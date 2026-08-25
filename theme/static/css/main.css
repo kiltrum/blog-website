@@ -1,0 +1,35 @@
+/* Grundlegende Einstellungen für die gesamte Website */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+/* Kopfbereich */
+
+header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+
+
+/* Überschriften */
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+
+/* Links */
+
+a {
+    color: inherit;
+}

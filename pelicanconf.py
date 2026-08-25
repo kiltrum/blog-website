@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = 'Berg & Rad Abenteuer'
+AUTHOR = 'Vanessa und Kilian'
 SITENAME = 'Berg & Rad Abenteuer'
 SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Berlin'
+TIMEZONE = 'Europe/Vienna'
 
 DEFAULT_LANG = 'de'
 
@@ -15,5 +15,6 @@ DEFAULT_PAGINATION = 10
 
 STATIC_PATHS = ['images', 'gpx']
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+THEME = 'theme'
+
+RELATIVE_URLS = True
