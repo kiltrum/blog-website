@@ -11,17 +11,15 @@
 </section>
 
 <section class="category-nav" aria-label="Kategorienavigation">
-    <a class="category-card category-card--bergsteigen" href="{{ SITEURL }}/category/bergsteigen.html">
-        <span class="category-card__label">Bergsteigen</span>
+    {% for category in FEATURED_CATEGORIES %}
+    <a
+        class="category-card category-card--{{ category.slug }}"
+        href="{{ SITEURL }}/category/{{ category.slug }}.html"
+        style="background-image: url('{{ category.image }}');"
+    >
+        <span class="category-card__label">{{ category.name }}</span>
     </a>
-
-    <a class="category-card category-card--bikepacking" href="{{ SITEURL }}/category/bikepacking.html">
-        <span class="category-card__label">Bikepacking</span>
-    </a>
-
-    <a class="category-card category-card--berglaufen" href="{{ SITEURL }}/category/berglaufen.html">
-        <span class="category-card__label">Berglaufen</span>
-    </a>
+    {% endfor %}
 </section>
 
 <section class="latest-posts">
@@ -33,8 +31,15 @@
     {% if articles %}
         <div class="posts-grid">
             {% for article in articles[:6] %}
+            {% set hero_image = article.metadata.get('HeroImage') or article.metadata.get('heroimage') %}
             <article class="post-card">
-                <div class="post-card__image" aria-hidden="true"></div>
+                {% if hero_image %}
+                <div class="post-card__image-wrap">
+                    <img class="post-card__image" src="{{ hero_image }}" alt="{{ article.title }}">
+                </div>
+                {% else %}
+                <div class="post-card__image post-card__image--placeholder" aria-hidden="true"></div>
+                {% endif %}
                 <div class="post-card__body">
                     <p class="post-card__meta">
                         {{ article.date.strftime('%d.%m.%Y') }}

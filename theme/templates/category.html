@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ category.name }} – {{ SITENAME }}
+{% endblock %}
+
+{% block content %}
+<section class="container category-page" aria-label="Kategorie {{ category.name }}">
+    <header class="category-page__header">
+        <p class="eyebrow eyebrow--dark">Kategorie</p>
+        <h1>{{ category.name }}</h1>
+        <p class="category-page__intro">
+            Entdecke Abenteuer und Berichte aus {{ category.name }} – von Bergpässen bis zu langen Touren im Gelände.
+        </p>
+    </header>
+
+    {% if articles %}
+    <div class="posts-grid category-posts-grid">
+        {% for article in articles %}
+        {% set hero_image = article.metadata.get('HeroImage') or article.metadata.get('heroimage') %}
+        <article class="post-card category-post-card">
+            {% if hero_image %}
+            <div class="post-card__image-wrap">
+                <img class="post-card__image" src="{{ hero_image }}" alt="{{ article.title }}">
+            </div>
+            {% else %}
+            <div class="post-card__image post-card__image--placeholder" aria-hidden="true"></div>
+            {% endif %}
+            <div class="post-card__body">
+                <p class="post-card__meta">
+                    {{ article.date.strftime('%d.%m.%Y') }}
+                    {% if article.author %}
+                        · {{ article.author }}
+                    {% endif %}
+                </p>
+                <h3>
+                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                </h3>
+                {% if article.summary %}
+                    <p>{{ article.summary }}</p>
+                {% endif %}
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p class="empty-state">Noch keine Einträge in dieser Kategorie.</p>
+    {% endif %}
+</section>
+{% endblock %}

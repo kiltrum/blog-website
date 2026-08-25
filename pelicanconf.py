@@ -18,3 +18,21 @@ STATIC_PATHS = ['images', 'gpx']
 THEME = 'theme'
 
 RELATIVE_URLS = True
+
+FEATURED_CATEGORIES = [
+    {
+        'name': 'Bergsteigen',
+        'slug': 'bergsteigen',
+        'image': '/images/categories/bergsteigen.jpg'
+    },
+    {
+        'name': 'Bikepacking',
+        'slug': 'bikepacking',
+        'image': '/images/categories/bikepacking.jpg'
+    },
+    {
+        'name': 'Berglaufen',
+        'slug': 'berglaufen',
+        'image': '/images/categories/berglaufen.jpg'
+    }
+]
