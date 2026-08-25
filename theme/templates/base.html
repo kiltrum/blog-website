@@ -20,10 +20,17 @@
         <header class="site-header">
             <div class="container header-inner">
                 <a class="site-brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
-                <nav class="site-nav" aria-label="Main navigation">
-                    <a href="{{ SITEURL }}/">Start</a>
-                    <a href="{{ SITEURL }}/categories.html">Kategorien</a>
-                    <a href="{{ SITEURL }}/archives.html">Archiv</a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Menü öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="site-nav" id="site-navigation" aria-label="Hauptnavigation">
+                    <a href="{{ SITEURL }}/category/bergsteigen.html">Bergsteigen</a>
+                    <a href="{{ SITEURL }}/category/bikepacking.html">Bikepacking</a>
+                    <a href="{{ SITEURL }}/category/berglaufen.html">Berglaufen</a>
+                    <a href="{{ SITEURL }}/#all-tours-title">Tourenkarte</a>
+                    <a href="{{ SITEURL }}/pages/ueber-uns.html">Über uns</a>
                 </nav>
             </div>
         </header>

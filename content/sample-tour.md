@@ -5,6 +5,7 @@ Tags: Radfahren, Mountainbike, Alpen, Gipfel
 Slug: sample-tour
 Authors: Berg & Rad Abenteuer
 Summary: Eine Beispieltour über Schotterpisten, Waldwege und alpine Panoramen.
+GPX: /gpx/test-berglauf.gpx
 
 Der Tag startet früh im Tal mit frischer Bergluft und einem langen Anstieg über Forststraßen.
 Nach den ersten Höhenmetern öffnet sich der Blick auf die Gipfelkette und den glitzernden Bergsee.

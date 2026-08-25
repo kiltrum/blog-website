@@ -19,6 +19,7 @@
         {% for article in articles %}
         {% set hero_image = article.metadata.get('HeroImage') or article.metadata.get('heroimage') %}
         <article class="post-card category-post-card">
+            <a class="post-card__link" href="{{ SITEURL }}/{{ article.url }}">
             {% if hero_image %}
             <div class="post-card__image-wrap">
                 <img class="post-card__image" src="{{ hero_image }}" alt="{{ article.title }}">
@@ -34,12 +35,13 @@
                     {% endif %}
                 </p>
                 <h3>
-                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                    {{ article.title }}
                 </h3>
                 {% if article.summary %}
                     <p>{{ article.summary }}</p>
                 {% endif %}
             </div>
+            </a>
         </article>
         {% endfor %}
     </div>
