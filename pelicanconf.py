@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'Vanessa und Kilian'
-SITENAME = 'Berg & Rad Abenteuer'
+SITENAME = 'TrailnError'
 SITEURL = ''
 
 PATH = 'content'
