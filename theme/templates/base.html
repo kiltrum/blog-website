@@ -25,6 +25,12 @@
                     <span></span>
                     <span></span>
                 </button>
+                <button class="search-toggle" type="button" aria-expanded="false" aria-controls="site-search" aria-label="Suche öffnen">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <circle cx="10.8" cy="10.8" r="6.3"></circle>
+                        <path d="m15.5 15.5 4.2 4.2"></path>
+                    </svg>
+                </button>
                 <nav class="site-nav" id="site-navigation" aria-label="Hauptnavigation">
                     <a href="{{ SITEURL }}/category/bergsteigen.html">Bergsteigen</a>
                     <a href="{{ SITEURL }}/category/bikepacking.html">Bikepacking</a>
@@ -33,6 +39,27 @@
                     <a href="{{ SITEURL }}/pages/ueber-uns.html">Über uns</a>
                 </nav>
             </div>
+            <div class="site-search" id="site-search" hidden>
+                <div class="container site-search__inner">
+                    <label class="site-search__label" for="site-search-input">Touren durchsuchen...</label>
+                    <input id="site-search-input" class="site-search__input" type="search" placeholder="Touren durchsuchen..." autocomplete="off">
+                    <div class="site-search__results" id="site-search-results" aria-live="polite"></div>
+                </div>
+            </div>
+            <script id="article-search-data" type="application/json">
+                [
+                {% for article in articles %}
+                    {
+                        "title": {{ article.title|tojson }},
+                        "url": {{ (SITEURL ~ '/' ~ article.url)|tojson }},
+                        "summary": {{ (article.summary|default('')|striptags)|tojson }},
+                        "category": {{ (article.category.name if article.category else '')|tojson }},
+                        "tourType": {{ (article.metadata.get('TourType') or article.metadata.get('tourtype') or '')|tojson }},
+                        "location": {{ (article.metadata.get('Location') or article.metadata.get('location') or '')|tojson }}
+                    }{% if not loop.last %},{% endif %}
+                {% endfor %}
+                ]
+            </script>
         </header>
 
         <main class="site-main">

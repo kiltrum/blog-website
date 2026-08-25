@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     initializeNavigation();
+    initializeArticleLightbox();
+    initializeTourTypeFilters();
+    initializeSiteSearch();
     const mapContainers = document.querySelectorAll('[data-gpx-map]');
 
     if (typeof L === 'undefined') {
@@ -61,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     color: '#b67a46',
                     weight: 4,
                     opacity: 0.9
-                });
+                }).addTo(map);
 
                 map.fitBounds(polyline.getBounds(), { padding: [20, 20] });
 
@@ -88,6 +91,196 @@ document.addEventListener('DOMContentLoaded', function () {
 
     initializeAllToursMap();
 });
+
+function initializeSiteSearch() {
+    const toggle = document.querySelector('.search-toggle');
+    const panel = document.querySelector('#site-search');
+    const input = document.querySelector('#site-search-input');
+    const results = document.querySelector('#site-search-results');
+    const dataElement = document.querySelector('#article-search-data');
+
+    if (!toggle || !panel || !input || !results || !dataElement) {
+        return;
+    }
+
+    let articles;
+
+    try {
+        articles = JSON.parse(dataElement.textContent);
+    } catch (error) {
+        console.error('Unable to parse article search data.', error);
+        return;
+    }
+
+    function closeSearch() {
+        panel.hidden = true;
+        toggle.setAttribute('aria-expanded', 'false');
+        input.value = '';
+        results.innerHTML = '';
+    }
+
+    function renderResults() {
+        const query = input.value.trim().toLocaleLowerCase();
+        results.innerHTML = '';
+
+        if (!query) {
+            return;
+        }
+
+        const matches = articles.filter(function (article) {
+            return [article.title, article.summary, article.category, article.tourType, article.location]
+                .some(function (value) {
+                    return String(value || '').toLocaleLowerCase().includes(query);
+                });
+        });
+
+        if (!matches.length) {
+            results.innerHTML = '<p class="site-search__empty">Keine Treffer</p>';
+            return;
+        }
+
+        matches.forEach(function (article) {
+            const link = document.createElement('a');
+            link.className = 'site-search__result';
+            link.href = article.url;
+            link.innerHTML = '<strong>' + escapeHtml(article.title) + '</strong>'
+                + '<small>' + [article.category, article.tourType, article.location]
+                    .filter(Boolean).map(escapeHtml).join(' · ') + '</small>';
+            results.appendChild(link);
+        });
+    }
+
+    toggle.addEventListener('click', function () {
+        const isOpen = !panel.hidden;
+        panel.hidden = isOpen;
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+
+        if (isOpen) {
+            closeSearch();
+        } else {
+            input.focus();
+        }
+    });
+
+    input.addEventListener('input', renderResults);
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && !panel.hidden) {
+            closeSearch();
+            toggle.focus();
+        }
+    });
+    document.addEventListener('click', function (event) {
+        if (!panel.hidden && !panel.contains(event.target) && !toggle.contains(event.target)) {
+            closeSearch();
+        }
+    });
+}
+
+function initializeTourTypeFilters() {
+    const filterNavigation = document.querySelector('[data-tour-type-filters]');
+
+    if (!filterNavigation) {
+        return;
+    }
+
+    const cards = document.querySelectorAll('.category-post-card[data-tour-type]');
+    const filters = filterNavigation.querySelectorAll('[data-tour-type]');
+
+    filters.forEach(function (filter) {
+        filter.addEventListener('click', function () {
+            const selectedType = filter.dataset.tourType;
+
+            filters.forEach(function (item) {
+                const isActive = item === filter;
+                item.classList.toggle('is-active', isActive);
+                item.setAttribute('aria-pressed', String(isActive));
+            });
+
+            cards.forEach(function (card) {
+                const cardType = card.dataset.tourType;
+                card.hidden = selectedType !== 'all' && cardType !== selectedType;
+            });
+        });
+    });
+}
+
+function initializeArticleLightbox() {
+    const articleImages = document.querySelectorAll('.article-body img');
+
+    if (!articleImages.length) {
+        return;
+    }
+
+    const overlay = document.createElement('div');
+    overlay.className = 'lightbox';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-label', 'Bildansicht');
+    overlay.innerHTML = '<button class="lightbox__close" type="button" aria-label="Bildansicht schließen">&times;</button>'
+        + '<figure class="lightbox__figure">'
+        + '<img class="lightbox__image" alt="">'
+        + '<figcaption class="lightbox__caption"></figcaption>'
+        + '</figure>';
+    document.body.appendChild(overlay);
+
+    const closeButton = overlay.querySelector('.lightbox__close');
+    const lightboxImage = overlay.querySelector('.lightbox__image');
+    const caption = overlay.querySelector('.lightbox__caption');
+    let previouslyFocusedImage = null;
+
+    function closeLightbox() {
+        overlay.classList.remove('is-open');
+        document.body.classList.remove('lightbox-open');
+        lightboxImage.removeAttribute('src');
+
+        if (previouslyFocusedImage) {
+            previouslyFocusedImage.focus();
+        }
+    }
+
+    function openLightbox(image) {
+        previouslyFocusedImage = image;
+        lightboxImage.src = image.currentSrc || image.src;
+        lightboxImage.alt = image.alt || '';
+
+        const figure = image.closest('figure');
+        const figureCaption = figure ? figure.querySelector('figcaption') : null;
+        caption.textContent = figureCaption ? figureCaption.textContent.trim() : '';
+        caption.hidden = !caption.textContent;
+
+        overlay.classList.add('is-open');
+        document.body.classList.add('lightbox-open');
+        closeButton.focus();
+    }
+
+    articleImages.forEach(function (image) {
+        image.setAttribute('tabindex', '0');
+        image.setAttribute('role', 'button');
+        image.classList.add('article-lightbox-trigger');
+        image.addEventListener('click', function () {
+            openLightbox(image);
+        });
+        image.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openLightbox(image);
+            }
+        });
+    });
+
+    closeButton.addEventListener('click', closeLightbox);
+    lightboxImage.addEventListener('click', closeLightbox);
+    overlay.addEventListener('click', function (event) {
+        if (event.target === overlay) {
+            closeLightbox();
+        }
+    });
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && overlay.classList.contains('is-open')) {
+            closeLightbox();
+        }
+    });
+}
 
 function initializeNavigation() {
     const toggle = document.querySelector('.nav-toggle');

@@ -34,8 +34,9 @@
     {% set duration = article.metadata.get('Duration') or article.metadata.get('duration') %}
     {% set difficulty = article.metadata.get('Difficulty') or article.metadata.get('difficulty') %}
     {% set location = article.metadata.get('Location') or article.metadata.get('location') %}
+    {% set tour_type = article.metadata.get('TourType') or article.metadata.get('tourtype') %}
 
-    {% if gpx_url or distance or elevation or duration or difficulty or location %}
+    {% if gpx_url or distance or elevation or duration or difficulty or location or tour_type %}
     <section class="article-details container" aria-label="Tour details">
         <div class="article-details__grid">
             {% if gpx_url or distance %}<div data-gpx-stat-container="distance"><span>Distanz</span><strong data-gpx-stat="distance">{{ distance }}</strong></div>{% endif %}
@@ -46,6 +47,7 @@
             {% if duration %}<div><span>Dauer</span><strong>{{ duration }}</strong></div>{% endif %}
             {% if difficulty %}<div><span>Schwierigkeit</span><strong>{{ difficulty }}</strong></div>{% endif %}
             {% if location %}<div><span>Ort</span><strong>{{ location }}</strong></div>{% endif %}
+            {% if tour_type %}<div><span>Tourtyp</span><strong>{{ tour_type }}</strong></div>{% endif %}
         </div>
     </section>
     {% endif %}

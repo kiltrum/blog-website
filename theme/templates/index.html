@@ -52,6 +52,7 @@
         <div class="posts-grid">
             {% for article in articles[:6] %}
             {% set hero_image = article.metadata.get('HeroImage') or article.metadata.get('heroimage') %}
+            {% set tour_type = article.metadata.get('TourType') or article.metadata.get('tourtype') %}
             <article class="post-card">
                 <a class="post-card__link" href="{{ SITEURL }}/{{ article.url }}">
                 {% if hero_image %}
@@ -63,9 +64,10 @@
                 {% endif %}
                 <div class="post-card__body">
                     <p class="post-card__meta">
+                        {% if tour_type %}{{ tour_type|upper }} · {% endif %}
                         {{ article.date.strftime('%d.%m.%Y') }}
-                        {% if article.category %}
-                            · {{ article.category }}
+                        {% if article.author %}
+                            · {{ article.author }}
                         {% endif %}
                     </p>
                     <h3>

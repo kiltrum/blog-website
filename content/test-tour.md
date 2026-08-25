@@ -22,6 +22,11 @@ Die ersten 15 Kilometer sind relativ flach. Erst nachdem wir die letzten Häuser
 
 Schon bald verschwindet der Asphalt und wird durch eine breite Schotterstraße ersetzt.
 
+<figure class="article-photo">
+    <img src="/images/articles/bikepacking-alpen/test1.JPG" alt="Berglandschaft">
+    <figcaption>Blick zurück auf den Pass.</figcaption>
+</figure>
+
 ## Der lange Anstieg
 
 Jetzt beginnt der eigentliche Anstieg der Tour.
@@ -40,6 +45,13 @@ Mit etwas Geduld lässt sich aber fast alles fahren.
 
 Nach knapp vier Stunden erreichen wir schließlich den höchsten Punkt der Tour.
 
+<div class="photo-grid photo-grid-2">
+    <img src="/images/articles/bikepacking-alpen/test2.JPG" alt="Bikepacking auf Schotter">
+    <img src="/images/articles/bikepacking-alpen/test3.JPG" alt="Blick ins Tal">
+    <figcaption>Dies und das.</figcaption>
+    <figcaption>Dies und das.</figcaption>
+</div>
+
 **Höchster Punkt: 2.290 m**
 
 Zeit für eine längere Pause.
@@ -53,7 +65,10 @@ Zunächst geht es über einen schmalen Schotterweg hinunter. Einige Stellen sind
 Nach ungefähr zehn Kilometern erreichen wir wieder Asphalt.
 
 Von hier geht es schnell zurück Richtung Tal.
-
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/bikepacking-alpen/panorama.jpg" alt="Bergpanorama">
+    <figcaption>Panorama entlang der Route.</figcaption>
+</figure>
 ## Zurück zum Ausgangspunkt
 
 Die letzten 25 Kilometer verlaufen überwiegend auf kleinen Nebenstraßen und Radwegen.
@@ -65,7 +80,7 @@ Nach rund acht Stunden erreichen wir wieder unseren Ausgangspunkt.
 ## Fazit
 
 Eine abwechslungsreiche Bikepacking-Tagestour mit einem langen alpinen Anstieg und einer großartigen Abfahrt.
-
+![Blick vom Weg](/images/articles/bikepacking-alpen/test2.JPG)
 Besonders schön ist der Übergang vom bewaldeten Tal in die offene Hochgebirgslandschaft.
 
 ### Was ich für die Tour empfehlen würde

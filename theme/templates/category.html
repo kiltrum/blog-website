@@ -14,11 +14,26 @@
         </p>
     </header>
 
+    {% set tour_types = [] %}
+    {% for article in articles %}
+        {% set tour_type = article.metadata.get('TourType') or article.metadata.get('tourtype') %}
+        {% if tour_type and tour_type not in tour_types %}
+            {% set _ = tour_types.append(tour_type) %}
+        {% endif %}
+    {% endfor %}
+    <nav class="tour-type-filters" aria-label="Tourtypen" data-tour-type-filters>
+        <button class="tour-type-filter is-active" type="button" data-tour-type="all" aria-pressed="true">Alle</button>
+        {% for tour_type in tour_types|sort %}
+        <button class="tour-type-filter" type="button" data-tour-type="{{ tour_type|lower }}" aria-pressed="false">{{ tour_type }}</button>
+        {% endfor %}
+    </nav>
+
     {% if articles %}
     <div class="posts-grid category-posts-grid">
         {% for article in articles %}
         {% set hero_image = article.metadata.get('HeroImage') or article.metadata.get('heroimage') %}
-        <article class="post-card category-post-card">
+        {% set tour_type = article.metadata.get('TourType') or article.metadata.get('tourtype') %}
+        <article class="post-card category-post-card" data-tour-type="{{ tour_type|default('')|lower }}">
             <a class="post-card__link" href="{{ SITEURL }}/{{ article.url }}">
             {% if hero_image %}
             <div class="post-card__image-wrap">
@@ -29,6 +44,7 @@
             {% endif %}
             <div class="post-card__body">
                 <p class="post-card__meta">
+                    {% if tour_type %}{{ tour_type|upper }} · {% endif %}
                     {{ article.date.strftime('%d.%m.%Y') }}
                     {% if article.author %}
                         · {{ article.author }}
