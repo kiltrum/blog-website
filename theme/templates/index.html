@@ -1,26 +1,59 @@
 {% extends "base.html" %}
 
 {% block content %}
+<section class="hero" aria-label="Startseite Hero">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+        <p class="eyebrow">Berg &amp; Rad Abenteuer</p>
+        <h1>TrailnError</h1>
+        <p class="hero__tagline">Tourenberichte, Bikepacking und Bergmomente zwischen Tal und Gipfel.</p>
+    </div>
+</section>
 
-<h2>Touren & Abenteuer</h2>
+<section class="category-nav" aria-label="Kategorienavigation">
+    <a class="category-card category-card--bergsteigen" href="{{ SITEURL }}/category/bergsteigen.html">
+        <span class="category-card__label">Bergsteigen</span>
+    </a>
 
-{% for article in articles %}
+    <a class="category-card category-card--bikepacking" href="{{ SITEURL }}/category/bikepacking.html">
+        <span class="category-card__label">Bikepacking</span>
+    </a>
 
-<article>
+    <a class="category-card category-card--berglaufen" href="{{ SITEURL }}/category/berglaufen.html">
+        <span class="category-card__label">Berglaufen</span>
+    </a>
+</section>
 
-    <h2>
-        <a href="{{ SITEURL }}/{{ article.url }}">
-            {{ article.title }}
-        </a>
-    </h2>
+<section class="latest-posts">
+    <div class="section-heading">
+        <p class="eyebrow eyebrow--dark">Neueste Einträge</p>
+        <h2>Aktuelle Abenteuer</h2>
+    </div>
 
-    <p>
-        {{ article.date.strftime('%d.%m.%Y') }}
-        · {{ article.author }}
-    </p>
-
-</article>
-
-{% endfor %}
-
+    {% if articles %}
+        <div class="posts-grid">
+            {% for article in articles[:6] %}
+            <article class="post-card">
+                <div class="post-card__image" aria-hidden="true"></div>
+                <div class="post-card__body">
+                    <p class="post-card__meta">
+                        {{ article.date.strftime('%d.%m.%Y') }}
+                        {% if article.category %}
+                            · {{ article.category }}
+                        {% endif %}
+                    </p>
+                    <h3>
+                        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                    </h3>
+                    {% if article.summary %}
+                        <p>{{ article.summary }}</p>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="empty-state">Mehr Abenteuer folgen bald.</p>
+    {% endif %}
+</section>
 {% endblock %}

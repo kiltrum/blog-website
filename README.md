@@ -6,7 +6,7 @@ Starter-Setup für einen persönlichen Cycling- und Mountain-Tour-Blog mit Pelic
 
 ```bash
 conda env create -f environment.yml
-conda activate outdoor-blog
+conda activate blog
 ```
 
 ## Website lokal bauen

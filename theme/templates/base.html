@@ -10,21 +10,35 @@
         {% endblock %}
     </title>
 
+    <meta name="description" content="{{ SITENAME }} - Tourenberichte, Bikepacking und Bergabenteuer.">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
 </head>
 
 <body>
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="site-brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
+                <nav class="site-nav" aria-label="Main navigation">
+                    <a href="{{ SITEURL }}/">Start</a>
+                    <a href="{{ SITEURL }}/categories.html">Kategorien</a>
+                    <a href="{{ SITEURL }}/archives.html">Archiv</a>
+                </nav>
+            </div>
+        </header>
 
-    <header>
-        <h1>{{ SITENAME }}</h1>
-    </header>
+        <main class="site-main">
+            {% block content %}
+            {% endblock %}
+        </main>
 
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p>© {{ SITENAME }}</p>
+            </div>
+        </footer>
+    </div>
 
     <script src="{{ SITEURL }}/theme/js/main.js"></script>
-
 </body>
 </html>

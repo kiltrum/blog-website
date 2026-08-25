@@ -1,4 +1,4 @@
-name: outdoor-blog
+name: blog
 channels:
   - conda-forge
 dependencies:
