@@ -42,12 +42,10 @@
             {% if gpx_url or distance %}<div data-gpx-stat-container="distance"><span>Distanz</span><strong data-gpx-stat="distance">{{ distance }}</strong></div>{% endif %}
             {% if gpx_url or elevation %}<div data-gpx-stat-container="elevationGain"><span>Höhenmeter bergauf</span><strong data-gpx-stat="elevationGain">{{ elevation }}</strong></div>{% endif %}
             {% if gpx_url %}<div data-gpx-stat-container="elevationLoss" hidden><span>Höhenmeter bergab</span><strong data-gpx-stat="elevationLoss"></strong></div>{% endif %}
-            {% if gpx_url %}<div data-gpx-stat-container="minimumElevation" hidden><span>Tiefster Punkt</span><strong data-gpx-stat="minimumElevation"></strong></div>{% endif %}
             {% if gpx_url %}<div data-gpx-stat-container="maximumElevation" hidden><span>Höchster Punkt</span><strong data-gpx-stat="maximumElevation"></strong></div>{% endif %}
             {% if duration %}<div><span>Dauer</span><strong>{{ duration }}</strong></div>{% endif %}
             {% if difficulty %}<div><span>Schwierigkeit</span><strong>{{ difficulty }}</strong></div>{% endif %}
             {% if location %}<div><span>Ort</span><strong>{{ location }}</strong></div>{% endif %}
-            {% if tour_type %}<div><span>Tourtyp</span><strong>{{ tour_type }}</strong></div>{% endif %}
         </div>
     </section>
     {% endif %}
@@ -64,8 +62,7 @@
              data-gpx-url="{{ gpx_url }}"
              data-gpx-title="{{ article.title }}">
         </div>
-           <div class="article-gpx__profile" data-gpx-profile aria-label="Elevation profile"></div>
-        <a class="article-gpx__link" href="{{ gpx_url }}" download>GPX herunterladen</a>
+        <div class="article-gpx__profile" data-gpx-profile aria-label="Elevation profile"></div>
     </section>
     {% endif %}
 </article>

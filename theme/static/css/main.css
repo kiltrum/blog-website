@@ -5,7 +5,7 @@
     --muted: #5a6468;
     --line: rgba(29, 43, 43, 0.12);
     --accent: #d8b98a;
-    --accent-strong: #b67a46;
+    --accent-strong: #ff5a00;
     --shadow: 0 18px 40px rgba(29, 43, 43, 0.12);
     --body-size: clamp(1.05rem, 0.96rem + 0.3vw, 1.2rem);
     --hero-title-size: clamp(4.2rem, 7vw, 8rem);
@@ -66,7 +66,7 @@ a {
     border-bottom: 1px solid var(--line);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1200;
 }
 
 .header-inner {
@@ -534,6 +534,54 @@ a {
     padding-top: 2rem;
 }
 
+.category-hero {
+    position: relative;
+    display: flex;
+    align-items: end;
+    min-height: 280px;
+    margin-bottom: 2rem;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border: 1px solid rgba(29, 43, 43, 0.1);
+    border-radius: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.category-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(14, 21, 20, 0.7), rgba(14, 21, 20, 0.25));
+}
+
+.category-hero__content {
+    position: relative;
+    z-index: 1;
+    max-width: 48rem;
+    color: #fff;
+}
+
+.category-hero__content .eyebrow {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.category-hero__content h1 {
+    margin-bottom: 0.5rem;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+    color: #fff;
+}
+
+.category-hero .category-page__intro {
+    max-width: 42rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(1rem, 0.95rem + 0.3vw, 1.2rem);
+}
+
 .category-page__header {
     margin-bottom: 2rem;
 }
@@ -678,7 +726,7 @@ a {
 .lightbox {
     position: fixed;
     inset: 0;
-    z-index: 2000;
+    z-index: 1300;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -701,8 +749,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: min(94vw, 1400px);
+    max-height: calc(100vh - 7.5rem);
     margin: 0;
     text-align: center;
 }
@@ -710,8 +758,8 @@ a {
 .lightbox__image {
     display: block;
     width: auto;
-    max-width: 94vw;
-    max-height: 88vh;
+    max-width: 100%;
+    max-height: calc(100vh - 10.5rem);
     height: auto;
     object-fit: contain;
     margin: 0 auto;
@@ -720,12 +768,13 @@ a {
 }
 
 .lightbox__caption {
-    max-width: 94vw;
+    max-width: min(94vw, 1000px);
     max-height: 8vh;
     overflow: auto;
     margin-top: 0.75rem;
     color: rgba(255, 255, 255, 0.82);
     font-size: 0.92rem;
+    text-align: center;
 }
 
 .lightbox__caption[hidden] {
@@ -860,7 +909,7 @@ a {
 
 .article-gpx__map {
     width: 100%;
-    height: 420px;
+    height: clamp(280px, 30vw, 340px);
     border-radius: 16px;
     overflow: hidden;
     background: #dfe7dd;
@@ -873,9 +922,34 @@ a {
     background: #dfe7dd;
 }
 
+.article-gpx__map .leaflet-pane,
+.article-gpx__map .leaflet-control,
+.article-gpx__map .leaflet-top,
+.article-gpx__map .leaflet-bottom,
+.article-gpx__map .leaflet-tooltip,
+.article-gpx__map .leaflet-popup {
+    z-index: 1;
+}
+
+.leaflet-control-layers {
+    margin: 0.55rem 0 0 0.55rem;
+    border: 1px solid rgba(29, 43, 43, 0.12);
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(29, 43, 43, 0.12);
+    z-index: 1;
+}
+
+.leaflet-control-layers .leaflet-control-layers-list {
+    font-size: 0.76rem;
+}
+
+.leaflet-control-layers label {
+    font-size: 0.76rem;
+}
+
 .article-gpx__profile {
-    margin-top: 1.25rem;
-    padding: 1rem 1rem 0.75rem;
+    margin-top: 0.9rem;
+    padding: 0.8rem 0.8rem 0.65rem;
     border: 1px solid var(--line);
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.72);
@@ -903,7 +977,7 @@ a {
     display: block;
     width: 100%;
     height: auto;
-    min-height: 155px;
+    min-height: 120px;
     touch-action: none;
 }
 
@@ -963,12 +1037,44 @@ a {
     pointer-events: none;
 }
 
-.article-gpx__link {
-    display: inline-block;
-    margin-top: 0.9rem;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 0.12em;
+.leaflet-custom-gpx-control {
+    border: 1px solid rgba(29, 43, 43, 0.15) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 3px 10px rgba(29, 43, 43, 0.12);
+    overflow: hidden;
+}
+
+.leaflet-custom-gpx-control__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.38rem;
+    padding: 0.45rem 0.7rem;
+    border: 0;
+    background: rgba(255, 255, 255, 0.96);
+    color: var(--ink);
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.leaflet-custom-gpx-control__button:hover,
+.leaflet-custom-gpx-control__button:focus-visible {
+    background: #fff;
+    outline: none;
+}
+
+.leaflet-custom-gpx-control__button span:first-child {
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+@media (max-width: 640px) {
+    .leaflet-custom-gpx-control__button {
+        padding: 0.62rem 0.8rem;
+        font-size: 0.82rem;
+    }
 }
 
 .page-content {

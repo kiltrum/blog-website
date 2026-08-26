@@ -46,9 +46,10 @@
                     <div class="site-search__results" id="site-search-results" aria-live="polite"></div>
                 </div>
             </div>
+            {% set search_articles = all_articles if all_articles is defined else articles %}
             <script id="article-search-data" type="application/json">
                 [
-                {% for article in articles %}
+                {% for article in search_articles %}
                     {
                         "title": {{ article.title|tojson }},
                         "url": {{ (SITEURL ~ '/' ~ article.url)|tojson }},

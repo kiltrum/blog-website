@@ -45,13 +45,13 @@ Mit etwas Geduld lässt sich aber fast alles fahren.
 
 Nach knapp vier Stunden erreichen wir schließlich den höchsten Punkt der Tour.
 
-<div class="photo-grid photo-grid-2">
-    <img src="/images/articles/bikepacking-alpen/test2.JPG" alt="Bikepacking auf Schotter">
-    <img src="/images/articles/bikepacking-alpen/test3.JPG" alt="Blick ins Tal">
-    <figcaption>Dies und das.</figcaption>
-    <figcaption>Dies und das.</figcaption>
-</div>
-
+<figure class="photo-grid-group">
+    <div class="photo-grid photo-grid-2">
+        <img src="/images/articles/bikepacking-alpen/test2.JPG" alt="Bikepacking auf Schotter">
+        <img src="/images/articles/bikepacking-alpen/test3.JPG" alt="Blick ins Tal">
+    </div>
+    <figcaption>Zwei Eindrücke vom höchsten Punkt der Tour.</figcaption>
+</figure>
 **Höchster Punkt: 2.290 m**
 
 Zeit für eine längere Pause.

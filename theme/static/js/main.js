@@ -1,3 +1,35 @@
+function buildBasemapLayers() {
+    const openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors'
+    });
+
+    const openTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        maxZoom: 17,
+        attribution: 'Map data: &copy; OpenStreetMap contributors; tiles: &copy; OpenTopoMap (CC-BY-SA)'
+    });
+
+    return {
+        openStreetMap: openStreetMap,
+        openTopoMap: openTopoMap
+    };
+}
+
+function addBasemapControl(map, defaultBasemapName) {
+    const basemaps = buildBasemapLayers();
+    const selectedBasemap = defaultBasemapName === 'openTopoMap' ? basemaps.openTopoMap : basemaps.openStreetMap;
+
+    selectedBasemap.addTo(map);
+
+    L.control.layers({
+        'OpenStreetMap': basemaps.openStreetMap,
+        'OpenTopoMap': basemaps.openTopoMap
+    }, null, {
+        position: 'bottomleft',
+        collapsed: true
+    }).addTo(map);
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     initializeNavigation();
     initializeArticleLightbox();
@@ -19,14 +51,44 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         const map = L.map(container, {
-            scrollWheelZoom: false,
+            scrollWheelZoom: true,
             zoomControl: true
         });
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
+        const gpxDownloadControl = L.Control.extend({
+            options: {
+                position: 'bottomright'
+            },
+            onAdd: function () {
+                const controlContainer = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-custom-gpx-control');
+                const button = L.DomUtil.create('button', 'leaflet-custom-gpx-control__button', controlContainer);
+                const fileName = gpxUrl.split('/').pop() || 'route.gpx';
+
+                button.type = 'button';
+                button.title = 'GPX herunterladen';
+                button.setAttribute('aria-label', 'GPX herunterladen');
+                button.innerHTML = '<span aria-hidden="true">↓</span><span>GPX</span>';
+
+                L.DomEvent.disableClickPropagation(controlContainer);
+                L.DomEvent.on(button, 'click', function (event) {
+                    L.DomEvent.stopPropagation(event);
+                    L.DomEvent.preventDefault(event);
+
+                    const link = document.createElement('a');
+                    link.href = gpxUrl;
+                    link.download = fileName;
+                    link.rel = 'noopener';
+                    document.body.appendChild(link);
+                    link.click();
+                    link.remove();
+                });
+
+                return controlContainer;
+            }
+        });
+
+        map.addControl(new gpxDownloadControl());
+        addBasemapControl(map, 'openTopoMap');
 
         fetch(gpxUrl)
             .then(function (response) {
@@ -61,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
 
                 const polyline = L.polyline(coords, {
-                    color: '#b67a46',
+                    color: '#ff5a00',
                     weight: 4,
                     opacity: 0.9
                 }).addTo(map);
@@ -128,7 +190,7 @@ function initializeSiteSearch() {
         }
 
         const matches = articles.filter(function (article) {
-            return [article.title, article.summary, article.category, article.tourType, article.location]
+            return [article.title, article.summary, article.category, article.tourType, article.location, article.url]
                 .some(function (value) {
                     return String(value || '').toLocaleLowerCase().includes(query);
                 });
@@ -228,10 +290,28 @@ function initializeArticleLightbox() {
     const caption = overlay.querySelector('.lightbox__caption');
     let previouslyFocusedImage = null;
 
+    function getFigureCaptionText(image) {
+        const figure = image.closest('figure');
+
+        if (!figure) {
+            return '';
+        }
+
+        const figureCaption = figure.querySelector('figcaption');
+
+        if (!figureCaption) {
+            return '';
+        }
+
+        return figureCaption.textContent.trim();
+    }
+
     function closeLightbox() {
         overlay.classList.remove('is-open');
         document.body.classList.remove('lightbox-open');
         lightboxImage.removeAttribute('src');
+        caption.textContent = '';
+        caption.hidden = true;
 
         if (previouslyFocusedImage) {
             previouslyFocusedImage.focus();
@@ -243,10 +323,9 @@ function initializeArticleLightbox() {
         lightboxImage.src = image.currentSrc || image.src;
         lightboxImage.alt = image.alt || '';
 
-        const figure = image.closest('figure');
-        const figureCaption = figure ? figure.querySelector('figcaption') : null;
-        caption.textContent = figureCaption ? figureCaption.textContent.trim() : '';
-        caption.hidden = !caption.textContent;
+        const captionText = getFigureCaptionText(image);
+        caption.textContent = captionText;
+        caption.hidden = !captionText;
 
         overlay.classList.add('is-open');
         document.body.classList.add('lightbox-open');
@@ -335,10 +414,7 @@ function initializeAllToursMap() {
         zoomControl: true
     });
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
+    addBasemapControl(map, 'openStreetMap');
 
     const routeBounds = L.latLngBounds([]);
     const layers = [];
@@ -382,12 +458,12 @@ function initializeAllToursMap() {
                 }
 
                 const route = L.polyline(coordinates, {
-                    color: '#b67a46',
+                    color: '#ff5a00',
                     weight: 3,
                     opacity: 0.55
                 });
                 const hitArea = L.polyline(coordinates, {
-                    color: '#b67a46',
+                    color: '#ff5a00',
                     weight: 14,
                     opacity: 0.01,
                     interactive: true
@@ -602,8 +678,8 @@ function distanceBetweenPoints(latitudeOne, longitudeOne, latitudeTwo, longitude
 
 function renderElevationProfile(container, data, map) {
     const width = 900;
-    const height = 240;
-    const padding = { top: 28, right: 20, bottom: 42, left: 54 };
+    const height = 180;
+    const padding = { top: 18, right: 18, bottom: 30, left: 46 };
     const chartWidth = width - padding.left - padding.right;
     const chartHeight = height - padding.top - padding.bottom;
     const elevations = data.map(function (point) { return point.elevation; });
@@ -691,7 +767,7 @@ function renderElevationProfile(container, data, map) {
                 radius: 6,
                 color: '#fffdf9',
                 weight: 2,
-                fillColor: '#b67a46',
+                fillColor: '#ff5a00',
                 fillOpacity: 1
             }).addTo(map);
         }

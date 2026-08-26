@@ -23,16 +23,19 @@ FEATURED_CATEGORIES = [
     {
         'name': 'Bergsteigen',
         'slug': 'bergsteigen',
-        'image': '/images/categories/bergsteigen.jpg'
+        'image': '/images/categories/bergsteigen.jpg',
+        'hero_image': '/images/categories/bergsteigen-hero.jpg'
     },
     {
         'name': 'Bikepacking',
         'slug': 'bikepacking',
-        'image': '/images/categories/bikepacking.jpg'
+        'image': '/images/categories/bikepacking.jpg',
+        'hero_image': '/images/categories/bikepacking-hero.jpg'
     },
     {
         'name': 'Berglaufen',
         'slug': 'berglaufen',
-        'image': '/images/categories/berglaufen.jpg'
+        'image': '/images/categories/berglaufen.jpg',
+        'hero_image': '/images/categories/berglaufen-hero.jpg'
     }
 ]
