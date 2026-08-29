@@ -1,27 +1,35 @@
-Title: Lenzspitze Nadelhorn Überschreitung
-Summary: Überschreitung der Lenzspitze über den Ostgrat mit anschließendem Übergang zum Nadelhorn.
-Date: 2026-07-24
+Title: Zinalrothorn über den Rothorngrat
+Summary: Besteigung des Zinalrothorns über den Rothorngrat mit abwechslungsreicher und ausgesetzter Kletterei in hochalpinem Gelände.
+Date: 2025-08-18
 Author: Kilian
 Category: Bergsteigen
 TourType: Hochtour
-Slug: lenzspitze-nadelhorn
-Difficulty: AD+
-Duration: 11 h
+Slug: zinalrothorn-rothorngrat
+Difficulty: AD+ / 4a
+Duration: 15 h
 Location: Wallis, Schweiz
-HeroImage: /images/articles/lenzspitze_nadelhorn_überschreitung/hero.jpg
-GPX: /gpx/lenzspitze_nadelhorn_überschreitung.gpx
+HeroImage: /images/articles/rothorngrat_zinalrothorn/hero.jpg
+GPX: /gpx/rothorngrat_zinalrothorn.gpx
 
 
 
-## Lenzspitze–Nadelhorn Überschreitung
+## Abreise nach Zermatt
 
-Nachdem wir uns nach den zwei Ruhetagen wieder regeneriert hatten und klar war, dass Lucas Knie eine weitere Tour durchstehen würde, war unser neues Ziel klar: die Gratüberschreitung von Lenzspitze und Nadelhorn. Die Wetterprognose war perfekt und zum Glück hatte die Mischabelhütte noch zwei Plätze für uns frei.
+Etwas später als geplant fahren wir mit dem Auto in die Schweiz. Das Wetter lässt wenig Hoffnung, dass wir mehr als 2-3 Schönwettertage bekommen werden und die schon in den nächsten zwei Tagen. Der Plan war: wir fahren direkt bis nach Zermatt, steigen heute am Nachmittage/Abend im Regen aufs Arbenbiwak auf. Klettern am ersten Schönwettertag den Arbengrat und überschreiten das Obergabelhorn. Am zweiter Schönwettertag solls dann über den Rothorngrat aufs Zinalrothorn gehn. So weit der Plan. 
 
-## Zustieg zur Mischabelhütte
 
-Wir starten den Zustieg vom Parkplatz in Saas-Almagell mit den Rädern, um uns insgesamt 50 € an Parkgebühr zu sparen. Der Zustieg mit ca. 1.400 hm und 5 km war zach. Der durchwegs schöne Ausblick aufs Allalinhorn und den Alphubel und später die Seilsversicherungen im oberen Bereich ließen die Höhenmeter aber wie im Flug vergehen. Nach genau drei Stunden erreichten wir die Hütte.
+## Zustieg zum Arbengrat
 
-Nachdem wir beim Zustieg und auf der Hütte eine kurze Umfrage gestartet hatten, war klar, dass am nächsten Tag mindestens 15 Seilschaften die Überschreitung geplant hatten.
+Wir starten klassisch mit dem Zug von Täsch und erreichen um 17:30 Uhr Zermatt. Wir kürzen die ersten paar Höhenmeter noch mit der Gondel ab. Bis zum Schwarzsee kommen wir nicht mehr und wir müssen bei der Zwischenstaion aussteigen. Los gehts mit dem dem 1400 hm steilen Zustieg! Im Speedmode um dem prognostizierten Regen zu entkommen starten wir Richtung Biwak. Bei der Hälfte beginnt es leicht zu Rechnen und es wir echt kalt. Ich muss am Schluss entwas vorgehen weil mir schon so kalt wurde und bei den letzen Leiter und Versicherungen waren meine Finger schon ganz klamm. Ich erreiche nach genau 4 Stunden Zustieg noch im letzen Tageslicht das Biwak und beginne mal Nudel zu kochen. So leise wie nur möglich starte ich den Gaskocher, alle anderen im Biwak schlafen schon. Kurz nach mir kommt Nick dann auch beim Biwak an. Wir einigen uns auf 5:00 Uhr Aufstehen, das Wetter soll erst ab 7:00 Uhr besser werden, das wäre dann die perfekte Zeit wenn wir am Grat wären. 
+
+<figure class="photo-grid-group">
+    <div class="photo-grid photo-grid-2">
+        <img src="/images/articles/rothorngrat_zinalrothorn/1.jpg" alt="Morgenstimmung am Grat">
+        <img src="/images/articles/rothorngrat_zinalrothorn/2.jpg" alt="Blick ins Tal">
+    <figcaption>Ankunft in Zermatt.</figcaption>
+    <figcaption>Das Matterhorn versteckt sich in den Wolken.</figcaption>
+</figure>
+
 
 
 <figure class="article-photo">
@@ -29,9 +37,10 @@ Nachdem wir beim Zustieg und auf der Hütte eine kurze Umfrage gestartet hatten,
     <figcaption>Blick auf Allalinhorn und Alphubel.</figcaption>
 </figure>
 
-## Von der Mischabelhütte zum Ostgrat
-Um einem Stau am Grat zu entgehen, klingelt der Wecker bereits um 2:00 Uhr. Kurz vor 3:00 Uhr treten wir unter sternenklarem Himmel als dritte Partie aus der Hütte. Nach nur kurzer Zeit haben wir uns dann an die Poleposition vorgearbeitet. Trotz des kalten Windes, der vom Windjoch herzieht, erreichen wir schnell den Einstieg und hinter einem windgeschützten Stein machen wir kurz Halt, um uns kletterready zu machen. Wir lassen noch einen netten Bergführer mit seiner Kundin vorbei, um im Dunkeln nicht allzu viel nach dem Weg suchen zu müssen.
 
+
+## Vom Arbenbiwak zur Rothornhütte
+Um 5:00 Leutet der Wecker, jedoch merken wir dass es draußen noch regnet und sich sonst im Biwak auch niemand rührt... Wir beschließen noch eine Stunde zu schlafen. Um 6:00 Uhr wieder der Wecker, es ist immer noch extrem windig, nass und neblig. Vor allem am Grat hängen einigen Nebelfetzen. Wir besprechen uns mit den anderen im Biwak und es wird schnell klar, dass nur eine Partie heute einsteigen wird, ein Bergführer mit seiner Freunding, die die Südwand gehen wollen(windgeschützer). Wir entscheiden uns, dass wir über das Tal ins 
 
 
 ## Über den Ostgrat auf die Lenzspitze

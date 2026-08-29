@@ -27,6 +27,12 @@
         <p class="eyebrow eyebrow--dark">Routenübersicht</p>
         <h2 id="all-tours-title">Unsere Touren</h2>
     </div>
+    <nav class="category-filters" aria-label="Kategoriefilter" data-category-filters>
+        <button class="category-filter is-active" type="button" data-category-slug="all" aria-pressed="true">Alle</button>
+        {% for category in FEATURED_CATEGORIES %}
+        <button class="category-filter" type="button" data-category-slug="{{ category.slug }}" aria-pressed="false">{{ category.name }}</button>
+        {% endfor %}
+    </nav>
     <div class="all-tours__map" data-all-tours-map></div>
     <script id="all-tours-data" type="application/json">
         [
@@ -35,7 +41,8 @@
                 "title": {{ article.title|tojson }},
                 "url": {{ (SITEURL ~ '/' ~ article.url)|tojson }},
                 "gpx": {{ (article.metadata.get('GPX') or article.metadata.get('gpx'))|tojson }},
-                "category": {{ (article.category.name if article.category else '')|tojson }}
+                "category": {{ (article.category.name if article.category else '')|tojson }},
+                "categorySlug": {{ (article.category.slug if article.category else '')|tojson }}
             }{% if not loop.last %},{% endif %}
         {% endfor %}
         ]

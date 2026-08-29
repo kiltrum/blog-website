@@ -87,7 +87,73 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
+        const expandMapControl = L.Control.extend({
+            options: {
+                position: 'bottomleft'
+            },
+            onAdd: function () {
+                const controlContainer = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-expand-map-control');
+                const button = L.DomUtil.create('button', 'leaflet-expand-map-control__button', controlContainer);
+
+                button.type = 'button';
+                button.title = 'Karte vergrößern';
+                button.setAttribute('aria-label', 'Karte vergrößern');
+                button.setAttribute('data-expanded', 'false');
+                button.innerHTML = '<span aria-hidden="true">⛶</span>';
+
+                L.DomEvent.disableClickPropagation(controlContainer);
+                L.DomEvent.on(button, 'click', function (event) {
+                    L.DomEvent.stopPropagation(event);
+                    L.DomEvent.preventDefault(event);
+
+                    const isExpanded = button.getAttribute('data-expanded') === 'true';
+                    if (isExpanded) {
+                        collapseMap();
+                    } else {
+                        expandMap();
+                    }
+                });
+
+                return controlContainer;
+            }
+        });
+
+        function expandMap() {
+            container.classList.add('article-gpx__map--expanded');
+            document.body.classList.add('map-expanded');
+            const expandButton = document.querySelector('.leaflet-expand-map-control__button');
+            expandButton.setAttribute('data-expanded', 'true');
+            expandButton.title = 'Karte verkleinern';
+            expandButton.setAttribute('aria-label', 'Karte verkleinern');
+            expandButton.innerHTML = '<span aria-hidden="true">⊗</span>';
+
+            requestAnimationFrame(function () {
+                map.invalidateSize();
+            });
+        }
+
+        function collapseMap() {
+            container.classList.remove('article-gpx__map--expanded');
+            document.body.classList.remove('map-expanded');
+            const expandButton = document.querySelector('.leaflet-expand-map-control__button');
+            expandButton.setAttribute('data-expanded', 'false');
+            expandButton.title = 'Karte vergrößern';
+            expandButton.setAttribute('aria-label', 'Karte vergrößern');
+            expandButton.innerHTML = '<span aria-hidden="true">⛶</span>';
+
+            requestAnimationFrame(function () {
+                map.invalidateSize();
+            });
+        }
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && container.classList.contains('article-gpx__map--expanded')) {
+                collapseMap();
+            }
+        });
+
         map.addControl(new gpxDownloadControl());
+        map.addControl(new expandMapControl());
         addBasemapControl(map, 'openTopoMap');
 
         fetch(gpxUrl)
@@ -288,16 +354,18 @@ function initializeArticleLightbox() {
     const closeButton = overlay.querySelector('.lightbox__close');
     const lightboxImage = overlay.querySelector('.lightbox__image');
     const caption = overlay.querySelector('.lightbox__caption');
+    const figure = overlay.querySelector('.lightbox__figure');
     let previouslyFocusedImage = null;
+    let currentImageIndex = -1;
 
     function getFigureCaptionText(image) {
-        const figure = image.closest('figure');
+        const fig = image.closest('figure');
 
-        if (!figure) {
+        if (!fig) {
             return '';
         }
 
-        const figureCaption = figure.querySelector('figcaption');
+        const figureCaption = fig.querySelector('figcaption');
 
         if (!figureCaption) {
             return '';
@@ -312,24 +380,52 @@ function initializeArticleLightbox() {
         lightboxImage.removeAttribute('src');
         caption.textContent = '';
         caption.hidden = true;
+        currentImageIndex = -1;
 
         if (previouslyFocusedImage) {
             previouslyFocusedImage.focus();
         }
     }
 
-    function openLightbox(image) {
-        previouslyFocusedImage = image;
+    function showImageByIndex(index) {
+        if (index < 0 || index >= articleImages.length) {
+            return;
+        }
+
+        currentImageIndex = index;
+        const image = articleImages[index];
         lightboxImage.src = image.currentSrc || image.src;
         lightboxImage.alt = image.alt || '';
 
         const captionText = getFigureCaptionText(image);
         caption.textContent = captionText;
         caption.hidden = !captionText;
+    }
+
+    function openLightbox(image) {
+        previouslyFocusedImage = image;
+        currentImageIndex = Array.from(articleImages).indexOf(image);
+        showImageByIndex(currentImageIndex);
 
         overlay.classList.add('is-open');
         document.body.classList.add('lightbox-open');
         closeButton.focus();
+    }
+
+    function navigateLightbox(direction) {
+        if (!overlay.classList.contains('is-open') || currentImageIndex === -1) {
+            return;
+        }
+
+        let nextIndex = currentImageIndex + direction;
+
+        if (nextIndex < 0) {
+            nextIndex = articleImages.length - 1;
+        } else if (nextIndex >= articleImages.length) {
+            nextIndex = 0;
+        }
+
+        showImageByIndex(nextIndex);
     }
 
     articleImages.forEach(function (image) {
@@ -349,14 +445,30 @@ function initializeArticleLightbox() {
 
     closeButton.addEventListener('click', closeLightbox);
     lightboxImage.addEventListener('click', closeLightbox);
+    caption.addEventListener('click', closeLightbox);
+    figure.addEventListener('click', function (event) {
+        if (event.target === figure) {
+            closeLightbox();
+        }
+    });
     overlay.addEventListener('click', function (event) {
         if (event.target === overlay) {
             closeLightbox();
         }
     });
     document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape' && overlay.classList.contains('is-open')) {
+        if (!overlay.classList.contains('is-open')) {
+            return;
+        }
+
+        if (event.key === 'Escape') {
             closeLightbox();
+        } else if (event.key === 'ArrowRight') {
+            event.preventDefault();
+            navigateLightbox(1);
+        } else if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+            navigateLightbox(-1);
         }
     });
 }
@@ -395,6 +507,7 @@ function initializeNavigation() {
 function initializeAllToursMap() {
     const mapContainer = document.querySelector('[data-all-tours-map]');
     const dataElement = document.getElementById('all-tours-data');
+    const filterContainer = document.querySelector('[data-category-filters]');
 
     if (!mapContainer || !dataElement) {
         return;
@@ -424,6 +537,39 @@ function initializeAllToursMap() {
     let selectedTour = null;
     let overviewInitialized = false;
     let completedTours = 0;
+    let selectedCategorySlug = 'all';
+
+    function getVisibleLayers() {
+        return layers.filter(function (layer) {
+            if (selectedCategorySlug === 'all') {
+                return true;
+            }
+            return layer.tour.categorySlug === selectedCategorySlug;
+        });
+    }
+
+    function updateCategoryFilter(slug) {
+        selectedCategorySlug = slug;
+        if (filterContainer) {
+            Array.from(filterContainer.querySelectorAll('.category-filter')).forEach(function (btn) {
+                const isActive = btn.getAttribute('data-category-slug') === slug;
+                btn.classList.toggle('is-active', isActive);
+                btn.setAttribute('aria-pressed', String(isActive));
+            });
+        }
+        selectedTour = null;
+        overviewInitialized = false;
+        refreshMapMode();
+    }
+
+    if (filterContainer) {
+        filterContainer.addEventListener('click', function (event) {
+            if (event.target.classList.contains('category-filter')) {
+                const slug = event.target.getAttribute('data-category-slug');
+                updateCategoryFilter(slug);
+            }
+        });
+    }
 
     const resetControl = L.control({ position: 'topright' });
     resetControl.onAdd = function () {

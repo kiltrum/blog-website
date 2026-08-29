@@ -599,6 +599,32 @@ a {
     color: var(--muted);
 }
 
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.category-filter {
+    padding: 0.45rem 0.8rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.9rem;
+}
+
+.category-filter:hover,
+.category-filter:focus-visible,
+.category-filter.is-active {
+    border-color: var(--ink);
+    background: var(--ink);
+    color: #fff;
+}
+
 .tour-type-filters {
     display: flex;
     flex-wrap: wrap;
@@ -720,6 +746,10 @@ a {
 }
 
 .lightbox-open {
+    overflow: hidden;
+}
+
+.map-expanded {
     overflow: hidden;
 }
 
@@ -914,6 +944,34 @@ a {
     overflow: hidden;
     background: #dfe7dd;
     border: 1px solid rgba(29, 43, 43, 0.1);
+    transition: height 0.3s ease, width 0.3s ease, position 0.3s ease, inset 0.3s ease, border-radius 0.3s ease, z-index 0.3s ease;
+}
+
+.article-gpx__map--expanded {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: none !important;
+    max-height: none !important;
+    min-width: 100vw !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    background: #dfe7dd !important;
+    z-index: 1250 !important;
+    transform: none !important;
+}
+
+.article-gpx__map--expanded .leaflet-container {
+    width: 100vw !important;
+    height: 100vh !important;
 }
 
 .article-gpx__map .leaflet-container {
@@ -1044,7 +1102,15 @@ a {
     overflow: hidden;
 }
 
-.leaflet-custom-gpx-control__button {
+.leaflet-expand-map-control {
+    border: 1px solid rgba(29, 43, 43, 0.15) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 3px 10px rgba(29, 43, 43, 0.12);
+    overflow: hidden;
+}
+
+.leaflet-custom-gpx-control__button,
+.leaflet-expand-map-control__button {
     display: inline-flex;
     align-items: center;
     gap: 0.38rem;
@@ -1060,7 +1126,9 @@ a {
 }
 
 .leaflet-custom-gpx-control__button:hover,
-.leaflet-custom-gpx-control__button:focus-visible {
+.leaflet-custom-gpx-control__button:focus-visible,
+.leaflet-expand-map-control__button:hover,
+.leaflet-expand-map-control__button:focus-visible {
     background: #fff;
     outline: none;
 }
