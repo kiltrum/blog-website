@@ -548,6 +548,21 @@ function initializeAllToursMap() {
         });
     }
 
+    function fitVisibleTours() {
+        const bounds = L.latLngBounds([]);
+
+        getVisibleLayers().forEach(function (layer) {
+            bounds.extend(layer.route.getBounds());
+        });
+
+        if (bounds.isValid()) {
+            map.fitBounds(bounds, {
+                padding: [24, 24],
+                maxZoom: overviewZoom - 1
+            });
+        }
+    }
+
     function updateCategoryFilter(slug) {
         selectedCategorySlug = slug;
         if (filterContainer) {
@@ -558,7 +573,8 @@ function initializeAllToursMap() {
             });
         }
         selectedTour = null;
-        overviewInitialized = false;
+        //overviewInitialized = false;
+        fitVisibleTours();
         refreshMapMode();
     }
 
@@ -681,7 +697,9 @@ function initializeAllToursMap() {
         }
 
         overviewMarkers.clearLayers();
-        layers.forEach(function (layer) {
+        trackLayer.clearLayers();
+
+        getVisibleLayers().forEach(function (layer) {
             trackLayer.addLayer(layer.route);
             trackLayer.addLayer(layer.hitArea);
         });
@@ -689,7 +707,7 @@ function initializeAllToursMap() {
     }
 
     function updateTrackStyles() {
-        layers.forEach(function (layer) {
+        getVisibleLayers().forEach(function (layer) {
             layer.route.setStyle({
                 opacity: selectedTour && selectedTour !== layer ? 0.18 : (selectedTour === layer ? 1 : 0.75),
                 weight: selectedTour === layer ? 5 : 3
@@ -703,7 +721,7 @@ function initializeAllToursMap() {
         const clusterDistance = 55;
         const zoom = Math.max(map.getZoom(), 1);
 
-        layers.forEach(function (layer) {
+        getVisibleLayers().forEach(function (layer) {
             const point = map.project(layer.markerLocation, zoom);
             let group = groups.find(function (candidate) {
                 return point.distanceTo(candidate.point) <= clusterDistance;
