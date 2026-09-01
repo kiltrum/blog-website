@@ -111,7 +111,7 @@ a {
     height: 38px;
     padding: 0.55rem;
     border: 1px solid var(--line);
-    border-radius: 6px;
+    border-radius: 0px;
     background: transparent;
     cursor: pointer;
 }
@@ -181,7 +181,7 @@ a {
     width: 100%;
     padding: 0.65rem 0.75rem;
     border: 1px solid var(--line);
-    border-radius: 6px;
+    border-radius: 0px;
     background: var(--paper);
     color: var(--ink);
     font: inherit;
@@ -203,7 +203,7 @@ a {
 .site-search__result {
     display: block;
     padding: 0.65rem 0.75rem;
-    border-radius: 6px;
+    border-radius: 0px;
 }
 
 .site-search__result:hover,
@@ -240,7 +240,7 @@ a {
     min-height: 520px;
     display: flex;
     align-items: end;
-    border-radius: 28px;
+    border-radius: 0px;
     overflow: hidden;
     box-shadow: var(--shadow);
     background: #2d3a33;
@@ -853,9 +853,9 @@ a {
 .article-body img,
 .article-body figure img {
     display: block;
-    width: 100%;
+    width: 75%;
     height: auto;
-    border-radius: 18px;
+    border-radius: 0;
     margin: 1rem auto 0.75rem;
 }
 
@@ -940,7 +940,7 @@ a {
 .article-gpx__map {
     width: 100%;
     height: clamp(280px, 30vw, 340px);
-    border-radius: 16px;
+    border-radius: 0px;
     overflow: hidden;
     background: #dfe7dd;
     border: 1px solid rgba(29, 43, 43, 0.1);
@@ -992,7 +992,7 @@ a {
 .leaflet-control-layers {
     margin: 0.55rem 0 0 0.55rem;
     border: 1px solid rgba(29, 43, 43, 0.12);
-    border-radius: 8px;
+    border-radius: 0px;
     box-shadow: 0 3px 12px rgba(29, 43, 43, 0.12);
     z-index: 1;
 }
@@ -1009,7 +1009,7 @@ a {
     margin-top: 0.9rem;
     padding: 0.8rem 0.8rem 0.65rem;
     border: 1px solid var(--line);
-    border-radius: 16px;
+    border-radius: 0px;
     background: rgba(255, 255, 255, 0.72);
 }
 
@@ -1086,7 +1086,7 @@ a {
     top: 0;
     transform: translateX(-50%);
     padding: 0.35rem 0.55rem;
-    border-radius: 6px;
+    border-radius: 0px;
     background: var(--ink);
     color: #fff;
     font-size: 0.78rem;
@@ -1097,14 +1097,14 @@ a {
 
 .leaflet-custom-gpx-control {
     border: 1px solid rgba(29, 43, 43, 0.15) !important;
-    border-radius: 8px !important;
+    border-radius: 0px !important;
     box-shadow: 0 3px 10px rgba(29, 43, 43, 0.12);
     overflow: hidden;
 }
 
 .leaflet-expand-map-control {
     border: 1px solid rgba(29, 43, 43, 0.15) !important;
-    border-radius: 8px !important;
+    border-radius: 0px !important;
     box-shadow: 0 3px 10px rgba(29, 43, 43, 0.12);
     overflow: hidden;
 }
@@ -1180,7 +1180,7 @@ a {
     aspect-ratio: 16 / 7;
     object-fit: cover;
     margin: 0 auto;
-    border-radius: 24px;
+    border-radius: 0px;
     background: linear-gradient(135deg, #b8a875, #3f5543);
     box-shadow: var(--shadow);
 }
@@ -1213,7 +1213,7 @@ a {
     aspect-ratio: 4 / 5;
     object-fit: cover;
     margin-bottom: 1.25rem;
-    border-radius: 18px;
+    border-radius: 0px;
     background: linear-gradient(135deg, #b8a875, #3f5543);
 }
 
@@ -1248,7 +1248,7 @@ a {
 .about-cta__link {
     display: inline-block;
     padding: 0.75rem 1.1rem;
-    border-radius: 6px;
+    border-radius: 0px;
     background: var(--ink);
     color: #fff;
     font-weight: 600;
@@ -1366,7 +1366,7 @@ a {
 
     .about-intro__image {
         aspect-ratio: 4 / 3;
-        border-radius: 18px;
+        border-radius: 0px;
     }
 
     .category-card {
