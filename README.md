@@ -13,7 +13,9 @@ conda activate blog
 
 ```bash
 pelican content
+pelican content -r -l
 ```
+dann auf browser öffnen: http://localhost:8000
 
 ## Preview-Server starten
 
