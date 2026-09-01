@@ -9,3 +9,4 @@ Duration: 5 Tage
 Location: Alashankou, China
 HeroImage: /images/articles/china_part_1/hero.jpg
 GPX: /gpx/china_part_1.gpx
+ 

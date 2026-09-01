@@ -1,7 +1,7 @@
 Title: Bikepacking Kasachstan Part 3
 Summary: 
 Date: 2026-05-10
-Author: Kilian
+Author: Kilian und Venssa
 Category: Bikepacking
 TourType: Gravel
 Slug: kasachstan-part-3
