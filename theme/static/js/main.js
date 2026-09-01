@@ -747,9 +747,9 @@ function initializeAllToursMap() {
             const marker = L.marker(center, {
                 icon: L.divIcon({
                     className: group.layers.length > 1 ? 'all-tours__cluster' : 'all-tours__marker',
-                    html: group.layers.length > 1 ? String(group.layers.length) : '•',
-                    iconSize: group.layers.length > 1 ? [34, 34] : [22, 22],
-                    iconAnchor: group.layers.length > 1 ? [17, 17] : [11, 11]
+                    html: group.layers.length > 1 ? String(group.layers.length) : '1',
+                    iconSize: [34, 34],
+                    iconAnchor: [17, 17]
                 })
             }).addTo(overviewMarkers);
 

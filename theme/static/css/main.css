@@ -402,14 +402,10 @@ a {
     font-weight: 700;
 }
 
-.all-tours__marker {
-    font-size: 1.35rem;
-}
-
+.all-tours__marker,
 .all-tours__cluster {
     font-size: 0.85rem;
 }
-
 .all-tours__reset-control {
     padding: 0.45rem 0.7rem;
     border: 1px solid var(--line);

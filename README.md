@@ -22,3 +22,19 @@ dann auf browser öffnen: http://localhost:8000
 ```bash
 pelican --listen
 ```
+## gpx verkleinern
+
+Originale gpx datei in gpx ordner laden und dann folgendes ausführen:
+
+```bash
+cd ~/Dokumente/TrailError/blog-website
+python scripts/simplify_gpx.py
+```
+
+## Bilder verkleinern
+
+```bash
+cd ~/Dokumente/TrailError/blog-website/content/images/articles/ORDNERNAME
+
+magick mogrify -resize "2000x2000>" -strip -quality 82 *.jpg
+```
