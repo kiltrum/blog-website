@@ -84,8 +84,23 @@ def main():
         print("Keine GPX-Dateien gefunden.")
         return
 
+    processed = 0
+    skipped = 0
+
     for source in files:
         destination = OVERVIEW_DIR / source.name
+
+        # Nur bearbeiten, wenn:
+        # - noch keine Overview-Datei existiert
+        # - oder das Original neuer ist
+        if destination.exists():
+            source_modified = source.stat().st_mtime
+            destination_modified = destination.stat().st_mtime
+
+            if destination_modified >= source_modified:
+                print(f"Übersprungen: {source.name}")
+                skipped += 1
+                continue
 
         simplify_gpx(source, destination)
 
@@ -93,10 +108,14 @@ def main():
         destination_size = destination.stat().st_size / 1024
 
         print(
-            f"{source.name}: "
+            f"Erstellt: {source.name}: "
             f"{source_size:.2f} MB -> {destination_size:.0f} KB"
         )
 
+        processed += 1
+
+    print()
+    print(f"Fertig: {processed} bearbeitet, {skipped} übersprungen.")
 
 if __name__ == "__main__":
     main()
