@@ -8,10 +8,18 @@ function buildBasemapLayers() {
         maxZoom: 17,
         attribution: 'Map data: &copy; OpenStreetMap contributors; tiles: &copy; OpenTopoMap (CC-BY-SA)'
     });
+    const alpenkarte = L.tileLayer(
+    'https://cdn.schneidergeo.com/tiles/{z}/{x}/{y}.png',
+    {
+        maxZoom: 16,
+        attribution: 'Alpenkarte: © Alpenkarte.eu, Kartendaten: © OpenStreetMap-Mitwirkende'
+    }
+);
 
     return {
         openStreetMap: openStreetMap,
-        openTopoMap: openTopoMap
+        openTopoMap: openTopoMap,
+        alpenkarte: alpenkarte,
     };
 }
 
@@ -22,6 +30,7 @@ function addBasemapControl(map, defaultBasemapName) {
     selectedBasemap.addTo(map);
 
     L.control.layers({
+        'Alpenkarte': basemaps.alpenkarte,
         'OpenStreetMap': basemaps.openStreetMap,
         'OpenTopoMap': basemaps.openTopoMap
     }, null, {

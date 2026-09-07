@@ -80,10 +80,20 @@ a {
 .site-brand {
     grid-column: 1;
     justify-self: start;
+    display: flex;
+    align-items: center;
     font-size: 1.05rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+
+}
+
+.site-brand-logo {
+    display: block;
+    width: 260px;
+    height: auto;
+
 }
 
 .site-nav {
@@ -1142,6 +1152,9 @@ a {
     .leaflet-custom-gpx-control__button {
         padding: 0.62rem 0.8rem;
         font-size: 0.82rem;
+    }
+    .site-brand-logo {
+    width: 190px;
     }
 }
 
