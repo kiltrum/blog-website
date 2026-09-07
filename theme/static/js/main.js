@@ -727,7 +727,7 @@ function initializeAllToursMap() {
     function renderOverviewMarkers() {
         overviewMarkers.clearLayers();
         const groups = [];
-        const clusterDistance = 55;
+        const clusterDistance = 50;
         const zoom = Math.max(map.getZoom(), 1);
 
         getVisibleLayers().forEach(function (layer) {

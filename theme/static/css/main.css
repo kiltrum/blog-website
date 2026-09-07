@@ -780,6 +780,10 @@ a {
     color: var(--accent-strong);
 }
 
+.article-navigation__item--previous {
+    justify-self: start;
+}
+
 .article-navigation__item--next {
     justify-self: end;
     text-align: right;

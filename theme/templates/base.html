@@ -10,7 +10,21 @@
         {% endblock %}
     </title>
 
-    <meta name="description" content="{{ SITENAME }} - Tourenberichte, Bikepacking und Bergabenteuer.">
+    {% set default_description = SITENAME ~ ' - Tourenberichte, Bikepacking und Bergabenteuer.' %}
+    {% set is_article_page = article is defined and article %}
+    {% set seo_description = article.summary|default('', true) if is_article_page else default_description %}
+    {% set seo_title = article.title if is_article_page else SITENAME %}
+    {% set seo_url = SITEURL ~ '/' ~ article.url if is_article_page else SITEURL ~ '/' %}
+    {% set seo_image = article.metadata.get('HeroImage') or article.metadata.get('heroimage') if is_article_page else SITEURL ~ '/theme/images/logo.png' %}
+    {% set seo_description = article.summary|default('', true)|striptags if is_article_page else default_description %}
+    <meta name="description" content="{{ seo_description|e }}">
+    <meta property="og:title" content="{{ seo_title|e }}">
+    <meta property="og:description" content="{{ seo_description|e }}">
+    <meta property="og:url" content="{{ seo_url }}">
+    <meta property="og:type" content="{{ 'article' if is_article_page else 'website' }}">
+    {% if seo_image %}
+    <meta property="og:image" content="{{ SITEURL ~ '/' ~ seo_image if is_article_page else seo_image }}">
+    {% endif %}
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
 </head>
