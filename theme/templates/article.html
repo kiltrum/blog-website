@@ -65,5 +65,87 @@
         <div class="article-gpx__profile" data-gpx-profile aria-label="Elevation profile"></div>
     </section>
     {% endif %}
+
+    {% set category_articles = articles | selectattr('category', 'equalto', article.category) | sort(attribute='date') | list %}
+    {% set current_index = namespace(value=none) %}
+    {% for category_article in category_articles %}
+    {% if category_article.url == article.url %}
+    {% set current_index.value = loop.index0 %}
+    {% endif %}
+    {% endfor %}
+    {% if current_index.value is not none %}
+    <nav class="article-navigation container" aria-label="Tour navigation">
+        {% if current_index.value > 0 %}
+        <a class="article-navigation__item article-navigation__item--previous" href="{{ SITEURL }}/{{ category_articles[current_index.value - 1].url }}">
+            <span>← Vorherige Tour</span>
+            <strong>{{ category_articles[current_index.value - 1].title }}</strong>
+        </a>
+        {% endif %}
+        {% if current_index.value < category_articles|length - 1 %}
+        <a class="article-navigation__item article-navigation__item--next" href="{{ SITEURL }}/{{ category_articles[current_index.value + 1].url }}">
+            <span>Nächste Tour →</span>
+            <strong>{{ category_articles[current_index.value + 1].title }}</strong>
+        </a>
+        {% endif %}
+    </nav>
+    {% endif %}
+
+    {% set related_articles = namespace(items=[], urls=[]) %}
+    {% for candidate in articles %}
+    {% set candidate_tour_type = candidate.metadata.get('TourType') or candidate.metadata.get('tourtype') %}
+    {% if related_articles.items|length < 3 and candidate.url != article.url and tour_type and candidate_tour_type == tour_type %}
+    {% set related_articles.items = related_articles.items + [candidate] %}
+    {% set related_articles.urls = related_articles.urls + [candidate.url] %}
+    {% endif %}
+    {% endfor %}
+    {% for candidate in articles %}
+    {% if related_articles.items|length < 3 and candidate.url != article.url and article.category and candidate.category == article.category and candidate.url not in related_articles.urls %}
+    {% set related_articles.items = related_articles.items + [candidate] %}
+    {% set related_articles.urls = related_articles.urls + [candidate.url] %}
+    {% endif %}
+    {% endfor %}
+    {% for candidate in articles %}
+    {% if related_articles.items|length < 3 and candidate.url != article.url and candidate.url not in related_articles.urls %}
+    {% set related_articles.items = related_articles.items + [candidate] %}
+    {% set related_articles.urls = related_articles.urls + [candidate.url] %}
+    {% endif %}
+    {% endfor %}
+    {% if related_articles.items %}
+    <section class="related-articles container" aria-labelledby="related-articles-title">
+        <div class="section-heading">
+            <h2 id="related-articles-title">Das könnte dich auch interessieren</h2>
+        </div>
+        <div class="posts-grid">
+            {% for related_article in related_articles.items %}
+            {% set related_hero_image = related_article.metadata.get('HeroImage') or related_article.metadata.get('heroimage') %}
+            {% set related_tour_type = related_article.metadata.get('TourType') or related_article.metadata.get('tourtype') %}
+            <article class="post-card">
+                <a class="post-card__link" href="{{ SITEURL }}/{{ related_article.url }}">
+                {% if related_hero_image %}
+                <div class="post-card__image-wrap">
+                    <img class="post-card__image" src="{{ related_hero_image }}" alt="{{ related_article.title }}">
+                </div>
+                {% else %}
+                <div class="post-card__image post-card__image--placeholder" aria-hidden="true"></div>
+                {% endif %}
+                <div class="post-card__body">
+                    <p class="post-card__meta">
+                        {% if related_tour_type %}{{ related_tour_type|upper }} · {% endif %}
+                        {{ related_article.date.strftime('%d.%m.%Y') }}
+                        {% if related_article.author %}
+                            · {{ related_article.author }}
+                        {% endif %}
+                    </p>
+                    <h3>{{ related_article.title }}</h3>
+                    {% if related_article.summary %}
+                        <p>{{ related_article.summary }}</p>
+                    {% endif %}
+                </div>
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
 </article>
 {% endblock %}
