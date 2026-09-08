@@ -7,23 +7,24 @@
 {% block content %}
 {% set current_category_slug = (category.slug or category.name|lower|replace(' ', '-'))|lower %}
 {% set featured_categories = FEATURED_CATEGORIES or settings.get('FEATURED_CATEGORIES', []) %}
-{% set ns = namespace(hero_image=none, matched=none) %}
+{% set ns = namespace(hero_image=none, description=none, matched=none) %}
 {% for featured_category in featured_categories %}
     {% set featured_category_slug = (featured_category.slug or featured_category.name|lower|replace(' ', '-'))|lower %}
     {% if featured_category_slug == current_category_slug %}
         {% set ns.hero_image = featured_category.hero_image or featured_category.image %}
+        {% set ns.description = featured_category.description %}
         {% set ns.matched = featured_category %}
     {% endif %}
 {% endfor %}
 
 <section class="container category-page" aria-label="Kategorie {{ category.name }}">
     {% if ns.hero_image %}
-    <header class="category-hero" style="background-image: url('{{ ns.hero_image }}');">
+    <header class="category-hero" style="--category-mobile-position: {{ ns.matched.mobile_position|default('center') }}; background-image: url('{{ ns.hero_image }}');">
         <div class="category-hero__overlay"></div>
         <div class="category-hero__content">
             <h1>{{ category.name }}</h1>
             <p class="category-page__intro">
-                Entdecke Abenteuer und Berichte aus {{ category.name }} – von Bergpässen bis zu langen Touren im Gelände.
+                {{ ns.description or 'Entdecke Abenteuer und Berichte aus ' ~ category.name ~ ' – von Bergpässen bis zu langen Touren im Gelände.' }}
             </p>
         </div>
         <a class="hero__scroll-link" href="#category-content" aria-label="Zu den Touren scrollen">
@@ -37,7 +38,7 @@
         <p class="eyebrow eyebrow--dark">Kategorie</p>
         <h1>{{ category.name }}</h1>
         <p class="category-page__intro">
-            Entdecke Abenteuer und Berichte aus {{ category.name }} – von Bergpässen bis zu langen Touren im Gelände.
+            {{ ns.description or 'Entdecke Abenteuer und Berichte aus ' ~ category.name ~ ' – von Bergpässen bis zu langen Touren im Gelände.' }}
         </p>
     </header>
     {% endif %}
