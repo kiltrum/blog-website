@@ -6,7 +6,7 @@ Slug: ueber-uns
     <header class="about-intro">
         <p class="eyebrow eyebrow--dark">ÜBER UNS</p>
 
-        <h1>Wir sind Kilian und Vanessa.</h1>
+        <h1>Wir sind Kilian und Vanessa</h1>
 
         <p class="about-intro__lead">
             Am liebsten verbringen wir unsere Freizeit draußen 
