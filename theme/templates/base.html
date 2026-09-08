@@ -15,7 +15,7 @@
     {% set seo_description = article.summary|default('', true) if is_article_page else default_description %}
     {% set seo_title = article.title if is_article_page else SITENAME %}
     {% set seo_url = SITEURL ~ '/' ~ article.url if is_article_page else SITEURL ~ '/' %}
-    {% set seo_image = article.metadata.get('HeroImage') or article.metadata.get('heroimage') if is_article_page else SITEURL ~ '/theme/images/logo.png' %}
+    {% set seo_image = article.metadata.get('HeroImage') or article.metadata.get('heroimage') if is_article_page else '/theme/images/logo.png' %}
     {% set seo_description = article.summary|default('', true)|striptags if is_article_page else default_description %}
     <meta name="description" content="{{ seo_description|e }}">
     <meta property="og:title" content="{{ seo_title|e }}">
@@ -26,17 +26,20 @@
     <meta property="og:image" content="{{ SITEURL ~ '/' ~ seo_image if is_article_page else seo_image }}">
     {% endif %}
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
+    <link rel="stylesheet" href="/theme/css/main.css">
 </head>
 
 <body>
     <div class="page-shell">
+        {% set current_lang = CURRENT_LANG if CURRENT_LANG is defined else DEFAULT_LANG %}
+        {% set ui = UI_TRANSLATIONS.get(current_lang, UI_TRANSLATIONS['de']) %}
+        
         <header class="site-header">
             <div class="container header-inner">
                 <a class="site-brand" href="{{ SITEURL }}/">
-                    <img src="{{ SITEURL }}/theme/images/logo.png" alt="TrailnError" class="site-brand-logo">
+                    <img src="/theme/images/logo.png" alt="TrailnError" class="site-brand-logo">
                 </a>
-                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Menü öffnen">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="{{ ui.nav_menu_open }}">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -48,17 +51,25 @@
                     </svg>
                 </button>
                 <nav class="site-nav" id="site-navigation" aria-label="Hauptnavigation">
-                    <a href="{{ SITEURL }}/category/bergsteigen.html">Bergsteigen</a>
-                    <a href="{{ SITEURL }}/category/bikepacking.html">Bikepacking</a>
-                    <a href="{{ SITEURL }}/category/berglaufen.html">Berglaufen</a>
+                    {% set category_base = SITEURL ~ '/category' %}
+                    <a href="{{ category_base }}/bergsteigen.html">{{ ui.nav_bergsteigen }}</a>
+                    <a href="{{ category_base }}/bikepacking.html">{{ ui.nav_bikepacking }}</a>
+                    <a href="{{ category_base }}/berglaufen.html">{{ ui.nav_berglaufen }}</a>
                     <a href="{{ SITEURL }}/#all-tours-title">Tourenkarte</a>
-                    <a href="{{ SITEURL }}/pages/ueber-uns.html">Über uns</a>
+                    <a href="{{ SITEURL }}/pages/ueber-uns.html">{{ ui.nav_about }}</a>
                 </nav>
+                <div class="site-lang-switcher">
+                    {% if current_lang == 'de' %}
+                        <a href="/en/" class="site-lang-switcher__link" hreflang="en">{{ UI_TRANSLATIONS.en.language_en }}</a>
+                    {% else %}
+                        <a href="/" class="site-lang-switcher__link" hreflang="de">{{ UI_TRANSLATIONS.de.language_de }}</a>
+                    {% endif %}
+                </div>
             </div>
             <div class="site-search" id="site-search" hidden>
                 <div class="container site-search__inner">
-                    <label class="site-search__label" for="site-search-input">Touren durchsuchen...</label>
-                    <input id="site-search-input" class="site-search__input" type="search" placeholder="Touren durchsuchen..." autocomplete="off">
+                    <label class="site-search__label" for="site-search-input">{{ ui.search_placeholder }}</label>
+                    <input id="site-search-input" class="site-search__input" type="search" placeholder="{{ ui.search_placeholder }}" autocomplete="off">
                     <div class="site-search__results" id="site-search-results" aria-live="polite"></div>
                 </div>
             </div>
@@ -92,6 +103,6 @@
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="{{ SITEURL }}/theme/js/main.js"></script>
+    <script src="/theme/js/main.js"></script>
 </body>
 </html>

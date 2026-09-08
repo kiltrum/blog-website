@@ -34,7 +34,8 @@ LANGUAGES = {
 I18N_SUBSITES = {
     'en': {
         'SITENAME': 'TrailnError',
-        'AUTHOR': 'Vanessa and Kilian'
+        'AUTHOR': 'Vanessa and Kilian',
+        'CURRENT_LANG': 'en'
     }
 }
 

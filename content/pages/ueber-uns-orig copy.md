@@ -1,5 +1,6 @@
 Title: Über uns
 Slug: ueber-uns
+Lang: en
 
 <div class="about-page">
 
