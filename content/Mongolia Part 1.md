@@ -9,4 +9,4 @@ Duration: 4 Tage
 Location: Mongolia
 HeroImage: /images/articles/mongolia_part_1/hero.jpg
 GPX: /gpx/mongolia_part_1.gpx
- 
+Lang: de

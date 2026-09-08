@@ -9,4 +9,4 @@ Duration: 6 Tage
 Location: East Kasachstan
 HeroImage: /images/articles/kasachstan_part_3/hero.jpg
 GPX: /gpx/kasachstan_part_3.gpx
-
+Lang: de

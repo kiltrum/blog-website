@@ -9,7 +9,7 @@ Duration: 2 Tage
 Location: Tirol, Österreich
 HeroImage: /images/articles/wildspitze_vom_kaunertal/hero.jpg
 GPX: /gpx/wildspitze_vom_kaunertal.gpx
-
+Lang: de
 
 
 ## Der Plan

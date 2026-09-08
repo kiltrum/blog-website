@@ -10,6 +10,7 @@ Duration: 15:30 h
 Location: Wallis, Schweiz
 HeroImage: /images/articles/rothorngrat_zinalrothorn/hero.jpg
 GPX: /gpx/rothorngrat_zinalrothorn.gpx
+Lang: de
 
 ## Anreise nach Zermatt
 

@@ -10,7 +10,7 @@ Duration: 11 h
 Location: Wallis, Schweiz
 HeroImage: /images/articles/lenzspitze_nadelhorn_überschreitung/hero.jpg
 GPX: /gpx/lenzspitze_nadelhorn_überschreitung.gpx
-
+Lang: de
 
 
 ## Lenzspitze–Nadelhorn Überschreitung

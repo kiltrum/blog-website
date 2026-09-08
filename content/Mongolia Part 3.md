@@ -9,4 +9,4 @@ Duration: 5 Tage
 Location: Orkhon Valley, Mongolia
 HeroImage: /images/articles/mongolia_part_3/hero.jpg
 GPX: /gpx/mongolia_part_3.gpx
- 
+Lang: de

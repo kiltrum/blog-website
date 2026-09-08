@@ -19,6 +19,25 @@ THEME = 'theme'
 
 RELATIVE_URLS = True
 
+# Multilingual support via i18n_subsites plugin
+PLUGINS = ['i18n_subsites']
+
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.i18n'],
+}
+
+LANGUAGES = {
+    'de': {},
+    'en': {}
+}
+
+I18N_SUBSITES = {
+    'en': {
+        'SITENAME': 'TrailnError',
+        'AUTHOR': 'Vanessa and Kilian'
+    }
+}
+
 FEATURED_CATEGORIES = [
     {
         'name': 'Bergsteigen',

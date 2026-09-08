@@ -9,3 +9,4 @@ Duration: 4 Tage
 Location: Almaty, Kasachstan
 HeroImage: /images/articles/kasachstan_part_1/hero.jpg
 GPX: /gpx/kasachstan_part_1.gpx
+Lang: de
