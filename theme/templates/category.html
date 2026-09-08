@@ -21,12 +21,16 @@
     <header class="category-hero" style="background-image: url('{{ ns.hero_image }}');">
         <div class="category-hero__overlay"></div>
         <div class="category-hero__content">
-            <p class="eyebrow">Kategorie</p>
             <h1>{{ category.name }}</h1>
             <p class="category-page__intro">
                 Entdecke Abenteuer und Berichte aus {{ category.name }} – von Bergpässen bis zu langen Touren im Gelände.
             </p>
         </div>
+        <a class="hero__scroll-link" href="#category-content" aria-label="Zu den Touren scrollen">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="m5 9 7 7 7-7"></path>
+            </svg>
+        </a>
     </header>
     {% else %}
     <header class="category-page__header">
@@ -45,7 +49,7 @@
             {% set _ = tour_types.append(tour_type) %}
         {% endif %}
     {% endfor %}
-    <nav class="tour-type-filters" aria-label="Tourtypen" data-tour-type-filters>
+    <nav class="tour-type-filters" id="category-content" aria-label="Tourtypen" data-tour-type-filters>
         <button class="tour-type-filter is-active" type="button" data-tour-type="all" aria-pressed="true">Alle</button>
         {% for tour_type in tour_types|sort %}
         <button class="tour-type-filter" type="button" data-tour-type="{{ tour_type|lower }}" aria-pressed="false">{{ tour_type }}</button>

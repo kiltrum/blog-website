@@ -9,18 +9,23 @@
         <h1>TrailnError</h1>
         <p class="hero__tagline">Tourenberichte, Bikepacking und Bergmomente zwischen Tal und Gipfel.</p>
     </div>
+    <a class="hero__scroll-link" href="#homepage-about" aria-label="Zu Über uns scrollen">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="m5 9 7 7 7-7"></path>
+        </svg>
+    </a>
 </section>
 
-<section class="category-nav" aria-label="Kategorienavigation">
-    {% for category in FEATURED_CATEGORIES %}
-    <a
-        class="category-card category-card--{{ category.slug }}"
-        href="{{ SITEURL }}/category/{{ category.slug }}.html"
-        style="background-image: url('{{ category.image }}');"
-    >
-        <span class="category-card__label">{{ category.name }}</span>
-    </a>
-    {% endfor %}
+<section class="homepage-about container" id="homepage-about" aria-labelledby="homepage-about-title">
+    <img class="homepage-about__image" src="{{ SITEURL }}/images/hero/aboutus.jpg" alt="Unterwegs in den Bergen">
+    <div class="homepage-about__content">
+        <div class="section-heading">
+            <p class="eyebrow eyebrow--dark">Über uns</p>
+            <h2 id="homepage-about-title">Gemeinsam draußen unterwegs.</h2>
+        </div>
+        <p>Hier entsteht ein kurzer Einblick in unsere Geschichte und unsere Liebe zu Bergen und Rädern. Wir sammeln unterwegs besondere Wege, kleine Geschichten und große Abenteuer. Mehr über uns und das, was uns antreibt, gibt es auf unserer About-Seite.</p>
+        <a class="homepage-about__link" href="{{ SITEURL }}/pages/ueber-uns.html">Mehr über uns →</a>
+    </div>
 </section>
 
 <section class="all-tours" aria-labelledby="all-tours-title">
