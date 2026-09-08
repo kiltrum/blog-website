@@ -38,6 +38,89 @@ I18N_SUBSITES = {
     }
 }
 
+# Centralized UI translations for German and English
+UI_TRANSLATIONS = {
+    'de': {
+        'nav_bergsteigen': 'Bergsteigen',
+        'nav_bikepacking': 'Bikepacking',
+        'nav_berglaufen': 'Berglaufen',
+        'nav_about': 'Über uns',
+        'nav_menu_open': 'Menü öffnen',
+        'nav_menu_close': 'Menü schließen',
+
+        'search_placeholder': 'Touren durchsuchen...',
+        'search_no_results': 'Keine Treffer',
+
+        'filter_all': 'Alle',
+
+        'map_title': 'Unsere Touren',
+        'map_reset': 'Zurücksetzen',
+        'map_expand': 'Karte vergrößern',
+        'map_collapse': 'Karte verkleinern',
+        'all_tours': 'Alle Touren',
+
+        'gpx_download': 'GPX herunterladen',
+        'gpx_error_no_points': 'Keine Trackpunkte in der GPX-Datei gefunden',
+        'gpx_error_load_failed': 'Die Route konnte nicht geladen werden',
+
+        'lightbox_title': 'Bildansicht',
+        'lightbox_close': 'Bildansicht schließen',
+
+        'elevation_profile_aria': 'Höhenprofil über {distance} Kilometer',
+
+        'distance': 'Distanz',
+        'ascent': 'HM bergauf',
+        'descent': 'HM bergab',
+        'highest_point': 'Höchster Punkt',
+        'duration': 'Dauer',
+        'difficulty': 'Schwierigkeit',
+        'location': 'Ort',
+
+        'language_de': 'Deutsch',
+        'language_en': 'English'
+    },
+
+    'en': {
+        'nav_bergsteigen': 'Mountaineering',
+        'nav_bikepacking': 'Bikepacking',
+        'nav_berglaufen': 'Trail Running',
+        'nav_about': 'About',
+        'nav_menu_open': 'Open menu',
+        'nav_menu_close': 'Close menu',
+
+        'search_placeholder': 'Search tours...',
+        'search_no_results': 'No results',
+
+        'filter_all': 'All',
+
+        'map_title': 'Our Tours',
+        'map_reset': 'Reset',
+        'map_expand': 'Expand map',
+        'map_collapse': 'Collapse map',
+        'all_tours': 'All tours',
+
+        'gpx_download': 'Download GPX',
+        'gpx_error_no_points': 'No track points found in the GPX file',
+        'gpx_error_load_failed': 'The route could not be loaded',
+
+        'lightbox_title': 'Image viewer',
+        'lightbox_close': 'Close image viewer',
+
+        'elevation_profile_aria': 'Elevation profile over {distance} kilometers',
+
+        'distance': 'Distance',
+        'ascent': 'Elevation gain',
+        'descent': 'Elevation loss',
+        'highest_point': 'Highest point',
+        'duration': 'Duration',
+        'difficulty': 'Difficulty',
+        'location': 'Location',
+
+        'language_de': 'Deutsch',
+        'language_en': 'English'
+    }
+}
+
 FEATURED_CATEGORIES = [
     {
         'name': 'Bergsteigen',
