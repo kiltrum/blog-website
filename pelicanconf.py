@@ -136,7 +136,7 @@ UI_TRANSLATIONS = {
         'home_hero_eyebrow': 'Mountain & Bike Adventures',
         'home_title': 'TrailnError',
         'home_about_label': 'About us',
-        'home_about_title': 'Big and small adventures',
+        'home_about_title': 'Adventures along the way',
         'home_about_text': 'We are Kilian and Vanessa. This is where we share our tours, travels and experiences, whether on foot, on skis or by bike.',        'home_about_link': 'More about us →',
         'home_tours_label': 'Route overview',
         'home_tours_title': 'Tour Map',
