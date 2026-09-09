@@ -44,7 +44,7 @@
                     <span></span>
                     <span></span>
                 </button>
-                <nav class="site-nav" id="site-navigation" aria-label="Hauptnavigation">
+                <nav class="site-nav" id="site-navigation" aria-label="{{ ui.nav_main }}">
                     {% set category_base = SITEURL ~ '/category' %}
                     <a href="{{ category_base }}/bergsteigen.html">{{ ui.nav_bergsteigen }}</a>
                     <a href="{{ category_base }}/bikepacking.html">{{ ui.nav_bikepacking }}</a>
@@ -53,7 +53,7 @@
                     <a href="{{ SITEURL }}/pages/ueber-uns.html">{{ ui.nav_about }}</a>
                 </nav>
                 <div class="header-utilities">
-                    <button class="search-toggle" type="button" aria-expanded="false" aria-controls="site-search" aria-label="Suche öffnen">
+                    <button class="search-toggle" type="button" aria-expanded="false" aria-controls="site-search" aria-label="{{ ui.search_open }}">
                         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                             <circle cx="10.8" cy="10.8" r="6.3"></circle>
                             <path d="m15.5 15.5 4.2 4.2"></path>

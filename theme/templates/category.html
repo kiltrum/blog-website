@@ -19,7 +19,7 @@
     {% endif %}
 {% endfor %}
 
-<section class="container category-page" aria-label="Kategorie {{ category.name }}">
+<section class="container category-page" aria-label="{{ ui.category_aria.format(category=ns.label.get(current_lang, category.name) if ns.label else category.name) }}">
     {% if ns.hero_image %}
     <header class="category-hero" style="--category-mobile-position: {{ ns.matched.mobile_position|default('center') }}; background-image: url('{{ ns.hero_image }}');">
         <div class="category-hero__overlay"></div>
@@ -29,7 +29,7 @@
                 {{ ns.description_i18n.get(current_lang, ns.description) if ns.description_i18n else (ns.description or ui.category_intro.format(category=category.name)) }}
             </p>
         </div>
-        <a class="hero__scroll-link" href="#category-content" aria-label="Zu den Touren scrollen">
+        <a class="hero__scroll-link" href="#category-content" aria-label="{{ ui.scroll_to_tours }}">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                 <path d="m5 9 7 7 7-7"></path>
             </svg>
@@ -52,7 +52,7 @@
             {% set _ = tour_types.append(tour_type) %}
         {% endif %}
     {% endfor %}
-    <nav class="tour-type-filters" id="category-content" aria-label="Tourtypen" data-tour-type-filters>
+    <nav class="tour-type-filters" id="category-content" aria-label="{{ ui.tour_types }}" data-tour-type-filters>
         <button class="tour-type-filter is-active" type="button" data-tour-type="all" aria-pressed="true">{{ ui.filter_all }}</button>
         {% for tour_type in tour_types|sort %}
         <button class="tour-type-filter" type="button" data-tour-type="{{ tour_type|lower }}" aria-pressed="false">{{ TOURTYPE_TRANSLATIONS.get(tour_type, {}).get(current_lang, tour_type) }}</button>

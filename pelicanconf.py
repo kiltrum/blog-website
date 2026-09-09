@@ -49,15 +49,24 @@ UI_TRANSLATIONS = {
         'nav_about': 'Über uns',
         'nav_menu_open': 'Menü öffnen',
         'nav_menu_close': 'Menü schließen',
+        'nav_main': 'Hauptnavigation',
 
         'search_placeholder': 'Touren durchsuchen...',
         'search_no_results': 'Keine Treffer',
+        'search_open': 'Suche öffnen',
 
         'filter_all': 'Alle',
 
         'category_label': 'Kategorie',
+        'category_aria': 'Kategorie {category}',
         'category_intro': 'Entdecke Abenteuer und Berichte aus {category} – von Bergpässen bis zu langen Touren im Gelände.',
         'category_empty_state': 'Noch keine Einträge in dieser Kategorie.',
+        'scroll_to_tours': 'Zu den Touren scrollen',
+        'tour_types': 'Tourtypen',
+        'homepage_hero': 'Startseite Hero',
+        'scroll_to_about': 'Zu Über uns scrollen',
+        'about_image_alt': 'Unterwegs in den Bergen',
+        'category_filter': 'Kategoriefilter',
         'related_articles_title': 'Das könnte dich auch interessieren',
 
         'home_hero_eyebrow': 'Berg & Rad Abenteuer',
@@ -113,15 +122,24 @@ UI_TRANSLATIONS = {
         'nav_about': 'About',
         'nav_menu_open': 'Open menu',
         'nav_menu_close': 'Close menu',
+        'nav_main': 'Main navigation',
 
         'search_placeholder': 'Search tours...',
         'search_no_results': 'No results',
+        'search_open': 'Open search',
 
         'filter_all': 'All',
 
         'category_label': 'Category',
+        'category_aria': 'Category {category}',
         'category_intro': 'Discover adventures and stories from {category} – from mountain passes to long tours in the backcountry.',
         'category_empty_state': 'No entries in this category yet.',
+        'scroll_to_tours': 'Scroll to tours',
+        'tour_types': 'Tour types',
+        'homepage_hero': 'Homepage hero',
+        'scroll_to_about': 'Scroll to About us',
+        'about_image_alt': 'Out in the mountains',
+        'category_filter': 'Category filter',
         'related_articles_title': 'You might also be interested in',
 
         'home_hero_eyebrow': 'Mountain & Bike Adventures',
@@ -155,7 +173,7 @@ UI_TRANSLATIONS = {
         'lightbox_close': 'Close image viewer',
         'elevation_profile': 'Elevation profile',
 
-        'elevation_profile_aria': 'Elevation profile over {distance} kilometers',
+        'elevation_profile_aria': 'Elevation profile over {distance} kilometres',
 
         'distance': 'Distance',
         'ascent': 'Elevation gain',

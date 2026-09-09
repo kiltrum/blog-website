@@ -370,8 +370,8 @@ function initializeArticleLightbox() {
     overlay.className = 'lightbox';
     overlay.setAttribute('role', 'dialog');
     overlay.setAttribute('aria-modal', 'true');
-    overlay.setAttribute('aria-label', 'Bildansicht');
-    overlay.innerHTML = '<button class="lightbox__close" type="button" aria-label="Bildansicht schließen">&times;</button>'
+    overlay.setAttribute('aria-label', translateUi('lightbox_title', 'Bildansicht'));
+    overlay.innerHTML = '<button class="lightbox__close" type="button" aria-label="' + translateUi('lightbox_close', 'Bildansicht schließen') + '">&times;</button>'
         + '<figure class="lightbox__figure">'
         + '<img class="lightbox__image" alt="">'
         + '<figcaption class="lightbox__caption"></figcaption>'
@@ -511,14 +511,14 @@ function initializeNavigation() {
     toggle.addEventListener('click', function () {
         const isOpen = navigation.classList.toggle('is-open');
         toggle.setAttribute('aria-expanded', String(isOpen));
-        toggle.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+        toggle.setAttribute('aria-label', isOpen ? translateUi('nav_menu_close', 'Menü schließen') : translateUi('nav_menu_open', 'Menü öffnen'));
     });
 
     navigation.addEventListener('click', function (event) {
         if (event.target.matches('a')) {
             navigation.classList.remove('is-open');
             toggle.setAttribute('aria-expanded', 'false');
-            toggle.setAttribute('aria-label', 'Menü öffnen');
+            toggle.setAttribute('aria-label', translateUi('nav_menu_open', 'Menü öffnen'));
         }
     });
 
@@ -526,7 +526,7 @@ function initializeNavigation() {
         if (event.key === 'Escape') {
             navigation.classList.remove('is-open');
             toggle.setAttribute('aria-expanded', 'false');
-            toggle.setAttribute('aria-label', 'Menü öffnen');
+            toggle.setAttribute('aria-label', translateUi('nav_menu_open', 'Menü öffnen'));
         }
     });
 }
@@ -899,7 +899,7 @@ function renderElevationProfile(container, data, map) {
         + '<span>' + minimumElevation.toFixed(0) + ' m - ' + maximumElevation.toFixed(0) + ' m</span>'
         + '</div>'
         + '<div class="elevation-profile__chart">'
-        + '<svg class="elevation-profile" viewBox="0 0 ' + width + ' ' + height + '" role="img" aria-label="Höhenprofil über ' + maximumDistance.toFixed(1) + ' Kilometer">'
+        + '<svg class="elevation-profile" viewBox="0 0 ' + width + ' ' + height + '" role="img" aria-label="' + translateUi('elevation_profile_aria', 'Höhenprofil über {distance} Kilometer').replace('{distance}', maximumDistance.toFixed(1)) + '">'
         + horizontalGrid
         + verticalGrid
         + '<line class="elevation-profile__axis" x1="' + padding.left + '" y1="' + (height - padding.bottom) + '" x2="' + (width - padding.right) + '" y2="' + (height - padding.bottom) + '"></line>'

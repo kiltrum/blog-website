@@ -2,13 +2,13 @@
 
 {% block content %}
 <div class="home-page">
-<section class="hero" aria-label="Startseite Hero">
+<section class="hero" aria-label="{{ ui.homepage_hero }}">
     <div class="hero__overlay"></div>
     <div class="container hero__content">
         <p class="eyebrow">{{ ui.home_hero_eyebrow }}</p>
         <h1>{{ ui.home_title }}</h1>
     </div>
-    <a class="hero__scroll-link" href="#homepage-about" aria-label="Zu Über uns scrollen">
+    <a class="hero__scroll-link" href="#homepage-about" aria-label="{{ ui.scroll_to_about }}">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <path d="m5 9 7 7 7-7"></path>
         </svg>
@@ -16,7 +16,7 @@
 </section>
 
 <section class="homepage-about container" id="homepage-about" aria-labelledby="homepage-about-title">
-    <img class="homepage-about__image" src="/images/hero/aboutus.jpg" alt="Unterwegs in den Bergen">
+    <img class="homepage-about__image" src="/images/hero/aboutus.jpg" alt="{{ ui.about_image_alt }}">
     <div class="homepage-about__content">
         <div class="section-heading">
             <p class="eyebrow eyebrow--dark">{{ ui.home_about_label }}</p>
@@ -32,7 +32,7 @@
         <p class="eyebrow eyebrow--dark">{{ ui.home_tours_label }}</p>
         <h2 id="all-tours-title">{{ ui.home_tours_title }}</h2>
     </div>
-    <nav class="category-filters" aria-label="Kategoriefilter" data-category-filters>
+    <nav class="category-filters" aria-label="{{ ui.category_filter }}" data-category-filters>
         <button class="category-filter is-active" type="button" data-category-slug="all" aria-pressed="true">{{ ui.filter_all }}</button>
         {% for category in FEATURED_CATEGORIES %}
         <button class="category-filter" type="button" data-category-slug="{{ category.slug }}" aria-pressed="false">{{ category.label.get(current_lang, category.name) if category.label else category.name }}</button>
