@@ -45,6 +45,7 @@ UI_TRANSLATIONS = {
         'nav_bergsteigen': 'Bergsteigen',
         'nav_bikepacking': 'Bikepacking',
         'nav_berglaufen': 'Berglaufen',
+        'nav_tour_map': 'Tourenkarte',
         'nav_about': 'Über uns',
         'nav_menu_open': 'Menü öffnen',
         'nav_menu_close': 'Menü schließen',
@@ -57,6 +58,7 @@ UI_TRANSLATIONS = {
         'category_label': 'Kategorie',
         'category_intro': 'Entdecke Abenteuer und Berichte aus {category} – von Bergpässen bis zu langen Touren im Gelände.',
         'category_empty_state': 'Noch keine Einträge in dieser Kategorie.',
+        'related_articles_title': 'Das könnte dich auch interessieren',
 
         'home_hero_eyebrow': 'Berg & Rad Abenteuer',
         'home_title': 'TrailnError',
@@ -75,13 +77,19 @@ UI_TRANSLATIONS = {
         'map_expand': 'Karte vergrößern',
         'map_collapse': 'Karte verkleinern',
         'all_tours': 'Alle Touren',
+        'all_tours_show': 'Alle Touren anzeigen',
+        'tour_open': 'Tour öffnen',
+        'tour_count': 'Touren',
 
         'gpx_download': 'GPX herunterladen',
+        'gpx_no_track_points': 'Keine Trackpunkte im GPX-Datei gefunden.',
+        'route_load_error': 'Die Route konnte nicht geladen werden.',
         'gpx_error_no_points': 'Keine Trackpunkte in der GPX-Datei gefunden',
         'gpx_error_load_failed': 'Die Route konnte nicht geladen werden',
 
         'lightbox_title': 'Bildansicht',
         'lightbox_close': 'Bildansicht schließen',
+        'elevation_profile': 'Höhenprofil',
 
         'elevation_profile_aria': 'Höhenprofil über {distance} Kilometer',
 
@@ -101,6 +109,7 @@ UI_TRANSLATIONS = {
         'nav_bergsteigen': 'Mountaineering',
         'nav_bikepacking': 'Bikepacking',
         'nav_berglaufen': 'Trail Running',
+        'nav_tour_map': 'Tour Map',
         'nav_about': 'About',
         'nav_menu_open': 'Open menu',
         'nav_menu_close': 'Close menu',
@@ -113,6 +122,7 @@ UI_TRANSLATIONS = {
         'category_label': 'Category',
         'category_intro': 'Discover adventures and stories from {category} – from mountain passes to long tours in the backcountry.',
         'category_empty_state': 'No entries in this category yet.',
+        'related_articles_title': 'You might also be interested in',
 
         'home_hero_eyebrow': 'Mountain & Bike Adventures',
         'home_title': 'TrailnError',
@@ -128,16 +138,22 @@ UI_TRANSLATIONS = {
 
         'map_title': 'Our Tours',
         'map_reset': 'Reset',
-        'map_expand': 'Expand map',
-        'map_collapse': 'Collapse map',
-        'all_tours': 'All tours',
+        'map_expand': 'Zoom in',
+        'map_collapse': 'Zoom out',
+        'all_tours': 'All Tours',
+        'all_tours_show': 'Show all tours',
+        'tour_open': 'Open tour',
+        'tour_count': 'Tours',
 
         'gpx_download': 'Download GPX',
+        'gpx_no_track_points': 'No track points found in the GPX file.',
+        'route_load_error': 'The route could not be loaded.',
         'gpx_error_no_points': 'No track points found in the GPX file',
         'gpx_error_load_failed': 'The route could not be loaded',
 
         'lightbox_title': 'Image viewer',
         'lightbox_close': 'Close image viewer',
+        'elevation_profile': 'Elevation profile',
 
         'elevation_profile_aria': 'Elevation profile over {distance} kilometers',
 

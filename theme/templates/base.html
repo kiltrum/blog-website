@@ -49,7 +49,7 @@
                     <a href="{{ category_base }}/bergsteigen.html">{{ ui.nav_bergsteigen }}</a>
                     <a href="{{ category_base }}/bikepacking.html">{{ ui.nav_bikepacking }}</a>
                     <a href="{{ category_base }}/berglaufen.html">{{ ui.nav_berglaufen }}</a>
-                    <a href="{{ SITEURL }}/#all-tours-title">Tourenkarte</a>
+                    <a href="{{ SITEURL }}/#all-tours-title">{{ ui.nav_tour_map }}</a>
                     <a href="{{ SITEURL }}/pages/ueber-uns.html">{{ ui.nav_about }}</a>
                 </nav>
                 <div class="header-utilities">
@@ -94,6 +94,7 @@
                 {% endfor %}
                 ]
             </script>
+            <script id="ui-translations" type="application/json">{{ ui|tojson }}</script>
         </header>
 
         <main class="site-main">

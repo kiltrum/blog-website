@@ -1,12 +1,12 @@
-Title: Wildspitze vom Kaunertal
+Title: Wildspitze from Kaunertal
 Summary: 
 Date: 2026-02-12
 Author: Kilian
 Category: Bergsteigen
 TourType: Skitour
 Slug: wildspitze-vom-kaunertal
-Duration: 2 Tage
-Location: Tirol, Österreich
+Duration: 2 days
+Location: Tirol, Austria
 HeroImage: /images/articles/wildspitze_vom_kaunertal/hero.jpg
 GPX: /gpx/wildspitze_vom_kaunertal.gpx
 Lang: en

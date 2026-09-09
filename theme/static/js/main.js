@@ -1,3 +1,21 @@
+const uiTranslations = (function () {
+    const element = document.getElementById('ui-translations');
+
+    if (!element) {
+        return {};
+    }
+
+    try {
+        return JSON.parse(element.textContent);
+    } catch (error) {
+        return {};
+    }
+})();
+
+function translateUi(key, fallback) {
+    return uiTranslations[key] || fallback;
+}
+
 function buildBasemapLayers() {
     const openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -74,8 +92,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 const fileName = gpxUrl.split('/').pop() || 'route.gpx';
 
                 button.type = 'button';
-                button.title = 'GPX herunterladen';
-                button.setAttribute('aria-label', 'GPX herunterladen');
+                button.title = translateUi('gpx_download', 'GPX herunterladen');
+                button.setAttribute('aria-label', translateUi('gpx_download', 'GPX herunterladen'));
                 button.innerHTML = '<span aria-hidden="true">↓</span><span>GPX</span>';
 
                 L.DomEvent.disableClickPropagation(controlContainer);
@@ -105,8 +123,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 const button = L.DomUtil.create('button', 'leaflet-expand-map-control__button', controlContainer);
 
                 button.type = 'button';
-                button.title = 'Karte vergrößern';
-                button.setAttribute('aria-label', 'Karte vergrößern');
+                button.title = translateUi('map_expand', 'Karte vergrößern');
+                button.setAttribute('aria-label', translateUi('map_expand', 'Karte vergrößern'));
                 button.setAttribute('data-expanded', 'false');
                 button.innerHTML = '<span aria-hidden="true">⛶</span>';
 
@@ -132,8 +150,8 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.classList.add('map-expanded');
             const expandButton = document.querySelector('.leaflet-expand-map-control__button');
             expandButton.setAttribute('data-expanded', 'true');
-            expandButton.title = 'Karte verkleinern';
-            expandButton.setAttribute('aria-label', 'Karte verkleinern');
+            expandButton.title = translateUi('map_collapse', 'Karte verkleinern');
+            expandButton.setAttribute('aria-label', translateUi('map_collapse', 'Karte verkleinern'));
             expandButton.innerHTML = '<span aria-hidden="true">⊗</span>';
 
             requestAnimationFrame(function () {
@@ -146,8 +164,8 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.classList.remove('map-expanded');
             const expandButton = document.querySelector('.leaflet-expand-map-control__button');
             expandButton.setAttribute('data-expanded', 'false');
-            expandButton.title = 'Karte vergrößern';
-            expandButton.setAttribute('aria-label', 'Karte vergrößern');
+            expandButton.title = translateUi('map_expand', 'Karte vergrößern');
+            expandButton.setAttribute('aria-label', translateUi('map_expand', 'Karte vergrößern'));
             expandButton.innerHTML = '<span aria-hidden="true">⛶</span>';
 
             requestAnimationFrame(function () {
@@ -179,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 if (!points.length) {
                     const fallback = document.createElement('p');
-                    fallback.textContent = 'Keine Trackpunkte im GPX-Datei gefunden.';
+                    fallback.textContent = translateUi('gpx_no_track_points', 'Keine Trackpunkte im GPX-Datei gefunden.');
                     container.appendChild(fallback);
                     return;
                 }
@@ -220,7 +238,7 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .catch(function () {
                 const error = document.createElement('p');
-                error.textContent = 'Die Route konnte nicht geladen werden.';
+                error.textContent = translateUi('route_load_error', 'Die Route konnte nicht geladen werden.');
                 container.appendChild(error);
             });
         });
@@ -272,7 +290,7 @@ function initializeSiteSearch() {
         });
 
         if (!matches.length) {
-            results.innerHTML = '<p class="site-search__empty">Keine Treffer</p>';
+            results.innerHTML = '<p class="site-search__empty">' + translateUi('search_no_results', 'Keine Treffer') + '</p>';
             return;
         }
 
@@ -600,8 +618,8 @@ function initializeAllToursMap() {
     resetControl.onAdd = function () {
         const element = L.DomUtil.create('button', 'all-tours__reset-control');
         element.type = 'button';
-        element.textContent = 'Alle Touren';
-        element.title = 'Alle Touren anzeigen';
+        element.textContent = translateUi('all_tours', 'Alle Touren');
+        element.title = translateUi('all_tours_show', 'Alle Touren anzeigen');
         L.DomEvent.disableClickPropagation(element);
         L.DomEvent.on(element, 'click', showOverview);
         return element;
@@ -676,7 +694,7 @@ function initializeAllToursMap() {
                     map.fitBounds(route.getBounds(), { padding: [24, 24], maxZoom: 14 });
                     hitArea.bindPopup(
                         '<strong>' + escapeHtml(tour.title) + '</strong>'
-                        + '<br><a href="' + encodeURI(tour.url) + '">Tour öffnen</a>'
+                        + '<br><a href="' + encodeURI(tour.url) + '">' + translateUi('tour_open', 'Tour öffnen') + '</a>'
                     ).openPopup();
                 });
 
@@ -763,7 +781,7 @@ function initializeAllToursMap() {
             }).addTo(overviewMarkers);
 
             if (group.layers.length > 1) {
-                marker.bindTooltip(group.layers.length + ' Touren');
+                marker.bindTooltip(group.layers.length + ' ' + translateUi('tour_count', 'Touren'));
                 marker.on('click', function () {
                     map.setView(center, Math.min(map.getZoom() + 3, 12));
                 });
@@ -782,7 +800,7 @@ function initializeAllToursMap() {
     function showTourPopup(layer) {
         layer.route.bindPopup(
             '<strong>' + escapeHtml(layer.tour.title) + '</strong>'
-            + '<br><a href="' + encodeURI(layer.tour.url) + '">Tour öffnen</a>'
+            + '<br><a href="' + encodeURI(layer.tour.url) + '">' + translateUi('tour_open', 'Tour öffnen') + '</a>'
         ).openPopup();
     }
 
@@ -877,7 +895,7 @@ function renderElevationProfile(container, data, map) {
 
     container.innerHTML = ''
         + '<div class="article-gpx__profile-heading">'
-        + '<h3>Höhenprofil</h3>'
+        + '<h3>' + translateUi('elevation_profile', 'Höhenprofil') + '</h3>'
         + '<span>' + minimumElevation.toFixed(0) + ' m - ' + maximumElevation.toFixed(0) + ' m</span>'
         + '</div>'
         + '<div class="elevation-profile__chart">'
