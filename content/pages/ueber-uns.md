@@ -36,12 +36,13 @@ Lang: en
             <h2>Kilian</h2>
 
             <p>
-                [Kurzer persönlicher Text über Kilian.]
+                <strong>Am liebsten ist ihm kalt.</strong> Im Winter fühlt sich Kilian am wohlsten – egal ob auf Skitour oder beim Eisklettern. Der Sommer ist für ihn deshalb vor allem eines: ein ständiges Warten darauf, dass es endlich wieder kalt wird.
             </p>
 
             <p>
-                
+                Ganz untätig bleibt er in den warmen Monaten trotzdem nicht. Dann ist er am liebsten laufend in den Bergen unterwegs. Früher war Kilian Leistungssportler im Orientierungslauf – eine Zeit, von der zumindest eines geblieben ist: die Orientierung. Während andere noch überlegen, wo es weitergeht, ist für ihn meistens schon klar, in welche Richtung es gehen soll.
             </p>
+
         </div>
 
     </section>

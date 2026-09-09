@@ -54,6 +54,22 @@ UI_TRANSLATIONS = {
 
         'filter_all': 'Alle',
 
+        'category_label': 'Kategorie',
+        'category_intro': 'Entdecke Abenteuer und Berichte aus {category} – von Bergpässen bis zu langen Touren im Gelände.',
+        'category_empty_state': 'Noch keine Einträge in dieser Kategorie.',
+
+        'home_hero_eyebrow': 'Berg & Rad Abenteuer',
+        'home_title': 'TrailnError',
+        'home_about_label': 'Über uns',
+        'home_about_title': 'Große und kleine Abenteuer',
+        'home_about_text': 'Wir sind Kilian und Vanessa. Willkommen bei unseren Abenteuern! Egal wie hoch der Berg oder wie lang die Tour, wir möchten hier unsere Erlebnisse und Erfahrungen mit dir teilen.',
+        'home_about_link': 'Mehr über uns →',
+        'home_tours_label': 'Routenübersicht',
+        'home_tours_title': 'Unsere Touren',
+        'home_latest_label': 'Neueste Einträge',
+        'home_latest_title': 'Aktuelle Abenteuer',
+        'home_empty_state': 'Mehr Abenteuer folgen bald.',
+
         'map_title': 'Unsere Touren',
         'map_reset': 'Zurücksetzen',
         'map_expand': 'Karte vergrößern',
@@ -94,6 +110,22 @@ UI_TRANSLATIONS = {
 
         'filter_all': 'All',
 
+        'category_label': 'Category',
+        'category_intro': 'Discover adventures and stories from {category} – from mountain passes to long tours in the backcountry.',
+        'category_empty_state': 'No entries in this category yet.',
+
+        'home_hero_eyebrow': 'Mountain & Bike Adventures',
+        'home_title': 'TrailnError',
+        'home_about_label': 'About us',
+        'home_about_title': 'Big and small adventures',
+        'home_about_text': 'We are Kilian and Vanessa. Welcome to our adventures! No matter how high the mountain or how long the tour, we want to share our experiences and stories with you.',
+        'home_about_link': 'More about us →',
+        'home_tours_label': 'Route overview',
+        'home_tours_title': 'All Tour Map',
+        'home_latest_label': 'Latest entries',
+        'home_latest_title': 'Current adventures',
+        'home_empty_state': 'More adventures coming soon.',
+
         'map_title': 'Our Tours',
         'map_reset': 'Reset',
         'map_expand': 'Expand map',
@@ -122,29 +154,50 @@ UI_TRANSLATIONS = {
     }
 }
 
+TOURTYPE_TRANSLATIONS = {
+    'Gravel': {'de': 'Gravel', 'en': 'Gravel'},
+    'Hochtour': {'de': 'Hochtour', 'en': 'Alpine Tour'},
+    'Skitour': {'de': 'Skitour', 'en': 'Ski Tour'}
+}
+
 FEATURED_CATEGORIES = [
     {
         'name': 'Bergsteigen',
         'slug': 'bergsteigen',
+        'label': {'de': 'Bergsteigen', 'en': 'Mountaineering'},
         'image': '/images/categories/bergsteigen.jpg',
         'hero_image': '/images/categories/bergsteigen-hero.jpg',
         'mobile_position': '70% center',
-        'description': 'Hochtouren, Grate und Skitouren – unsere Touren und Erfahrungen aus den Bergen.'
+        'description': 'Hochtouren, Grate und Skitouren – unsere Touren und Erfahrungen aus den Bergen.',
+        'description_i18n': {
+            'de': 'Hochtouren, Grate und Skitouren – unsere Touren und Erfahrungen aus den Bergen.',
+            'en': 'Alpine tours, ridges and ski tours – our mountain adventures and experiences.'
+        }
     },
     {
         'name': 'Bikepacking',
         'slug': 'bikepacking',
+        'label': {'de': 'Bikepacking', 'en': 'Bikepacking'},
         'image': '/images/categories/bikepacking.jpg',
         'hero_image': '/images/categories/bikepacking-hero.jpg',
         'mobile_position': '75% center',
-        'description': 'Mehrtagestouren auf zwei Rädern – von kurzen Trips bis zu langen Reisen mit vollgepackten Taschen.'
+        'description': 'Mehrtagestouren auf zwei Rädern – von kurzen Trips bis zu langen Reisen mit vollgepackten Taschen.',
+        'description_i18n': {
+            'de': 'Mehrtagestouren auf zwei Rädern – von kurzen Trips bis zu langen Reisen mit vollgepackten Taschen.',
+            'en': 'Multi-day tours on two wheels – from short trips to long journeys with fully loaded bags.'
+        }
     },
     {
         'name': 'Berglaufen',
         'slug': 'berglaufen',
+        'label': {'de': 'Berglaufen', 'en': 'Trail Running'},
         'image': '/images/categories/berglaufen.jpg',
         'hero_image': '/images/categories/berglaufen-hero.jpg',
         'mobile_position': '42% center',
-        'description': 'Lange Anstiege, technische Trails und schnelle Runden durch die Berge.'
+        'description': 'Lange Anstiege, technische Trails und schnelle Runden durch die Berge.',
+        'description_i18n': {
+            'de': 'Lange Anstiege, technische Trails und schnelle Runden durch die Berge.',
+            'en': 'Long climbs, technical trails and fast loops through the mountains.'
+        }
     }
 ]

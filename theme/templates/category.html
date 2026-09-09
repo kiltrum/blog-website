@@ -7,12 +7,14 @@
 {% block content %}
 {% set current_category_slug = (category.slug or category.name|lower|replace(' ', '-'))|lower %}
 {% set featured_categories = FEATURED_CATEGORIES or settings.get('FEATURED_CATEGORIES', []) %}
-{% set ns = namespace(hero_image=none, description=none, matched=none) %}
+{% set ns = namespace(hero_image=none, description=none, description_i18n=none, label=none, matched=none) %}
 {% for featured_category in featured_categories %}
     {% set featured_category_slug = (featured_category.slug or featured_category.name|lower|replace(' ', '-'))|lower %}
     {% if featured_category_slug == current_category_slug %}
         {% set ns.hero_image = featured_category.hero_image or featured_category.image %}
         {% set ns.description = featured_category.description %}
+        {% set ns.description_i18n = featured_category.description_i18n %}
+        {% set ns.label = featured_category.label %}
         {% set ns.matched = featured_category %}
     {% endif %}
 {% endfor %}
@@ -22,9 +24,9 @@
     <header class="category-hero" style="--category-mobile-position: {{ ns.matched.mobile_position|default('center') }}; background-image: url('{{ ns.hero_image }}');">
         <div class="category-hero__overlay"></div>
         <div class="category-hero__content">
-            <h1>{{ category.name }}</h1>
+            <h1>{{ ns.label.get(current_lang, category.name) if ns.label else category.name }}</h1>
             <p class="category-page__intro">
-                {{ ns.description or 'Entdecke Abenteuer und Berichte aus ' ~ category.name ~ ' – von Bergpässen bis zu langen Touren im Gelände.' }}
+                {{ ns.description_i18n.get(current_lang, ns.description) if ns.description_i18n else (ns.description or ui.category_intro.format(category=category.name)) }}
             </p>
         </div>
         <a class="hero__scroll-link" href="#category-content" aria-label="Zu den Touren scrollen">
@@ -35,10 +37,10 @@
     </header>
     {% else %}
     <header class="category-page__header">
-        <p class="eyebrow eyebrow--dark">Kategorie</p>
-        <h1>{{ category.name }}</h1>
+        <p class="eyebrow eyebrow--dark">{{ ui.category_label }}</p>
+        <h1>{{ ns.label.get(current_lang, category.name) if ns.label else category.name }}</h1>
         <p class="category-page__intro">
-            {{ ns.description or 'Entdecke Abenteuer und Berichte aus ' ~ category.name ~ ' – von Bergpässen bis zu langen Touren im Gelände.' }}
+            {{ ns.description_i18n.get(current_lang, ns.description) if ns.description_i18n else (ns.description or ui.category_intro.format(category=category.name)) }}
         </p>
     </header>
     {% endif %}
@@ -51,9 +53,9 @@
         {% endif %}
     {% endfor %}
     <nav class="tour-type-filters" id="category-content" aria-label="Tourtypen" data-tour-type-filters>
-        <button class="tour-type-filter is-active" type="button" data-tour-type="all" aria-pressed="true">Alle</button>
+        <button class="tour-type-filter is-active" type="button" data-tour-type="all" aria-pressed="true">{{ ui.filter_all }}</button>
         {% for tour_type in tour_types|sort %}
-        <button class="tour-type-filter" type="button" data-tour-type="{{ tour_type|lower }}" aria-pressed="false">{{ tour_type }}</button>
+        <button class="tour-type-filter" type="button" data-tour-type="{{ tour_type|lower }}" aria-pressed="false">{{ TOURTYPE_TRANSLATIONS.get(tour_type, {}).get(current_lang, tour_type) }}</button>
         {% endfor %}
     </nav>
 
@@ -73,7 +75,7 @@
             {% endif %}
             <div class="post-card__body">
                 <p class="post-card__meta">
-                    {% if tour_type %}{{ tour_type|upper }} · {% endif %}
+                    {% if tour_type %}{{ TOURTYPE_TRANSLATIONS.get(tour_type, {}).get(current_lang, tour_type)|upper }} · {% endif %}
                     {{ article.date.strftime('%d.%m.%Y') }}
                     {% if article.author %}
                         · {{ article.author }}
@@ -91,7 +93,7 @@
         {% endfor %}
     </div>
     {% else %}
-    <p class="empty-state">Noch keine Einträge in dieser Kategorie.</p>
+    <p class="empty-state">{{ ui.category_empty_state }}</p>
     {% endif %}
 </section>
 {% endblock %}
