@@ -53,7 +53,7 @@
             {% if gpx_url %}<div data-gpx-stat-container="elevationLoss" hidden><span>{{ ui.descent }}</span><strong data-gpx-stat="elevationLoss"></strong></div>{% endif %}
             {% if gpx_url %}<div data-gpx-stat-container="maximumElevation" hidden><span>{{ ui.highest_point }}</span><strong data-gpx-stat="maximumElevation"></strong></div>{% endif %}
             {% if duration %}<div><span>{{ ui.duration }}</span><strong>{{ duration }}</strong></div>{% endif %}
-            {% if difficulty %}<div><span>Schwierigkeit</span><strong>{{ difficulty }}</strong></div>{% endif %}
+            {% if difficulty %}<div><span>{{ ui.difficulty }}</span><strong>{{ difficulty }}</strong></div>{% endif %}
             {% if location %}<div><span>{{ ui.location }}</span><strong>{{ location }}</strong></div>{% endif %}
         </div>
     </section>
