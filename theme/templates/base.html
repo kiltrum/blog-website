@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG }}">
+<html lang="{{ CURRENT_LANG if CURRENT_LANG is defined else DEFAULT_LANG }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,6 @@
 
     {% set default_description = SITENAME ~ ' - Tourenberichte, Bikepacking und Bergabenteuer.' %}
     {% set is_article_page = article is defined and article %}
-    {% set seo_description = article.summary|default('', true) if is_article_page else default_description %}
     {% set seo_title = article.title if is_article_page else SITENAME %}
     {% set seo_url = SITEURL ~ '/' ~ article.url if is_article_page else SITEURL ~ '/' %}
     {% set seo_image = article.metadata.get('HeroImage') or article.metadata.get('heroimage') if is_article_page else '/theme/images/logo.png' %}

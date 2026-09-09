@@ -123,7 +123,7 @@ UI_TRANSLATIONS = {
 
         'category_label': 'Category',
         'category_aria': 'Category {category}',
-        'category_intro': 'Discover adventures and stories from {category} – from mountain passes to long tours in the backcountry.',
+        'category_intro': 'Discover adventures and reports from {category} – from mountain passes to long tours in the backcountry.',
         'category_empty_state': 'No entries in this category yet.',
         'scroll_to_tours': 'Scroll to tours',
         'tour_types': 'Tour types',
@@ -137,12 +137,11 @@ UI_TRANSLATIONS = {
         'home_title': 'TrailnError',
         'home_about_label': 'About us',
         'home_about_title': 'Big and small adventures',
-        'home_about_text': 'We are Kilian and Vanessa. Welcome to our adventures! No matter how high the mountain or how long the tour, we want to share our experiences and stories with you.',
-        'home_about_link': 'More about us →',
+        'home_about_text': 'We are Kilian and Vanessa. This is where we share our tours, travels and experiences, whether on foot, on skis or by bike.',        'home_about_link': 'More about us →',
         'home_tours_label': 'Route overview',
-        'home_tours_title': 'All Tour Map',
-        'home_latest_label': 'Latest entries',
-        'home_latest_title': 'Current adventures',
+        'home_tours_title': 'Tour Map',
+        'home_latest_label': 'Latest Posts',
+        'home_latest_title': 'Recent adventures',
         'home_empty_state': 'More adventures coming soon.',
 
         'map_title': 'Our Tours',
@@ -181,7 +180,7 @@ UI_TRANSLATIONS = {
 
 TOURTYPE_TRANSLATIONS = {
     'Gravel': {'de': 'Gravel', 'en': 'Gravel'},
-    'Hochtour': {'de': 'Hochtour', 'en': 'Alpine Tour'},
+    'Hochtour': {'de': 'Hochtour', 'en': 'Alpine Climb'},
     'Skitour': {'de': 'Skitour', 'en': 'Ski Tour'}
 }
 
@@ -196,7 +195,7 @@ FEATURED_CATEGORIES = [
         'description': 'Hochtouren, Grate und Skitouren – unsere Touren und Erfahrungen aus den Bergen.',
         'description_i18n': {
             'de': 'Hochtouren, Grate und Skitouren – unsere Touren und Erfahrungen aus den Bergen.',
-            'en': 'Alpine tours, ridges and ski tours – our mountain adventures and experiences.'
+            'en': 'Alpine climbs, ridges and ski tours – our adventures and experiences in the mountains.'
         }
     },
     {
