@@ -44,12 +44,6 @@
                     <span></span>
                     <span></span>
                 </button>
-                <button class="search-toggle" type="button" aria-expanded="false" aria-controls="site-search" aria-label="Suche öffnen">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                        <circle cx="10.8" cy="10.8" r="6.3"></circle>
-                        <path d="m15.5 15.5 4.2 4.2"></path>
-                    </svg>
-                </button>
                 <nav class="site-nav" id="site-navigation" aria-label="Hauptnavigation">
                     {% set category_base = SITEURL ~ '/category' %}
                     <a href="{{ category_base }}/bergsteigen.html">{{ ui.nav_bergsteigen }}</a>
@@ -58,12 +52,24 @@
                     <a href="{{ SITEURL }}/#all-tours-title">Tourenkarte</a>
                     <a href="{{ SITEURL }}/pages/ueber-uns.html">{{ ui.nav_about }}</a>
                 </nav>
-                <div class="site-lang-switcher">
-                    {% if current_lang == 'de' %}
-                        <a href="/en/" class="site-lang-switcher__link" hreflang="en">{{ UI_TRANSLATIONS.en.language_en }}</a>
-                    {% else %}
-                        <a href="/" class="site-lang-switcher__link" hreflang="de">{{ UI_TRANSLATIONS.de.language_de }}</a>
-                    {% endif %}
+                <div class="header-utilities">
+                    <button class="search-toggle" type="button" aria-expanded="false" aria-controls="site-search" aria-label="Suche öffnen">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <circle cx="10.8" cy="10.8" r="6.3"></circle>
+                            <path d="m15.5 15.5 4.2 4.2"></path>
+                        </svg>
+                    </button>
+                    <div class="site-lang-switcher">
+                        {% if current_lang == 'de' %}
+                            <span class="site-lang-switcher__current">DE</span>
+                            <span class="site-lang-switcher__separator">/</span>
+                            <a class="site-lang-switcher__link" href="/en/" hreflang="en">EN</a>
+                        {% else %}
+                            <a class="site-lang-switcher__link" href="/" hreflang="de">DE</a>
+                            <span class="site-lang-switcher__separator">/</span>
+                            <span class="site-lang-switcher__current">EN</span>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
             <div class="site-search" id="site-search" hidden>
