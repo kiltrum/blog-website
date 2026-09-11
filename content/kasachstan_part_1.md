@@ -19,7 +19,7 @@ Eigentlich wollten wir zuerst eine Gravelroute im Norden Kasachstans fahren: die
 
 Also wird zum ersten Mal intensiv umgeplant.
 
-Statt 30 Stunden mit dem Nachtzug in den Norden zu fahren, starten wir direkt von Almaty und wollen über das Assy Plateau bis zum Charyn Canyon. Diesen Abschnitt hatten wir ohnehin geplant – allerdings in die andere Richtung. Eigentlich sollte er unsere Aufwärmtour nach dem Norden werden. Eine Gelegenheit, um herauszufinden, ob unser Setup, das bis dahin gerade einmal zwei Tage auf den Rädern montiert war, überhaupt mit den kasachischen Bedingungen zurechtkommt. Und falls etwas nicht funktioniert, hätten wir in Almaty vermutlich noch die beste Chance auf Ersatz oder eine Reparatur gehabt.
+Statt 30 Stunden mit dem Nachtzug in den Norden zu fahren, starten wir direkt von Almaty und wollen über das Assy Plateau bis zum Charyn Canyon. Diesen Abschnitt hatten wir ohnehin geplant – allerdings in die andere Richtung. Eigentlich sollte er unsere Aufwärmtour vor dem Norden werden. Eine Gelegenheit, um herauszufinden, ob unser Setup, das bis dahin gerade einmal zwei Tage auf den Rädern montiert war, überhaupt mit den kasachischen Bedingungen zurechtkommt. Und falls etwas nicht funktioniert, hätten wir in Almaty vermutlich noch die beste Chance auf Ersatz oder eine Reparatur gehabt.
 
 Aber na gut. Also direkt von Almaty los!
 
@@ -78,7 +78,7 @@ Wir fahren die letzten paar hundert Höhenmeter bis zum Pass hinauf. Zum Glück 
     </div>
 </figure>
 
-Ein paar Kilometer fahren wir noch weiter, bevor wir uns vor einem kurzen Regenschauer in einem von Nomaden errichteten Blechschuppen verstecken, den sie ihr Hab und Gut für den Sommer lagern. Nach etwa 45 Kilometern beschließen wir, dass wir uns am zweiten Tag noch nicht komplett vernichten müssen, und schlagen unser Zelt neben einem Bach auf.
+Ein paar Kilometer fahren wir noch weiter, bevor wir uns vor einem kurzen Regenschauer in einem von Nomaden errichteten Blechschuppen verstecken, in dem sie ihr Hab und Gut für den Sommer lagern. Nach etwa 45 Kilometern beschließen wir, dass wir uns am zweiten Tag noch nicht komplett vernichten müssen, und schlagen unser Zelt neben einem Bach auf.
 
 <figure class="article-photo article-photo-wide">
         <img src="/images/articles/kasachstan_part_1/4.jpg" alt="Zeltplatz am Assy Plateau"
@@ -159,15 +159,15 @@ Als wir endlich den Canyon erreichen, bin ich komplett fertig und wir gönnen un
 
 
 
-<figure class="photo-grid-group">
-    <div class="photo-grid photo-grid-2">
+<figure class="ariticle-photo">
         <img src="/images/articles/kasachstan_part_1/9.jpg" alt="Unsere Räder vor einem Straßenschild und einer langen geraden Straße richtug Charyn Canyon"
              loading="lazy">
-        <img src="/images/articles/kasachstan_part_1/11.jpg" alt="Blick über den Charyn Canyon"
-             loading="lazy">
-    </div>
 </figure>
 
+<figure class="article-photo">
+        <img src="/images/articles/kasachstan_part_1/12.jpg" alt="Kalt="Charyn Canyon in Kasachstan"
+             loading="lazy">
+</figure>
 
 Der Canyon ist wirklich beeindruckend. Man dürfte sogar ganz unten am Fluss zelten, aber dort ist es so heiß, dass wir schon vorher beschlossen haben, heute noch ein Stück weiterzufahren. Durch den Canyon können wir mit den Rädern leider auch nicht weiter, da der Weg eine Sackgasse ist und unten am Fluss endet.
 
