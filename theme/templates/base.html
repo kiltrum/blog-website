@@ -10,19 +10,169 @@
         {% endblock %}
     </title>
 
-    {% set default_description = SITENAME ~ ' - Tourenberichte, Bikepacking und Bergabenteuer.' %}
+    {% set current_lang = CURRENT_LANG if CURRENT_LANG is defined else DEFAULT_LANG %}
+
+    {% if current_lang == 'en' %}
+        {% set default_description = 'TrailnError - Mountain adventures, bikepacking and trail running.' %}
+    {% else %}
+        {% set default_description = 'TrailnError - Tourenberichte, Bikepacking und Bergabenteuer.' %}
+    {% endif %}
+
     {% set is_article_page = article is defined and article %}
-    {% set seo_title = article.title if is_article_page else SITENAME %}
-    {% set seo_url = SITEURL ~ '/' ~ article.url if is_article_page else SITEURL ~ '/' %}
-    {% set seo_image = article.metadata.get('HeroImage') or article.metadata.get('heroimage') if is_article_page else '/theme/images/logo.png' %}
-    {% set seo_description = article.summary|default('', true)|striptags if is_article_page else default_description %}
+    {% set is_page = page is defined and page %}
+    {% set is_category_page = category is defined and category %}
+
+    {% if is_article_page %}
+    {% set seo_title = article.title ~ ' | ' ~ SITENAME %}
+    {% elif is_page %}
+        {% set seo_title = page.title ~ ' | ' ~ SITENAME %}
+    {% elif is_category_page %}
+        {% set seo_title = category.name ~ ' | ' ~ SITENAME %}
+    {% else %}
+        {% set seo_title = SITENAME %}
+    {% endif %}
+
+    {% if is_article_page %}
+        {% set seo_url = SITEURL ~ '/' ~ article.url %}
+    {% elif is_page %}
+        {% set seo_url = SITEURL ~ '/' ~ page.url %}
+    {% elif is_category_page %}
+        {% set seo_url = SITEURL ~ '/' ~ category.url %}
+    {% else %}
+        {% set seo_url = SITEURL ~ '/' %}
+    {% endif %}
+    
+    {% if is_article_page %}
+        {% set seo_image = article.metadata.get('HeroImage') or article.metadata.get('heroimage') %}
+
+    {% elif is_category_page %}
+        {% set image_ns = namespace(value='/images/hero/panorama.jpg') %}
+
+        {% for featured_category in FEATURED_CATEGORIES %}
+            {% if featured_category.slug == category.slug %}
+                {% set image_ns.value = featured_category.hero_image %}
+            {% endif %}
+        {% endfor %}
+
+        {% set seo_image = image_ns.value %}
+
+    {% elif is_page %}
+        {% set seo_image = '/images/hero/panorama.jpg' %}
+
+    {% else %}
+        {% set seo_image = '/images/hero/panorama.jpg' %}
+    {% endif %}
+
+    {% if is_article_page %}
+        {% set seo_description = article.summary|default('', true)|striptags %}
+    {% elif is_page %}
+        {% set seo_description = page.summary|default(default_description, true)|striptags %}
+    {% elif is_category_page %}
+        {% set ns = namespace(description=default_description) %}
+
+        {% for featured_category in FEATURED_CATEGORIES %}
+            {% if featured_category.slug == category.slug %}
+                {% if featured_category.description_i18n is defined %}
+                    {% set ns.description = featured_category.description_i18n.get(current_lang, featured_category.description) %}
+                {% else %}
+                    {% set ns.description = featured_category.description %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+
+        {% set seo_description = ns.description %}
+    {% else %}
+        {% set seo_description = default_description %}
+    {% endif %}
+
+    {% set base_siteurl = BASE_SITEURL if BASE_SITEURL is defined else SITEURL %}
+
     <meta name="description" content="{{ seo_description|e }}">
+
     <meta property="og:title" content="{{ seo_title|e }}">
     <meta property="og:description" content="{{ seo_description|e }}">
     <meta property="og:url" content="{{ seo_url }}">
     <meta property="og:type" content="{{ 'article' if is_article_page else 'website' }}">
+
     {% if seo_image %}
-    <meta property="og:image" content="{{ SITEURL ~ '/' ~ seo_image if is_article_page else seo_image }}">
+    <meta property="og:image" content="{{ base_siteurl ~ seo_image }}">
+    {% endif %}
+
+    <meta property="og:site_name" content="{{ SITENAME }}">
+    <meta property="og:locale" content="{{ 'en_US' if current_lang == 'en' else 'de_AT' }}">
+
+    <link rel="canonical" href="{{ seo_url }}">
+
+    {% if is_article_page %}
+
+    <link rel="alternate"
+            hreflang="{{ article.lang }}"
+            href="{{ seo_url }}">
+
+    {% for translation in article.translations %}
+        {% set clean_translation_url = translation.url|replace('../', '') %}
+        {% if translation.lang == 'en' and not clean_translation_url.startswith('en/') %}
+            {% set clean_translation_url = 'en/' ~ clean_translation_url %}
+        {% endif %}
+        <link rel="alternate"
+                hreflang="{{ translation.lang }}"
+                href="{{ base_siteurl ~ '/' ~ clean_translation_url }}">
+    {% endfor %}
+
+    {% if article.lang == 'de' %}
+    <link rel="alternate"
+            hreflang="x-default"
+            href="{{ seo_url }}">
+    {% else %}
+        {% for translation in article.translations %}
+            {% if translation.lang == 'de' %}
+                {% set clean_translation_url = translation.url|replace('../', '') %}
+                <link rel="alternate"
+                        hreflang="x-default"
+                        href="{{ base_siteurl ~ '/' ~ clean_translation_url }}">
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {% endif %}
+
+    {% if not is_article_page %}
+
+        {% if is_category_page %}
+            <link rel="alternate"
+                hreflang="de"
+                href="{{ base_siteurl }}/category/{{ category.slug }}/">
+            <link rel="alternate"
+                hreflang="en"
+                href="{{ base_siteurl }}/en/category/{{ category.slug }}/">
+            <link rel="alternate"
+                hreflang="x-default"
+                href="{{ base_siteurl }}/category/{{ category.slug }}/">
+
+        {% elif is_page %}
+            {% set clean_page_url = page.url|replace('../', '')|replace('en/', '') %}
+            <link rel="alternate"
+                hreflang="de"
+                href="{{ base_siteurl }}/{{ clean_page_url }}">
+            <link rel="alternate"
+                hreflang="en"
+                href="{{ base_siteurl }}/en/{{ clean_page_url }}">
+            <link rel="alternate"
+                hreflang="x-default"
+                href="{{ base_siteurl }}/{{ clean_page_url }}">
+
+        {% else %}
+            <link rel="alternate"
+                hreflang="de"
+                href="{{ base_siteurl }}/">
+            <link rel="alternate"
+                hreflang="en"
+                href="{{ base_siteurl }}/en/">
+            <link rel="alternate"
+                hreflang="x-default"
+                href="{{ base_siteurl }}/">
+        {% endif %}
+
     {% endif %}
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="/theme/css/main.css">
@@ -45,11 +195,11 @@
                 </button>
                 <nav class="site-nav" id="site-navigation" aria-label="{{ ui.nav_main }}">
                     {% set category_base = SITEURL ~ '/category' %}
-                    <a href="{{ category_base }}/bergsteigen.html">{{ ui.nav_bergsteigen }}</a>
-                    <a href="{{ category_base }}/bikepacking.html">{{ ui.nav_bikepacking }}</a>
-                    <a href="{{ category_base }}/berglaufen.html">{{ ui.nav_berglaufen }}</a>
+                    <a href="{{ category_base }}/bergsteigen/">{{ ui.nav_bergsteigen }}</a>
+                    <a href="{{ category_base }}/bikepacking/">{{ ui.nav_bikepacking }}</a>
+                    <a href="{{ category_base }}/berglaufen/">{{ ui.nav_berglaufen }}</a>
                     <a href="{{ SITEURL }}/#all-tours-title">{{ ui.nav_tour_map }}</a>
-                    <a href="{{ SITEURL }}/pages/ueber-uns.html">{{ ui.nav_about }}</a>
+                    <a href="{{ SITEURL }}/ueber-uns/">{{ ui.nav_about }}</a>
                 </nav>
                 <div class="header-utilities">
                     <button class="search-toggle" type="button" aria-expanded="false" aria-controls="site-search" aria-label="{{ ui.search_open }}">

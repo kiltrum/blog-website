@@ -13,14 +13,30 @@ DEFAULT_LANG = 'de'
 
 DEFAULT_PAGINATION = 10
 
-STATIC_PATHS = ['images', 'gpx']
+STATIC_PATHS = ['images', 'gpx', 'extra/robots.txt']
+
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+}
 
 THEME = 'theme'
 
 RELATIVE_URLS = True
 
+ARTICLE_URL = '{slug}/'
+ARTICLE_SAVE_AS = '{slug}/index.html'
+
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
+
+CATEGORY_URL = 'category/{slug}/'
+CATEGORY_SAVE_AS = 'category/{slug}/index.html'
+
+
 # Multilingual support via i18n_subsites plugin
-PLUGINS = ['i18n_subsites']
+PLUGINS = [
+    'i18n_subsites',
+]
 
 I18N_SUBSITES = {
     'en': {

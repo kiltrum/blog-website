@@ -1,5 +1,6 @@
 Title: About Us
 Slug: ueber-uns
+Summary: About TrailnError, our adventures and why mistakes and failure are an important part of them.
 Lang: en
 
 <div class="about-page">

@@ -1,7 +1,7 @@
 Title: Kazakhstan Part 3
 Summary: Between broken freehubs, a sandstorm, rain and endless hospitality, we continue through eastern Kazakhstan towards the Chinese border. Despite a few changes of plan, our route takes us along lonely gravel tracks, across green highlands and finally to Lake Alaköl.
 Date: 2026-05-10
-Author: Kilian and Vanessa
+Author: Kilian und Vanessa
 Category: Bikepacking
 TourType: Gravel
 Slug: kasachstan-part-3

@@ -1,7 +1,7 @@
 Title: Kasachstan Teil 3
 Summary: Zwischen kaputten Freiläufen, Sandsturm, Regen und endloser Gastfreundschaft fahren wir weiter durch den Osten Kasachstans Richtung chinesische Grenze. Trotz einiger Planänderungen führt uns die Route über einsame Gravelpisten, grüne Hochebenen und schließlich bis zum Alaköl See.
 Date: 2026-05-10
-Author: Kilian und Venssa
+Author: Kilian und Vanessa
 Category: Bikepacking
 TourType: Gravel
 Slug: kasachstan-part-3

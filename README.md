@@ -38,3 +38,12 @@ cd ~/Dokumente/TrailError/blog-website/content/images/articles/ORDNERNAME
 
 magick mogrify -resize "2000x2000>" -strip -quality 82 *.jpg
 ```
+
+## Production Build and sitemap creation
+
+
+Optional noch kompakter als kompletter Ablauf:
+
+```bash
+pelican content -s publishconf.py
+python scripts/generate_sitemap.py

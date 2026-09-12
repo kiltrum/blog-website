@@ -1,7 +1,7 @@
 Title: Kazakhstan Part 2
 Summary: Through the Kazakh steppe and remote mountain regions of eastern Kazakhstan. Endless gravel roads, thunderstorms and countless river crossings turn our self-planned route into much more of an adventure than expected.
 Date: 2026-04-30
-Author: Kilian and Vanessa
+Author: Kilian und Vanessa
 Category: Bikepacking
 TourType: Gravel
 Slug: kasachstan-part-2

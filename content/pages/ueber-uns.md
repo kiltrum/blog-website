@@ -1,5 +1,6 @@
 Title: Über uns
 Slug: ueber-uns
+Summary: Über TrailnError, unsere Touren und warum Fehler und Scheitern ein wichtiger Teil der Abenteuer sind.
 Lang: de
 
 <div class="about-page">
