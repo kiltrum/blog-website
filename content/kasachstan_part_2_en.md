@@ -1,5 +1,5 @@
 Title: Kazakhstan Part 2
-Summary: Through the Kazakh steppe and remote mountain regions of eastern Kazakhstan. Between endless gravel roads, thunderstorms and countless river crossings, our self-planned route turns out to be much more adventurous than expected.
+Summary: Through the Kazakh steppe and remote mountain regions of eastern Kazakhstan. Endless gravel roads, thunderstorms and countless river crossings turn our self-planned route into much more of an adventure than expected.
 Date: 2026-04-30
 Author: Kilian and Vanessa
 Category: Bikepacking
@@ -13,110 +13,185 @@ Lang: en
 
 ## Time to change our plans again
 
-Our original plan was to cross into China at the Karatal (KZ)–Jeminay (CN) border crossing. Before that, we also wanted to take the night train north to Öskemen. But now the border crossing seems very far away and we're not sure whether we can reach it within the remaining 16 days of our 30-day tourist visa. We don't want to take the standard border crossing into China at Horgos either, as that would mean entering China too early, and we don't want to spend more time there than absolutely necessary. So we decide on the Dostyk (KZ)–Alashankou (CN) crossing instead. We can find very little information about the border, but one thing is clear: you have to take the border bus and the crossing is closed on weekends ...
+Our original plan was to cross into China at Karatal (KZ)–Jeminay (CN). But before that, we had also wanted to take the night train north to Öskemen. By now, the border crossing feels a very long way off, and we're not sure we can make it there within the 16 days we have left on our 30-day tourist visa. We don't want to use the main crossing into China at Horgos either, because that would put us in China earlier than we want. So we settle on Dostyk (KZ)–Alashankou (CN) instead. There isn't much information about the crossing online, but one thing seems clear: you have to take a bus across the border, and the crossing is closed on weekends ...
 
-Perfect, we have a destination. Now we just need a plan for how to get to Dostyk. We like the idea of visiting Altyn-Emel National Park, but we don't really feel like riding endless straight roads through the desert and steppe. So we decide on a route through the mountains instead: from Koktal to Arantobe through a high-altitude valley. Some of the roads we only found using satellite images.
+Perfect, we have a destination. Now we just need to figure out how to get to Dostyk. Visiting Altyn-Emel National Park sounds tempting, but neither of us is particularly keen on endless straight roads through desert and steppe. Instead, we come up with a route through the mountains, from Koktal to Arantobe via a high valley. Some of the roads only show up on satellite images.
 
 ## Day 5: The Oasis
 
-As planned, we take it easy and plan to ride around 30 km in the afternoon to a small canyon. We wash our clothes and watch the shepherds drive their sheep and goats down to the river to drink. Everyone greets us, and as we're packing our things, a friendly Kazakh man rides up to us on his horse and tries to communicate with us. With our hands and feet, we explain that we're from Europe and flew to Almaty with our bikes. How much he actually understands is unclear, but he's fascinated by our gear.
+As planned, we take it easy and aim to ride around 30 km in the afternoon to a small canyon. We wash our clothes and watch the shepherds bring their sheep and goats down to the river for water. Everyone greets us, and while we're packing up, a friendly Kazakh man rides over on his horse and tries to strike up a conversation. With plenty of gestures, we explain that we're from Europe and flew to Almaty with our bikes. How much of it he actually understands is anyone's guess, but he seems fascinated by all our gear.
 
-We set off. Once again into a headwind, until we find a small minimarket in a village where we stock up on pasta for the evening. Finally, no polenta or rice!
+Eventually, we get going. Once again straight into a headwind, until we find a small shop in a village and stock up on pasta for dinner. Finally, something other than polenta or rice!
 
-We turn off the paved road and follow a gravel track towards the edge of a canyon. Suddenly, the road drops steeply and we have to push our bikes. We try not to think about the fact that we'll have to push them back up this section the next day.
+We leave the paved road and follow a gravel track towards the edge of a canyon. Suddenly the road drops steeply away and we're forced to push the bikes down. We try not to think about the fact that we'll have to push them all the way back up again tomorrow.
 
-We find a beautiful spot right next to the river in a small oasis. We finally cook ourselves enough food and enjoy the evening around a small campfire. Even though we've had an easy day with not too many kilometres, we once again drop into the tent like stones.
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/2.jpg" alt="View into a Kazakh oasis">
+</figure>
+
+We find a beautiful spot right by the river in a small oasis. For once, we cook enough food to actually fill us up and spend the evening around a little campfire. Even though it's been a relaxed day with relatively few kilometres, we still collapse into the tent like stones.
+
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/1.jpg" alt="Our tent in a Kazakh oasis">
+</figure>
 
 ## Day 6: Steppe, motorway and the cursed search for a campsite
 
-We start fairly early again. By now we've got our routine down pretty well and usually don't need more than an hour before we're back on the bikes. First, we push the bikes back out of the canyon and then continue on asphalt.
+We get going fairly early again. By now we've settled into a routine and usually need no more than an hour before we're back on the bikes. First we push them back out of the canyon, then it's onto asphalt.
 
-We're making surprisingly quick progress and, for the first time, get to enjoy a tailwind. We fly through the steppe and enjoy the endless landscape. On the horizon, we can already see the mountains we're heading towards.
+We're making surprisingly good progress and, for the first time, finally get a tailwind. We race across the steppe, enjoying the sheer vastness of the landscape. The mountains we're heading for are already visible on the horizon.
 
-In Chundzha, we stop for lunch at a café. The Kazakhs also have the 1st of May off, and the streets are full of children playing. Here we also learn something the hard way: if there's something you need to buy, buy it straight away. You never know when you'll get another chance. When we reach the next village and want to buy some vegetables, we're out of luck. From now on, we'll always stock up when we get the chance.
+We stop for lunch at a café in Chundzha. May 1st is a public holiday in Kazakhstan too, and the streets are full of children playing. It's also where we learn an important lesson the hard way: if you find something you need, buy it there and then. You never know when you'll see it again. We learn this when we reach the next village hoping to buy vegetables and find none. From now on, if we see something, we grab it.
 
-We're a little nervous about the next section: we have to ride on the motorway. There is no other road or track for these 50 km through the steppe and across the rivers. We consider hitchhiking, but for quite a while only a few vehicles have passed us that would be suitable for carrying two bikes.
+We're a little wary of the next section: 50 km on the motorway. There simply isn't another road or track across this part of the steppe and its rivers. We briefly consider hitchhiking, but there hasn't been much traffic for a while, and none of the vehicles passing us would have had room for two bikes anyway.
 
-Just before the motorway entrance, we meet a Russian group. They tell us there's very little traffic and that it's no problem at all. Well, whether you can trust Russians when it comes to judging things like this is debatable. So we set off, and of course, just as we're riding onto the motorway, the perfect small truck for hitchhiking overtakes us ...
+Just before the slip road, we meet a Russian group. They reckon there's hardly any traffic and that it'll be no problem. Well, whether Russians are the best people to ask about this sort of thing is debatable. We decide to go for it — and, naturally, just as we're riding onto the motorway, the perfect little truck for hitchhiking passes us ...
 
-Off we go. There really isn't much traffic and, as we've come to expect from the Kazakhs, they give us plenty of space when overtaking. There's a narrow shoulder that's perfect for us to ride on.
+<figure class="article-photo">
+    <img src="/images/articles/kasachstan_part_2/2.5.jpg" alt="Cyclist on a Kazakh motorway">
+</figure>
 
-Thirty minutes later, we take the first exit. The river where we had planned to sleep turns out to be a muddy mess, so we decide to continue along the motorway after all. Completely exhausted, we finally reach the exit towards Koktal and fight our way through the last few kilometres into the village.
+So off we go. There really isn't much traffic, and just as we've come to expect from the Kazakhs, everyone gives us plenty of room when passing. There's even a narrow shoulder that's just wide enough for us.
 
-For the first time, we see camels. Motivated by the sight of them, we somehow make it to the next shop. We must look so exhausted that two friendly Kazakhs immediately buy us two Cokes and some water.
+Half an hour later, we take the first exit. The river where we'd planned to camp turns out to be a muddy mess, so we decide to stay on the motorway a little longer after all. Completely exhausted, we eventually reach the turn-off for Koktal and drag ourselves through the final kilometres into the village.
 
-But since we desperately want to wash ourselves, we still have to continue a little further to the next river. That's where the search begins. Between barbed wire and thorn bushes, we try to find our way down to the river. Finally, we make it. Once again, a perfect place to sleep, wash and cook.
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/3.jpg" alt="Camels in the Kazakh steppe">
+</figure>
+
+For the first time, we see camels. The sight gives us enough motivation to make it to the next shop. We must look absolutely wrecked, because two friendly Kazakhs immediately buy us two Cokes and some water.
+
+We desperately want to wash, though, so we still have to make it a little farther to the next river. That's when the search begins. We try to fight our way through barbed wire and thorn bushes to reach the water. Eventually, we make it. Once again, we've found a perfect spot to sleep, wash and cook.
 
 ## Day 7: Through the desert into the mountains
 
-We're completely exhausted from the 130 km the day before. We ride the few kilometres back into the village to plan the next section through the mountains. How long will it take us? How much food do we need? Where can we refill our water? Food for four days should be enough.
+We're still completely wrecked from yesterday's 130 km. We ride the few kilometres back into the village to plan the next stretch through the mountains. How long will it take? How much food do we need? Where can we refill our water? We reckon four days' worth of food should do it.
 
-Even though we're still completely exhausted, we decide to set off again that same day. It's only 25 km to the next river, which according to the satellite images should be lined with plenty of trees. So we head off in the midday heat, fill our water bottles one more time and then it's back into the steppe.
+Even though we're still exhausted, we decide to set off that same day. It's only 25 km to the next river, which looks heavily wooded on the satellite images. So we head out into the midday heat, fill our bottles one last time and ride back into the steppe.
 
-Since we only found the track on satellite images, we leave the road and suddenly find ourselves standing in a dried-up riverbed. After a short search, we eventually find the track, which to our surprise is actually a fairly decent road. It gets hillier and hillier, and the riding becomes really exhausting.
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/4.jpg" alt="Our tent in a Kazakh oasis">
+</figure>
 
-After about an hour on the gravel road, a motorbike with two masked men comes towards us. Unusually for Kazakhs, they don't greet us and just speed past. A few minutes later, a large off-road vehicle comes around the corner with men wearing balaclavas inside. Slightly intimidated, we keep riding. What are they doing here and why are they so covered up? And why don't they greet us like all the other Kazakhs we've met so far?
+Since we'd only spotted the track on satellite images, we leave the road and suddenly find ourselves in a dried-up riverbed. After a bit of searching, we find the track after all and, to our surprise, it's actually in decent condition. The terrain gets hillier and the riding gets properly hard.
 
-Then a small flatbed truck comes towards us, the kind normally used to transport livestock. We get quite a shock when we see around 20 masked men looking out through the bars at the back. Our imaginations start running wild, and we're already expecting to find a drug factory or something similar behind every corner and hill.
+After about an hour on the gravel road, a motorbike carrying two masked men comes towards us. Unlike every other Kazakh we've met so far, they don't greet us and simply race past. A few minutes later, a large 4x4 rounds the corner, full of men wearing balaclavas. Slightly unsettled, we keep riding. What are they doing out here? Why are they all covering their faces? And why does nobody greet us like everyone else has?
 
-Nothing of the sort appears. They were probably shepherds driving their livestock up to the high plateaus for the summer and protecting themselves from the dust of the steppe with balaclavas.
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/hero.jpg" alt="Kazakh shepherds driving their sheep through the river">
+</figure>
 
-After a short descent, we reach the small mountain oasis and watch the shepherds driving their sheep through the river. The weather forecast for the next few days is a mix of sunshine and thunderstorms ...
+Then a small flatbed truck comes towards us, the kind normally used for transporting livestock. We get a proper fright when we notice around 20 masked men staring out through the bars at the back. Our imaginations start running wild, and before long we're half expecting a drug lab or something similar behind every corner and hill.
+
+Of course, nothing of the sort appears. They were most likely shepherds moving their livestock up to the high plateaus for the summer, using balaclavas to keep the dust out of their faces.
+
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/5.jpg" alt="A mountain oasis in Kazakhstan">
+</figure>
+
+After a short descent, we reach the little mountain oasis and watch the shepherds drive their sheep through the river. The forecast for the next few days promises a mix of sunshine and thunderstorms ...
 
 ## Day 8: The last stretch into the mountains
 
-After yet another morning river crossing, we start the final section into the mountains. The black horizon gives us a pretty good idea that we won't stay dry today.
+After yet another morning river crossing, we set off on the final stretch into the mountains. The black horizon is a pretty good sign that we're not going to stay dry today.
 
-In places, the gravel road is so sandy that our bikes sink in and we have to push them. Then the road gets steeper and climbs up a hilly mountainside. We catch up with the shepherds driving their livestock uphill. But they're moving at a pretty good pace, so we don't overtake them.
+Parts of the gravel track are so sandy that the bikes sink in and we have no choice but to push. Then the track steepens and climbs across a rolling mountainside. We catch up with the shepherds driving their animals uphill, but they're moving at a decent pace, so we stay behind them.
 
-Thunder starts rumbling in the background and we see the first flashes of lightning. We keep going because there's nowhere to shelter and we hope the hilly terrain will offer us at least some protection.
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/6.jpg" alt="Kazakh shepherd on a motorbike following his animals">
+</figure>
 
-After more sections of pushing and a short rain shower, we reach the plateau. Just before the proper rain starts, we quickly put up the tent and crawl inside without even setting up our sleeping mats. Two hours later, we wake up to sunshine. Apparently, we're still a little drained from the long stage two days earlier.
+Thunder starts rumbling behind us and we spot the first flashes of lightning. We keep moving because there's nowhere to shelter, hoping the rolling terrain will at least offer some protection.
 
-We watch the shepherds living in their yurts on the plateau and enjoy being back in the green mountains.
+After more pushing and a short rain shower, we reach the plateau. Just before the real rain begins, we throw up the tent and crawl inside without even bothering with our sleeping mats.
+
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/7.jpg" alt="Rolling hills in Kazakhstan">
+</figure>
+
+Two hours later, we wake up to sunshine. Apparently, we're still feeling the effects of the long day two days ago.
+
+We watch the shepherds living in their yurts up on the plateau and enjoy being back among green mountains again.
+
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/10.jpg" alt="Kazakh shepherd on horseback rescuing a lamb from the river">
+</figure>
 
 ## Day 9: Stopped by the river
 
-The forecast is mixed again. We're hoping for trail conditions that will allow us to ride twice as fast as the day before. At around 10 km/h, we make our way across the plateau, passing yurts and scattered herds of animals. Before the descent, we stop to look at a large monument that is supposed to commemorate a battle from long ago.
+The forecast is unsettled again. We're hoping the tracks will be good enough to let us move twice as fast as yesterday. At around 10 km/h, we make our way across the plateau, passing yurts and scattered herds. Before starting the descent, we stop at a large monument that apparently commemorates a battle from long ago.
 
-On the descent, we repeatedly have to take off our shoes and push the bikes through deep rivers. We constantly look back at the approaching thunderstorm, which is getting closer and closer. Sometimes there isn't even a road and we ride across meadows until the next stream crossing, where we always have to decide: Can we just ride through? Maybe balance across on some rocks? Or do we have to take our shoes off again? Most of the time, it ends up being the last option.
+<div class="photo-grid photo-grid-2">
+    <img src="/images/articles/kasachstan_part_2/11.jpg" alt="Horse skull bones">
+    <img src="/images/articles/kasachstan_part_2/9.jpg" alt="Marmot on a Kazakh plateau">
+</div>
 
-We reach the valley floor and the thunderstorm catches up with us. We quickly put up the outer fly of our tent and just manage to jump inside without getting completely soaked.
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/12.jpg" alt="Cyclist on a Kazakh plateau">
+</figure>
 
-When the rain eases, one thing quickly becomes clear: the river has swollen so much from the rainfall that there is no way we can cross it. We look for suitable places, but none of them seem even remotely safe.
+On the descent, we have to take our shoes off again and again to push the bikes through deep streams. We keep looking back at the thunderstorm chasing us down the valley and getting closer by the minute. At times there's no road at all, and we ride straight across meadows until we reach the next stream. Each time it's the same decision: can we just ride through, balance across on a few rocks, or do the shoes have to come off again? Most of the time, it's the shoes.
 
-After going back and forth for a while, we decide that the only sensible option is to sleep here and cross the river very early the next morning. By then, hopefully most of the rainwater will have already run down the mountain and the snow higher up will still be frozen.
+We reach the valley floor just as the storm catches us. We quickly put up the outer fly of the tent and manage to dive underneath just before getting completely soaked.
 
-The alternatives would be to push our bikes for 20 km along a slope on our side of the river.
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/13.jpg" alt="Bird of prey in Kazakhstan">
+</figure>
 
-Or, worst case, ride all the way back the way we came over the last three days. But with the amount of food we have left, that would probably be cutting it pretty close.
+Once the rain eases, one thing becomes obvious: the river has risen so much that crossing it is out of the question. We walk around looking for a better spot, but nowhere looks remotely safe.
 
-So we go to bed really early. The alarm is set for 04:00.
+After plenty of back and forth, we decide there's only one sensible option: camp here and try again first thing in the morning. Hopefully, by then most of the rainwater will have drained off the mountain, while the snow higher up will still be frozen.
+
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/14.jpg" alt="Kazakh landscape with a river">
+</figure>
+
+The alternative would be to push our bikes for 20 km along the hillside on our side of the river.
+
+Or, worst case, turn around and retrace the last three days. With the amount of food we have left, though, that could get a bit tight.
+
+So we go to bed ridiculously early. The alarm is set for 04:00.
 
 ## Day 10: The river crossing
 
-Still half asleep, I climb out of the tent and check the situation. The river is noticeably less violent, but still too strong. And it's freezing cold outside. We go back to sleep.
+Still half asleep, I crawl out of the tent to check the river. It's definitely calmer than yesterday, but still too powerful. It's also freezing outside. We go back to sleep.
 
-At 06:00, we try again. We pack our things and get to work without breakfast. We're definitely a little nervous! But we find a spot that looks manageable.
+At 06:00, we try again. We pack everything up and get to work without breakfast. We're both visibly a little nervous, but we find a spot that looks doable.
 
-I try to go first on my own, but as soon as my bike is fully in the river, it almost pulls me over. So we do it together. On the slippery rocks, we just about manage to manoeuvre my bike across to the other side.
+I try going first on my own, but as soon as my bike is fully in the current, it nearly pulls me over. So we do it together. Between the current and the slippery rocks, we just manage to wrestle my bike across to the other bank.
 
-Our feet are already numb from the cold water, and now we still have to get Vanessa's bike. So back we go. Without a bike giving you at least a little bit of stability, it's much harder. Without thinking about it for too long, we grab the bike and drag it through the raging river again.
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/15.jpg" alt="Kazakh landscape with a river">
+</figure>
 
-Finally, we made it!! The relief is written all over our faces. We're both completely soaked, but by now the sun is warming us up. We cook breakfast and oil the chains on our bikes.
+Our feet are already numb from the freezing water, and we still have Vanessa's bike to get across. So back we go. Without a bike to give you at least a bit of stability, crossing on foot is noticeably harder. We don't waste much time thinking about it, grab the second bike and haul it through the current.
 
-Time to keep going, except two minutes later we already have to cross another side stream. For the next two hours, we ride down the valley and have to cross at least 20 small rivers.
+Made it!! The relief is written all over our faces. We're both completely soaked, but at least the sun is starting to warm us up. We make breakfast and oil the bike chains.
 
-Luckily, we don't have to cross the main river again as we had feared. Instead, we stay on the left side until, further down the valley, the roads gradually start getting better. The only thing really bothering me is the extremely fine dust. The bikes sound as if there's a handful of sand in every bearing. Vanessa is a little more relaxed about it and simply ignores the noise.
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/16.jpg" alt="Cyclist crossing a river in Kazakhstan">
+</figure>
 
-Eventually, we reach the village of Subar, where we're once again delighted by the minimarkets.
+And off we go again — only to hit another side stream two minutes later. For the next two hours, we ride down the valley and cross at least 20 smaller streams.
 
-A few people want to take photos with us and invite us into their homes. But our plan is to continue to the next big city and sleep in a hotel for the first time. It's another 90 km to Taldykorgan.
+Luckily, we don't have to cross the main river again as we'd feared. We stay on its left side, and the farther down the valley we get, the better the roads become. The only thing driving me mad is the incredibly fine dust. The bikes sound as though someone has poured a handful of sand into every bearing. Vanessa is much more relaxed about it and simply ignores the noise.
 
-The landscape is beautiful, and after three days of gravel and river crossings, the asphalt road feels amazing. We ride up to a pass, from where it's almost all downhill. We meet a Kazakh youth cycling team, who even have a support vehicle with them.
+Eventually, we reach the village of Subar, where we're once again delighted to find a minimarket.
 
-Shortly before Taldykorgan, we take another break and discover our favourite ice cream of the trip: Bomba ice cream. The last few kilometres fly by, even though we're back in smelly city traffic. The first hotel is full, but luckily the second one still has a room for us.
+A few people want to take photos with us and invite us into their homes. But our plan is to keep going to the next big town and sleep in a hotel for the first time. Taldykorgan is still another 90 km away.
 
-Once again completely exhausted, we enjoy the shower and the bed. The next day is a rest day. We want to explore the city and go out for something to eat. We also have to plan the next section again, and this time we want to pay particular attention to any possible river crossings.
+<figure class="article-photo">
+    <img src="/images/articles/kasachstan_part_2/18.jpg" alt="">
+</figure>
 
-We definitely don't want to repeat this situation. What we don't realise yet is that something completely different is about to become a challenge that will stay with us all the way to Mongolia.
+The landscape is beautiful, and after three days of gravel tracks and river crossings, riding on smooth asphalt feels like a luxury. We climb up to a pass, and from there it's almost all downhill. Along the way, we meet a Kazakh youth cycling team, complete with a support car.
+
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/kasachstan_part_2/17.jpg" alt="Two Kazakh children riding a horse for transport">
+</figure>
+
+Just before Taldykorgan, we stop one more time and discover our favourite ice cream of the entire trip: Bomba. The final kilometres fly by, even though we're back in smelly city traffic. The first hotel is full, but luckily the second has a room for us.
+
+Completely exhausted, we enjoy the shower and the bed. Tomorrow is a rest day. We want to explore the city and go out for some food. We also need to plan the next section, and this time we'll be paying very close attention to any possible river crossings.
+
+We definitely don't want a repeat of this. What we don't know yet is that something completely different is about to become our next challenge, one that will follow us all the way to Mongolia.
