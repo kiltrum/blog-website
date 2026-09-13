@@ -33,7 +33,7 @@
     {% set hero_image = article.metadata.get('HeroImage') or article.metadata.get('heroimage') %}
     {% if hero_image %}
     <div class="article-hero container">
-        <img src="{{ hero_image }}" alt="{{ article.title }}">
+        <img src="{{ hero_image }}" alt="{{ article.title }}" fetchpriority="high">
     </div>
     {% endif %}
 

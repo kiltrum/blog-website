@@ -63,6 +63,10 @@
         {% set seo_image = '/images/hero/panorama.jpg' %}
     {% endif %}
 
+    {% if is_article_page and seo_image %}
+        <link rel="preload" as="image" href="{{ seo_image }}" fetchpriority="high">
+    {% endif %}
+
     {% if is_article_page %}
         {% set seo_description = article.summary|default('', true)|striptags %}
     {% elif is_page %}
