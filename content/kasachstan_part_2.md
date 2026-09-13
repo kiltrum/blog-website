@@ -190,7 +190,7 @@ Es wollen noch ein paar Leute mit uns ein Foto machen und uns zu sich nach Hause
 
 
 <figure class="article-photo">
-        <img src="/images/articles/kasachstan_part_2/18.jpg" alt="">
+        <img src="/images/articles/kasachstan_part_2/18.jpg" alt="Selfie mit einer Frau, die wir in Kasachstan getroffen haben">
 </figure>
 
 Die Landschaft ist wunderschön und die Asphaltstraße nach den drei Tagen Schotter und Flussquerungen ist eine Wohltat. Wir fahren bis auf einen Pass, von dem es dann fast nur noch bergab geht. Wir treffen ein kasachisches Jugend-Radteam, das sogar mit Begleitauto unterwegs ist.

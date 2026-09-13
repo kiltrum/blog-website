@@ -108,7 +108,7 @@ Lang: en
 
     <div class="about-why__images">
         <img src="/images/about/error-01.jpg" alt="A moment when things didn't go according to plan">
-        <img src="/images/about/error-02.jpg" alt="Changing plans along the way">
+        <img src="/images/about/error-02.jpg" alt="Repairing a broken bike during a tour">
     </div>
 
 </section>

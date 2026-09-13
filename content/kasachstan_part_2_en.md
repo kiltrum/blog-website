@@ -70,7 +70,7 @@ We're still completely wrecked from yesterday's 130 km. We ride the few kilometr
 Even though we're still exhausted, we decide to set off that same day. It's only 25 km to the next river, which looks heavily wooded on the satellite images. So we head out into the midday heat, fill our bottles one last time and ride back into the steppe.
 
 <figure class="article-photo article-photo-wide">
-    <img src="/images/articles/kasachstan_part_2/4.jpg" alt="Our tent in a Kazakh oasis">
+    <img src="/images/articles/kasachstan_part_2/4.jpg" alt="Our tent in a Kazakh mountain oasis">
 </figure>
 
 Since we'd only spotted the track on satellite images, we leave the road and suddenly find ourselves in a dried-up riverbed. After a bit of searching, we find the track after all and, to our surprise, it's actually in decent condition. The terrain gets hillier and the riding gets properly hard.
@@ -122,7 +122,7 @@ We watch the shepherds living in their yurts up on the plateau and enjoy being b
 The forecast is unsettled again. We're hoping the tracks will be good enough to let us move twice as fast as yesterday. At around 10 km/h, we make our way across the plateau, passing yurts and scattered herds. Before starting the descent, we stop at a large monument that apparently commemorates a battle from long ago.
 
 <div class="photo-grid photo-grid-2">
-    <img src="/images/articles/kasachstan_part_2/11.jpg" alt="Horse skull bones">
+    <img src="/images/articles/kasachstan_part_2/11.jpg" alt="Horse skull on the Kazakh plateau">
     <img src="/images/articles/kasachstan_part_2/9.jpg" alt="Marmot on a Kazakh plateau">
 </div>
 
@@ -143,7 +143,7 @@ Once the rain eases, one thing becomes obvious: the river has risen so much that
 After plenty of back and forth, we decide there's only one sensible option: camp here and try again first thing in the morning. Hopefully, by then most of the rainwater will have drained off the mountain, while the snow higher up will still be frozen.
 
 <figure class="article-photo article-photo-wide">
-    <img src="/images/articles/kasachstan_part_2/14.jpg" alt="Kazakh landscape with a river">
+    <img src="/images/articles/kasachstan_part_2/14.jpg" alt="Swollen river in the Kazakh mountains">
 </figure>
 
 The alternative would be to push our bikes for 20 km along the hillside on our side of the river.
@@ -181,7 +181,7 @@ Eventually, we reach the village of Subar, where we're once again delighted to f
 A few people want to take photos with us and invite us into their homes. But our plan is to keep going to the next big town and sleep in a hotel for the first time. Taldykorgan is still another 90 km away.
 
 <figure class="article-photo">
-    <img src="/images/articles/kasachstan_part_2/18.jpg" alt="">
+    <img src="/images/articles/kasachstan_part_2/18.jpg" alt="Selfie with a woman we met in Kazakhstan">
 </figure>
 
 The landscape is beautiful, and after three days of gravel tracks and river crossings, riding on smooth asphalt feels like a luxury. We climb up to a pass, and from there it's almost all downhill. Along the way, we meet a Kazakh youth cycling team, complete with a support car.

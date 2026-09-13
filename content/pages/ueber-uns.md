@@ -108,7 +108,7 @@ Lang: de
 
     <div class="about-why__images">
         <img src="/images/about/error-01.jpg" alt="Ein Moment, in dem nicht alles nach Plan lief">
-        <img src="/images/about/error-02.jpg" alt="Planänderung unterwegs">
+        <img src="/images/about/error-02.jpg" alt="Reparatur eines kaputten Fahrrads während einer Tour">
     </div>
 
 </section>
