@@ -17,12 +17,10 @@ STATIC_PATHS = [
     'images',
     'gpx',
     'extra/robots.txt',
-    'extra/favicon.png',
 ]
 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/favicon.png': {'path': 'favicon.png'},
 }
 
 THEME = 'theme'
@@ -124,7 +122,10 @@ UI_TRANSLATIONS = {
         'location': 'Ort',
 
         'language_de': 'Deutsch',
-        'language_en': 'English'
+        'language_en': 'English',
+
+        'previous_tour': 'Vorherige Tour',
+        'next_tour': 'Nächste Tour',
     },
 
     'en': {
@@ -196,7 +197,11 @@ UI_TRANSLATIONS = {
         'location': 'Location',
 
         'language_de': 'Deutsch',
-        'language_en': 'English'
+        'language_en': 'English',
+
+        'previous_tour': 'Previous Tour',
+        'next_tour': 'Next Tour',
+
     }
 }
 

@@ -8,4 +8,6 @@ Duration: 18 Stunden
 Location: Steiner Alpen, Slowenien
 HeroImage: /images/articles/steiner_alpen_durchquerung/hero.jpg
 GPX: /gpx/steiner_alpen_durchquerung.gpx
-Lang: de
+Lang: en
+
+# coming soon

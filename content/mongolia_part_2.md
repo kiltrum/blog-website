@@ -1,4 +1,4 @@
-Title: Bikepacking Mongolia Part 2
+Title: Mongolia Part 2
 Summary: 
 Date: 2026-06-15
 Author: Kilian und Vanessa

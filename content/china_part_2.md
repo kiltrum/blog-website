@@ -1,4 +1,4 @@
-Title: Bikepacking China Part 2
+Title: China Part 2
 Summary: Die letzten zwei Tage in China und er erste in der Mongolei.
 Date: 2026-05-29
 Author: Kilian und Vanessa

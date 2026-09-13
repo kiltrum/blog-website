@@ -86,13 +86,13 @@
     <nav class="article-navigation container" aria-label="Tour navigation">
         {% if current_index.value > 0 %}
         <a class="article-navigation__item article-navigation__item--previous" href="{{ SITEURL }}/{{ category_articles[current_index.value - 1].url }}">
-            <span>← Vorherige Tour</span>
+            <span>← {{ UI_TRANSLATIONS[current_lang]['previous_tour'] }}</span>
             <strong>{{ category_articles[current_index.value - 1].title }}</strong>
         </a>
         {% endif %}
         {% if current_index.value < category_articles|length - 1 %}
         <a class="article-navigation__item article-navigation__item--next" href="{{ SITEURL }}/{{ category_articles[current_index.value + 1].url }}">
-            <span>Nächste Tour →</span>
+            <span>{{ UI_TRANSLATIONS[current_lang]['next_tour'] }} →</span>
             <strong>{{ category_articles[current_index.value + 1].title }}</strong>
         </a>
         {% endif %}

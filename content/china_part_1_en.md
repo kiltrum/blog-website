@@ -1,4 +1,4 @@
-Title: Bikepacking China Part 1
+Title: China Part 1
 Summary: 
 Date: 2026-05-11
 Author: Kilian und Vanessa

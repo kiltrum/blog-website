@@ -1,4 +1,4 @@
-Title: Bikepacking Mongolia Part 1
+Title: Mongolia Part 1
 Summary: 
 Date: 2026-06-03
 Author: Kilian und Vanessa
@@ -10,3 +10,5 @@ Location: Mongolia
 HeroImage: /images/articles/mongolia_part_1/hero.jpg
 GPX: /gpx/mongolia_part_1.gpx
 Lang: de
+
+## coming soon
