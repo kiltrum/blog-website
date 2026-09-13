@@ -13,10 +13,16 @@ DEFAULT_LANG = 'de'
 
 DEFAULT_PAGINATION = 10
 
-STATIC_PATHS = ['images', 'gpx', 'extra/robots.txt']
+STATIC_PATHS = [
+    'images',
+    'gpx',
+    'extra/robots.txt',
+    'extra/favicon.png',
+]
 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.png': {'path': 'favicon.png'},
 }
 
 THEME = 'theme'
