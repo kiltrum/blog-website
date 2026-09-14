@@ -5,6 +5,11 @@ Author: Kilian
 Category: Bergsteigen
 TourType: Skitour
 Slug: wildspitze-vom-kaunertal
+Distance: 40.9 km
+ElevationGain: 3091 m
+ElevationLoss: 3273 m
+HighestPoint: 3752 m
+MinimumElevation: 1736 m
 Duration: 2 Tage
 Location: Tirol, Österreich
 HeroImage: /images/articles/wildspitze_vom_kaunertal/hero.jpg

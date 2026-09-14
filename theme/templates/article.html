@@ -39,22 +39,59 @@
 
     {% set gpx_url = article.metadata.get('GPX') or article.metadata.get('gpx') %}
     {% set distance = article.metadata.get('Distance') or article.metadata.get('distance') %}
-    {% set elevation = article.metadata.get('ElevationGain') or article.metadata.get('elevationgain') %}
+    {% set elevation_gain = article.metadata.get('ElevationGain') or article.metadata.get('elevationgain') %}
+    {% set elevation_loss = article.metadata.get('ElevationLoss') or article.metadata.get('elevationloss') %}
+    {% set highest_point = article.metadata.get('HighestPoint') or article.metadata.get('highestpoint') %}
+    {% set minimum_elevation = article.metadata.get('MinimumElevation') or article.metadata.get('minimumelevation') %}
     {% set duration = article.metadata.get('Duration') or article.metadata.get('duration') %}
     {% set difficulty = article.metadata.get('Difficulty') or article.metadata.get('difficulty') %}
     {% set location = article.metadata.get('Location') or article.metadata.get('location') %}
     {% set tour_type = article.metadata.get('TourType') or article.metadata.get('tourtype') %}
-
-    {% if gpx_url or distance or elevation or duration or difficulty or location or tour_type %}
+    {% if distance or elevation_gain or elevation_loss or highest_point or duration or difficulty or location %}
     <section class="article-details container" aria-label="Tour details">
         <div class="article-details__grid">
-            {% if gpx_url or distance %}<div data-gpx-stat-container="distance"><span>{{ ui.distance }}</span><strong data-gpx-stat="distance">{{ distance }}</strong></div>{% endif %}
-            {% if gpx_url or elevation %}<div data-gpx-stat-container="elevationGain"><span>{{ ui.ascent }}</span><strong data-gpx-stat="elevationGain">{{ elevation }}</strong></div>{% endif %}
-            {% if gpx_url %}<div data-gpx-stat-container="elevationLoss" hidden><span>{{ ui.descent }}</span><strong data-gpx-stat="elevationLoss"></strong></div>{% endif %}
-            {% if gpx_url %}<div data-gpx-stat-container="maximumElevation" hidden><span>{{ ui.highest_point }}</span><strong data-gpx-stat="maximumElevation"></strong></div>{% endif %}
-            {% if duration %}<div><span>{{ ui.duration }}</span><strong>{{ duration }}</strong></div>{% endif %}
-            {% if difficulty %}<div><span>{{ ui.difficulty }}</span><strong>{{ difficulty }}</strong></div>{% endif %}
-            {% if location %}<div><span>{{ ui.location }}</span><strong>{{ location }}</strong></div>{% endif %}
+            {% if distance %}
+            <div>
+                <span>{{ ui.distance }}</span>
+                <strong>{{ distance }}</strong>
+            </div>
+            {% endif %}
+            {% if elevation_gain %}
+            <div>
+                <span>{{ ui.ascent }}</span>
+                <strong>{{ elevation_gain }}</strong>
+            </div>
+            {% endif %}
+            {% if elevation_loss %}
+            <div>
+                <span>{{ ui.descent }}</span>
+                <strong>{{ elevation_loss }}</strong>
+            </div>
+            {% endif %}
+            {% if highest_point %}
+            <div>
+                <span>{{ ui.highest_point }}</span>
+                <strong>{{ highest_point }}</strong>
+            </div>
+            {% endif %}
+            {% if duration %}
+            <div>
+                <span>{{ ui.duration }}</span>
+                <strong>{{ duration }}</strong>
+            </div>
+            {% endif %}
+            {% if difficulty %}
+            <div>
+                <span>{{ ui.difficulty }}</span>
+                <strong>{{ difficulty }}</strong>
+            </div>
+            {% endif %}
+            {% if location %}
+            <div>
+                <span>{{ ui.location }}</span>
+                <strong>{{ location }}</strong>
+            </div>
+            {% endif %}
         </div>
     </section>
     {% endif %}

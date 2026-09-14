@@ -228,13 +228,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const profileContainer = container.parentElement.querySelector('[data-gpx-profile]');
                 const elevationData = buildElevationData(points);
-                const trackStats = calculateTrackStats(points);
 
                 if (profileContainer && elevationData.length > 1) {
                     renderElevationProfile(profileContainer, elevationData, map);
                 }
 
-                updateTourStatistics(trackStats);
             })
             .catch(function () {
                 const error = document.createElement('p');
@@ -971,122 +969,3 @@ function renderElevationProfile(container, data, map) {
     svg.addEventListener('touchend', hideHoverState, { passive: true });
 }
 
-function calculateTrackStats(points) {
-    const trackPoints = points.map(function (point) {
-        const elevationElement = point.querySelector('ele');
-
-        return {
-            latitude: parseFloat(point.getAttribute('lat')),
-            longitude: parseFloat(point.getAttribute('lon')),
-            elevation: elevationElement ? parseFloat(elevationElement.textContent) : NaN
-        };
-    }).filter(function (point) {
-        return !Number.isNaN(point.latitude) && !Number.isNaN(point.longitude);
-    });
-
-    if (trackPoints.length < 2) {
-        return null;
-    }
-
-    let totalDistance = 0;
-    let elevationGain = 0;
-    let elevationLoss = 0;
-    const elevations = [];
-    const elevationSamples = [];
-
-    trackPoints.forEach(function (point, index) {
-        if (!Number.isNaN(point.elevation)) {
-            elevations.push(point.elevation);
-            elevationSamples.push(point.elevation);
-        }
-
-        if (index === 0) {
-            return;
-        }
-
-        const previousPoint = trackPoints[index - 1];
-        const segmentDistance = distanceBetweenPoints(
-            previousPoint.latitude,
-            previousPoint.longitude,
-            point.latitude,
-            point.longitude
-        );
-        totalDistance += segmentDistance;
-
-    });
-
-    const smoothedElevations = smoothElevations(elevationSamples, 5);
-
-    // Sum the changes in the smoothed series so gradual climbs remain visible
-    // without allowing single-point GPS spikes to inflate ascent or descent.
-    smoothedElevations.forEach(function (elevation, index) {
-        if (index === 0) {
-            return;
-        }
-
-        const elevationChange = elevation - smoothedElevations[index - 1];
-
-        if (elevationChange > 0) {
-            elevationGain += elevationChange;
-        } else {
-            elevationLoss += Math.abs(elevationChange);
-        }
-    });
-
-    const statistics = {
-        distance: totalDistance,
-        elevationGain: elevationGain,
-        elevationLoss: elevationLoss,
-        minimumElevation: elevations.length ? Math.min(...elevations) : null,
-        maximumElevation: elevations.length ? Math.max(...elevations) : null
-    };
-
-    return statistics;
-}
-
-function smoothElevations(elevations, windowSize) {
-    return elevations.map(function (_, index) {
-        const start = Math.max(0, index - Math.floor(windowSize / 2));
-        const end = Math.min(elevations.length, index + Math.ceil(windowSize / 2));
-        const window = elevations.slice(start, end);
-
-        return window.reduce(function (sum, elevation) {
-            return sum + elevation;
-        }, 0) / window.length;
-    });
-}
-
-function updateTourStatistics(statistics) {
-    if (!statistics) {
-        document.querySelectorAll('[data-gpx-stat-container]').forEach(function (container) {
-            const valueElement = container.querySelector('[data-gpx-stat]');
-
-            if (valueElement && !valueElement.textContent.trim()) {
-                container.hidden = true;
-            }
-        });
-        return;
-    }
-
-    const values = {
-        distance: statistics.distance.toFixed(1) + ' km',
-        elevationGain: Math.round(statistics.elevationGain) + ' m',
-        elevationLoss: Math.round(statistics.elevationLoss) + ' m',
-        minimumElevation: statistics.minimumElevation === null ? null : Math.round(statistics.minimumElevation) + ' m',
-        maximumElevation: statistics.maximumElevation === null ? null : Math.round(statistics.maximumElevation) + ' m'
-    };
-
-    Object.keys(values).forEach(function (name) {
-        if (values[name] === null) {
-            return;
-        }
-
-        const valueElement = document.querySelector('[data-gpx-stat="' + name + '"]');
-        const container = document.querySelector('[data-gpx-stat-container="' + name + '"]');
-
-        if (valueElement && container) {
-            valueElement.textContent = values[name];
-            container.hidden = false;
-        }
-    });
-}

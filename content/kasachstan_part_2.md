@@ -6,6 +6,11 @@ Category: Bikepacking
 TourType: Gravel
 Slug: kasachstan-part-2
 Duration: 6 Tage
+Distance: 372.4 km
+ElevationGain: 4556 m
+ElevationLoss: 5018 m
+HighestPoint: 2137 m
+MinimumElevation: 497 m
 Location: Koktal, Taldykorgan, Kasachstan
 HeroImage: /images/articles/kasachstan_part_2/hero.jpg
 GPX: /gpx/kasachstan_part_2.gpx

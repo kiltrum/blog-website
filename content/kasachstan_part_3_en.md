@@ -5,6 +5,11 @@ Author: Kilian und Vanessa
 Category: Bikepacking
 TourType: Gravel
 Slug: kasachstan-part-3
+Distance: 633.5 km
+ElevationGain: 7707 m
+ElevationLoss: 7894 m
+HighestPoint: 1465 m
+MinimumElevation: 347 m
 Duration: 9 days
 Location: East Kazakhstan
 HeroImage: /images/articles/kasachstan_part_3/hero.jpg

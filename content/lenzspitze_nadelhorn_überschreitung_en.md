@@ -5,6 +5,11 @@ Author: Kilian
 Category: Bergsteigen
 TourType: Hochtour
 Slug: lenzspitze-nadelhorn
+Distance: 12.2 km
+ElevationGain: 1418 m
+ElevationLoss: 2901 m
+HighestPoint: 4330 m
+MinimumElevation: 1824 m
 Difficulty: AD+
 Duration: 11 h
 Location: Valais, Switzerland

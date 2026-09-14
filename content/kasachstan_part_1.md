@@ -5,6 +5,11 @@ Author: Kilian und Vanessa
 Category: Bikepacking
 TourType: Gravel
 Slug: kasachstan-part-1
+Distance: 241.8 km
+ElevationGain: 4433 m
+ElevationLoss: 4140 m
+HighestPoint: 2579 m
+MinimumElevation: 732 m
 Duration: 4 Tage
 Location: Almaty, Kasachstan
 HeroImage: /images/articles/kasachstan_part_1/hero.jpg

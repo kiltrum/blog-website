@@ -30,6 +30,13 @@ Originale gpx datei in gpx ordner laden und dann folgendes ausführen:
 cd ~/Dokumente/TrailError/blog-website
 python scripts/simplify_gpx.py
 ```
+## gpx daten berechnen
+
+```bash
+cd ~/Dokumente/TrailError/blog-website
+python scripts/calculate_gpx_stats.py content/gpx/kasachstan_part_1.gpx
+```
+
 
 ## Bilder verkleinern
 

@@ -5,6 +5,11 @@ Author: Kilian
 Category: Bergsteigen
 TourType: Hochtour
 Slug: zinalrothorn-rothorngrat
+Distance: 16.6 km
+ElevationGain: 1423 m
+ElevationLoss: 2945 m
+HighestPoint: 4038 m
+MinimumElevation: 1492 m
 Difficulty: AD+ / 4a
 Duration: 15:30 h
 Location: Valais, Switzerland

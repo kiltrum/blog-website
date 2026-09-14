@@ -4,6 +4,11 @@ Date: 2025-09-15
 Author: Vanessa 
 Category: Berglaufen
 Slug: steiner-alpen-durchquerung
+Distance: 38.7 km
+ElevationGain: 4796 m
+ElevationLoss: 4750 m
+HighestPoint: 2561 m
+MinimumElevation: 840 m
 Duration: 18 Stunden
 Location: Steiner Alpen, Slowenien
 HeroImage: /images/articles/steiner_alpen_durchquerung/hero.jpg

@@ -5,6 +5,11 @@ Author: Kilian und Vanessa
 Category: Bikepacking
 TourType: Gravel
 Slug: mongolia-part-2
+Distance: 273.8 km
+ElevationGain: 3894 m
+ElevationLoss: 3894 m
+HighestPoint: 2084 m
+MinimumElevation: 1669 m
 Duration: 5 Tage
 Location: Orkhon Valley, Mongolia
 HeroImage: /images/articles/mongolia_part_2/hero.jpg
