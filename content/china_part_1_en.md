@@ -132,13 +132,15 @@ May 24, my 24th birthday. What I want most for my birthday: a bike shop that can
 
 We spend the rest of the day in the city at the bazaar and finish the evening with beer, skewers and dumplings.
 
-<figure class="article-photo">
-    <img src="/images/articles/china_part_1/12.jpg" alt="The bazaar in Urumqi, China">
-</figure>
 
-<figure class="article-photo">
+
+<figure class="photo-grid-group">
+<div class="photo-grid photo-grid-2">
+
+    <img src="/images/articles/china_part_1/12.jpg" alt="The bazaar in Urumqi, China">
     <img src="/images/articles/china_part_1/13.jpg" alt="Eating skewers and drinking beer at the bazaar in Urumqi, China">
-</figure>
+
+</div>
 
 Over the next few days, we plan the rest of our journey and decide that we don't want to cycle another 500 km through the desert, so we'll cover that section by train. We also finally manage to replace Vanessa's short-sleeved shirt and find a cleaning kit for our camera. We almost even manage to get a new water filter after ours hasn't been working properly since Kazakhstan. Everything is running smoothly again ...
 
