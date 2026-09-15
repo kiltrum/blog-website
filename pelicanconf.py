@@ -36,6 +36,9 @@ PAGE_SAVE_AS = '{slug}/index.html'
 CATEGORY_URL = 'category/{slug}/'
 CATEGORY_SAVE_AS = 'category/{slug}/index.html'
 
+DRAFT_URL = 'drafts/{slug}/'
+DRAFT_SAVE_AS = 'drafts/{slug}/index.html'
+
 
 # Multilingual support via i18n_subsites plugin
 PLUGINS = [
