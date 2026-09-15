@@ -15,5 +15,5 @@ Location: Teykeshken, China
 HeroImage: /images/articles/china_part_2/hero.jpg
 GPX: /gpx/china_part_2.gpx
 Lang: en
-
+Status: draft
 ## coming soon

@@ -15,5 +15,5 @@ Location: Orkhon Valley, Mongolia
 HeroImage: /images/articles/mongolia_part_2/hero.jpg
 GPX: /gpx/mongolia_part_2_figure_8.gpx
 Lang: en
-
+Status: draft
 ## coming soon
