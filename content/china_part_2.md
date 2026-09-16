@@ -122,7 +122,7 @@ Ohne Probleme können wir Benzin für den Kocher bei der Tankstelle kaufen. Auch
 
 Wir suchen uns also einen Schlafplatz auf der „sicheren“ Seite des Flusses und genießen es, endlich wieder ohne Probleme im Zelt schlafen zu können. Für den nächsten Tag steht auf dem Plan, die restlichen Lebensmittel für die Bergetappe einzukaufen und noch etwas Geld abzuheben. Geld können wir dort offenbar erst wieder abheben, wenn andere zuvor etwas eingezahlt haben.
 
-## Die Mongolei macht es uns nicht so leicht wie erhofft
+## Die Mongolei macht es uns nicht so leicht wie erhofft...
 
 In der Früh kommt ein Hirte vorbei, der uns gleich auf sein Pferd setzt, damit wir ein Foto machen können. Es ist unser erster Morgen in der Mongolei und wir haben schon auf einem Pferd gesessen, so haben wir uns das vorgestellt.
 
@@ -131,4 +131,11 @@ In der Früh kommt ein Hirte vorbei, der uns gleich auf sein Pferd setzt, damit 
              loading="lazy">
 </figure>
 
-Nachdem wir das restliche Essen gekauft haben, warten wir eine Stunde vor dem Bankomaten darauf, dass Leute mit einem großen Stapel Geld ankommen und diesen einzahlen, damit wir das Geld gleich darauf abheben können. Nachdem alles erledigt ist, machen wir uns auf in die Berge. Kurz nachdem wir uns von Bulgan auf einer Schotterstraße Richtung Altai-Gebirge aufgemacht haben, stehen dort wieder zwei Autos. Es wirkt so, als ob die Dörfer in den Bergen auch noch in Quarantäne wären. Wir werden gestoppt. Da niemand Englisch spricht, wird jemand angerufen, der für uns übersetzt, und plötzlich ist alles klar. Wir befinden uns in Quarantäne! WTF! Laut dem Typen am Telefon ist Bulgan für die nächsten 30 Tage in Quarantäne, wegen des Ausbruchs einer Tierkrankheit, die auch auf Menschen übertragbar sein soll. Er meint, sie könnten uns ein leer stehendes Haus suchen, in dem wir die Quarantäne aussitzen könnten. Wir bedanken uns für die Info, drehen um und fahren zurück in das Dorf. Eins ist für uns klar, wir müssen hier so schnell als möglich weg und tun das, was man als Erstes in so einer Situation macht. Wir rufen unsere Mamas in Österreich an …
+Nachdem wir das restliche Essen gekauft haben, warten wir eine Stunde vor dem Bankomaten darauf, dass Leute mit einem großen Stapel Geld ankommen und diesen einzahlen, damit wir das Geld gleich darauf abheben können.
+
+<figure class="article-photo article-photo-wide">
+    <img src="/images/articles/china\_part\_2/15.jpg" alt="geld abheben ind der Mongolei"
+         loading="lazy">
+</figure>
+
+ Nachdem alles erledigt ist, machen wir uns auf in die Berge. Kurz nachdem wir uns von Bulgan auf einer Schotterstraße Richtung Altai-Gebirge aufgemacht haben, stehen dort wieder zwei Autos. Es wirkt so, als ob die Dörfer in den Bergen auch noch in Quarantäne wären. Wir werden gestoppt. Da niemand Englisch spricht, wird jemand angerufen, der für uns übersetzt, und plötzlich ist alles klar. Wir befinden uns in Quarantäne! WTF! Laut dem Typen am Telefon ist Bulgan für die nächsten 30 Tage in Quarantäne, wegen des Ausbruchs einer Tierkrankheit, die auch auf Menschen übertragbar sein soll. Er meint, sie könnten uns ein leer stehendes Haus suchen, in dem wir die Quarantäne aussitzen könnten. Wir bedanken uns für die Info, drehen um und fahren zurück in das Dorf. Eins ist für uns klar, wir müssen hier so schnell als möglich weg und tun das, was man als Erstes in so einer Situation macht. Wir rufen unsere Mamas in Österreich an …
