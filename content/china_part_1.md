@@ -151,6 +151,8 @@ Den restlichen Tag verbringen wir in der Stadt am Bazar und lassen den Abend mit
     <img src="/images/articles/china_part_1/13.jpg" alt="Wir essen Spieße und trinken Bier am Bazar in Urumqi, China">
 
 </div>
+</figure>
+
 
 In den nächsten Tagen planen wir unsere weitere Reise und entscheiden uns, dass wir die nächsten 500 km nicht mehr durch die Wüste fahren wollen und wir diesen Abschnitt mit dem Zug überbrücken. Außerdem schaffen wir es endlich, Vanessas kurzes Leibchen zu ersetzen und ein Reinigungsset für unsere Kamera zu organisieren. Fast hätten wir auch einen neuen Wasserfilter bekommen, nachdem unserer seit Kasachstan nicht mehr richtig funktioniert. Alles läuft wieder wie am Schnürchen ...
 

@@ -133,7 +133,6 @@ May 24, my 24th birthday. What I want most for my birthday: a bike shop that can
 We spend the rest of the day in the city at the bazaar and finish the evening with beer, skewers and dumplings.
 
 
-
 <figure class="photo-grid-group">
 <div class="photo-grid photo-grid-2">
 
@@ -141,23 +140,25 @@ We spend the rest of the day in the city at the bazaar and finish the evening wi
     <img src="/images/articles/china_part_1/13.jpg" alt="Eating skewers and drinking beer at the bazaar in Urumqi, China">
 
 </div>
+</figure>
 
-Over the next few days, we plan the rest of our journey and decide that we don't want to cycle another 500 km through the desert, so we'll cover that section by train. We also finally manage to replace Vanessa's short-sleeved shirt and find a cleaning kit for our camera. We almost even manage to get a new water filter after ours hasn't been working properly since Kazakhstan. Everything is running smoothly again ...
+Over the next few days, we plan the rest of our journey and decide that we don't want to cycle another 500 km through the desert, so we'll cover that section by train. We also finally manage to replace Vanessa's short-sleeved shirt and find a cleaning kit for our camera. We almost even manage to get a new water filter after ours hasn't been working properly since Kazakhstan. Everything is running smoothly again.
+
 
 ## Tips and Tricks for China
 
-* VPN: We bought a Chinese VPN that was able to bypass the Great Firewall and worked without any problems. You can also regularly get recommendations in bikepacking WhatsApp groups.
+- VPN: We bought a Chinese VPN that was able to bypass the Great Firewall and worked without any problems. You can also regularly get recommendations in bikepacking WhatsApp groups.
 
-* SIM card: Our Chinese SIM card worked well in combination with the VPN. We also had an eSIM that was supposed to bypass the firewall, but it didn't always work reliably.
+- SIM card: Our Chinese SIM card worked well in combination with the VPN. We also had an eSIM that was supposed to bypass the firewall, but it didn't always work reliably.
 
-* Payments: We could pay practically everywhere with Alipay and WeChat – from street vendors to hotels. We didn't need any cash.
+- Payments: We could pay practically everywhere with Alipay and WeChat – from street vendors to hotels. We didn't need any cash.
 
-* Hotels: We always booked through Trip.com. It worked without any problems and also saved us foreign currency fees.
+- Hotels: We always booked through Trip.com. It worked without any problems and also saved us foreign currency fees.
 
-* Train tickets: We also booked these through Trip.com. You don't get a traditional ticket; the booking is linked to your passport number.
+- Train tickets: We also booked these through Trip.com. You don't get a traditional ticket; the booking is linked to your passport number.
 
-* Navigation: Amap is the Chinese equivalent of Google Maps and was very useful for us to figure out where tourists are "supposed" to go and where they aren't.
+- Navigation: Amap is the Chinese equivalent of Google Maps and was very useful for us to figure out where tourists are "supposed" to go and where they aren't.
 
-* Power sockets: In most hotels, we didn't need an adapter.
+- Power sockets: In most hotels, we didn't need an adapter.
 
 
