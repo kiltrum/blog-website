@@ -15,7 +15,6 @@ Location: Fuyun, China – Bulgan, Mongolia
 HeroImage: /images/articles/china_part_2/hero.jpg
 GPX: /gpx/china_part_2.gpx
 Lang: en
-Status: draft
 
 ## Taking the train in China: an experience in itself
 
@@ -117,6 +116,9 @@ We have no trouble buying petrol for the stove at the filling station. Getting a
 </figure>
 
 So we find somewhere to sleep on the “safe” side of the river and enjoy finally being able to camp without any hassle again. Tomorrow's plan is to buy the rest of our food for the mountain section and withdraw some more cash. Apparently, we can only take money out once someone else has deposited some.
+
+
+##  First da in Mongolia with a twist...
 
 In the morning, a herder comes by and promptly puts us on his horse so we can take a photo. It's our first morning in Mongolia, and we've already been on a horse. Just how we'd imagined it.
 
