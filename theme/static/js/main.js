@@ -612,18 +612,6 @@ function initializeAllToursMap() {
         });
     }
 
-    const resetControl = L.control({ position: 'topright' });
-    resetControl.onAdd = function () {
-        const element = L.DomUtil.create('button', 'all-tours__reset-control');
-        element.type = 'button';
-        element.textContent = translateUi('all_tours', 'Alle Touren');
-        element.title = translateUi('all_tours_show', 'Alle Touren anzeigen');
-        L.DomEvent.disableClickPropagation(element);
-        L.DomEvent.on(element, 'click', showOverview);
-        return element;
-    };
-    resetControl.addTo(map);
-
     tours.forEach(function (tour) {
         fetch(tour.gpx)
             .then(function (response) {
