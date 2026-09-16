@@ -134,7 +134,7 @@ In der Früh kommt ein Hirte vorbei, der uns gleich auf sein Pferd setzt, damit 
 Nachdem wir das restliche Essen gekauft haben, warten wir eine Stunde vor dem Bankomaten darauf, dass Leute mit einem großen Stapel Geld ankommen und diesen einzahlen, damit wir das Geld gleich darauf abheben können.
 
 <figure class="article-photo article-photo-wide">
-    <img src="/images/articles/china\_part\_2/15.jpg" alt="geld abheben ind der Mongolei"
+    <img src="/images/articles/china_part_2/15.jpg" alt="geld abheben ind der Mongolei"
          loading="lazy">
 </figure>
 
