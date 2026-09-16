@@ -1098,6 +1098,7 @@ a {
     margin: 2rem 0;
 }
 
+
 .article-body .photo-grid-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1715,6 +1716,24 @@ a {
 
     .article-body {
         font-size: 1.05rem;
+    }
+
+    .article-body figure.article-photo,
+    .article-body figure.article-photo-wide {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        transform: none;
+    }
+
+    .article-body figure.article-photo img,
+    .article-body figure.article-photo-wide img,
+    .article-body img.article-photo,
+    .article-body img.article-photo-wide {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        transform: none;
     }
 
     .article-body .photo-grid-2 {
