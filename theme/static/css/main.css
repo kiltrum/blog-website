@@ -1368,6 +1368,9 @@ a {
     .article-gpx__map .leaflet-bottom.leaflet-left {
     bottom: 28px;
     }
+    .site-brand-logo {
+    width: 190px;
+    }
 }
 
 .page-content {
