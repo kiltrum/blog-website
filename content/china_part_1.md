@@ -138,7 +138,7 @@ Die letzten 10 km fühlten sich an wie 100 km. Der nette Portier hilft uns, den 
 
 ## 5 Tage Urumqi
 
-24. Mai, mein 24. Geburtstag. Was ich mir zu meinem Geburtstag am meisten wünsche: eine Fahrradwerkstatt, die unsere Freiläufe reparieren kann. Wir haben schon vorher von einem Bikepacker eine Werkstatt empfohlen bekommen, die wir dann gleich am Vormittag aufsuchen. Mit der Übersetzer-App versuchen wir, unser Problem zu erklären, doch im Moment funktionieren die Freiläufe problemlos ... Als wir ihnen dann ein Video von Vanessas Fixie zeigen, verstehen sie das Problem und wir machen mit ihnen aus, dass sie beide Räder komplett servicieren und die Freiläufe reparieren.
+24\. Mai, mein 24. Geburtstag. Was ich mir zu meinem Geburtstag am meisten wünsche: eine Fahrradwerkstatt, die unsere Freiläufe reparieren kann. Wir haben schon vorher von einem Bikepacker eine Werkstatt empfohlen bekommen, die wir dann gleich am Vormittag aufsuchen. Mit der Übersetzer-App versuchen wir, unser Problem zu erklären, doch im Moment funktionieren die Freiläufe problemlos ... Als wir ihnen dann ein Video von Vanessas Fixie zeigen, verstehen sie das Problem und wir machen mit ihnen aus, dass sie beide Räder komplett servicieren und die Freiläufe reparieren.
 
 Den restlichen Tag verbringen wir in der Stadt am Bazar und lassen den Abend mit Bier, Spießen und Teigtaschen ausklingen.
 
@@ -154,7 +154,9 @@ Den restlichen Tag verbringen wir in der Stadt am Bazar und lassen den Abend mit
 
 In den nächsten Tagen planen wir unsere weitere Reise und entscheiden uns, dass wir die nächsten 500 km nicht mehr durch die Wüste fahren wollen und wir diesen Abschnitt mit dem Zug überbrücken. Außerdem schaffen wir es endlich, Vanessas kurzes Leibchen zu ersetzen und ein Reinigungsset für unsere Kamera zu organisieren. Fast hätten wir auch einen neuen Wasserfilter bekommen, nachdem unserer seit Kasachstan nicht mehr richtig funktioniert. Alles läuft wieder wie am Schnürchen ...
 
+
 ## Tipps und Tricks für China
+
 
 - VPN: Wir haben uns einen chinesischen VPN gekauft, der die Great Firewall umgehen konnte und problemlos funktioniert hat. Empfehlungen bekommt man auch immer wieder in Bikepacking-WhatsApp-Gruppen.
 
