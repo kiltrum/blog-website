@@ -78,7 +78,7 @@ Their mother makes a determined effort to keep all the village children peeking 
          loading="lazy">
 </figure>
 
-They follow us for a while, “well hidden” behind a truck, until we lose sight of them, or they lose sight of us. We find a nice spot by the river and pitch our tent. Just as we're about to go for a swim, the farmer turns up. He's less happy about us camping here. Neither Chinese nor our translation app gets us anywhere with him. We just can't communicate. Slightly annoyed, we pack up and move on. Just off the road, behind a hill on the steppe, we find a spot that'll do for tonight.
+They follow us for a while, “well hidden” behind a truck, until we lose sight of them, or they lose sight of us. We find a nice spot by the river and pitch our tent. Just as we're about to go for a swim, the farmer turns up. He's less happy about us camping here. Neither Chinese nor our translation app gets us anywhere with him. He can neither read nor write. Slightly annoyed, we pack up and move on. Just off the road, behind a hill on the steppe, we find a spot that'll do for tonight.
 
 ## Day 7: Crossing into Mongolia, Araltobe (CN) - Bulgan (MNG)
 
@@ -118,7 +118,7 @@ We have no trouble buying petrol for the stove at the filling station. Getting a
 So we find somewhere to sleep on the “safe” side of the river and enjoy finally being able to camp without any hassle again. Tomorrow's plan is to buy the rest of our food for the mountain section and withdraw some more cash. Apparently, we can only take money out once someone else has deposited some.
 
 
-##  First da in Mongolia with a twist...
+##  Mongolia isn't making it as easy for us as we had hoped...
 
 In the morning, a herder comes by and promptly puts us on his horse so we can take a photo. It's our first morning in Mongolia, and we've already been on a horse. Just how we'd imagined it.
 

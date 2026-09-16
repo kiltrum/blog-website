@@ -83,7 +83,7 @@ Die Mutter versucht mit Nachdruck, die ganzen Kinder vom Dorf, die durch die Tü
 </figure>
 
 
-Sie verfolgen uns noch „gut versteckt“ hinter einem LKW ein Stück, bis wir sie oder sie uns aus den Augen verlieren. Wir finden eine schöne Stelle am Fluss und stellen unser Zelt auf. Als wir gerade im Fluss baden wollen, kommt der Bauer und ist weniger damit einverstanden, dass wir hier zelten wollen. Mit Chinesisch und unserer Übersetzer-App kommen wir bei ihm nicht weiter. Die Verständigung klappt einfach nicht. Wir packen leicht genervt unsere Sachen und ziehen weiter. Gleich neben der Straße, hinter einem Hügel in der Steppe, finden wir einen Platz, der für heute reichen sollte.
+Sie verfolgen uns noch „gut versteckt“ hinter einem LKW ein Stück, bis wir sie oder sie uns aus den Augen verlieren. Wir finden eine schöne Stelle am Fluss und stellen unser Zelt auf. Als wir gerade im Fluss baden wollen, kommt der Bauer und ist weniger damit einverstanden, dass wir hier zelten wollen. Mit Chinesisch und unserer Übersetzer-App kommen wir bei ihm nicht weiter. Er kann weder Lesen noch schreiben. Wir packen leicht genervt unsere Sachen und ziehen weiter. Gleich neben der Straße, hinter einem Hügel in der Steppe, finden wir einen Platz, der für heute reichen sollte.
 
 ## Tag 7: Einreise in die Mongolei Araltobe (CN) - Bulgan (MNG)
 
@@ -122,7 +122,7 @@ Ohne Probleme können wir Benzin für den Kocher bei der Tankstelle kaufen. Auch
 
 Wir suchen uns also einen Schlafplatz auf der „sicheren“ Seite des Flusses und genießen es, endlich wieder ohne Probleme im Zelt schlafen zu können. Für den nächsten Tag steht auf dem Plan, die restlichen Lebensmittel für die Bergetappe einzukaufen und noch etwas Geld abzuheben. Geld können wir dort offenbar erst wieder abheben, wenn andere zuvor etwas eingezahlt haben.
 
-## Der erste Tag in der Mongolei und dann das...
+## Die Mongolei macht es uns nicht so leicht wie erhofft
 
 In der Früh kommt ein Hirte vorbei, der uns gleich auf sein Pferd setzt, damit wir ein Foto machen können. Es ist unser erster Morgen in der Mongolei und wir haben schon auf einem Pferd gesessen, so haben wir uns das vorgestellt.
 
