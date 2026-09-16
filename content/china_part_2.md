@@ -122,7 +122,7 @@ Ohne Probleme können wir Benzin für den Kocher bei der Tankstelle kaufen. Auch
 
 Wir suchen uns also einen Schlafplatz auf der „sicheren“ Seite des Flusses und genießen es, endlich wieder ohne Probleme im Zelt schlafen zu können. Für den nächsten Tag steht auf dem Plan, die restlichen Lebensmittel für die Bergetappe einzukaufen und noch etwas Geld abzuheben. Geld können wir dort offenbar erst wieder abheben, wenn andere zuvor etwas eingezahlt haben.
 
-## 
+## Der erste Tag in der Mongolei und dann das...
 
 In der Früh kommt ein Hirte vorbei, der uns gleich auf sein Pferd setzt, damit wir ein Foto machen können. Es ist unser erster Morgen in der Mongolei und wir haben schon auf einem Pferd gesessen, so haben wir uns das vorgestellt.
 
