@@ -29,7 +29,7 @@ Wir starten den Zustieg vom Parkplatz in Saas-Almagell mit den Rädern, um uns i
 Nachdem wir beim Zustieg und auf der Hütte eine kurze Umfrage gestartet hatten, war klar, dass am nächsten Tag mindestens 15 Seilschaften die Überschreitung geplant hatten.
 
 
-<figure class="article-photo">
+<figure class="article-photo article-photo-wide">
     <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/1.jpg" alt="Berglandschaft">
     <figcaption>Blick auf Allalinhorn und Alphubel.</figcaption>
 </figure>
@@ -67,11 +67,12 @@ Der durchwegs feste Fels bietet perfektes Klettergelände und es macht richtig S
 
 Auf der Lenzspitze blicken wir nur kurz rüber zum Dom und beobachten die Karawanen die von Westen über den Normalweg unterwegs sind. Vom Gipfel aus sieht man auch gut den Grat zum Nadelhorn, der laut Tourenbeschreibung noch schöner als der erste Grat sein soll. Wieder klettern wir den ersten Abschnitt seilfrei, da es leichte Kletterei in wenig ausgesetzten Gelände ist. Bald stellen sich uns jedoch einige Gendarmen in den Weg und wir seilen wieder an. Tatsächlich ist dieser Gratabschnitt noch schöner als der erste und es macht wieder richtig Spaß, unter anderem weil die Sonne uns wärmt und wir immer noch recht flott voran kommen. Auf den Chendarmen befinden sich Eisenstangen auf denen wir unsere Abseilen und Abklettern Taktik anwenden können. 
 
-<figure class="photo-grid-group">
-    <div class="photo-grid photo-grid-2">
-        <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/4.jpg" alt="Morgenstimmung am Grat">
-        <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/5.jpg" alt="Blick ins Tal">
-    </div>
+<figure class="article-photo">
+        <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/4.jpg" alt="Kletterer am Grat zum Nadelhorn">
+</figure>
+
+<figure class="article-photo article-photo-wide">
+        <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/5.jpg" alt="Steiler Aufschwung am Grat zum Nadelhorn">
     <figcaption>Der Gneis bietet perfekte Klettergriffe, auch in den steileren Passagen.</figcaption>
 </figure>
 
@@ -81,8 +82,8 @@ Obwohl von der Lenzspitze, das Nadelhorn zum Greifen nahe aussieht, brauchten wi
 
 <figure class="photo-grid-group">
     <div class="photo-grid photo-grid-2">
-        <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/7.jpg" alt="Morgenstimmung am Grat">
-        <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/6.jpg" alt="Blick ins Tal">
+        <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/7.jpg" alt="Bergsteiger am Abstieg vom Nadelhorn">
+        <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/6.jpg" alt="Bergsteiger am Gletscher">
     <figcaption>Am Schneekamm im Abstieg Richtung Windjoch. Rechts im Hintergrund sieht man das Blankeis.</figcaption>
     <figcaption>Das Gletscherbecken mit den Querspalten. Im Hintergrund der Ostgrat der Lenzspitze</figcaption>
 </figure>

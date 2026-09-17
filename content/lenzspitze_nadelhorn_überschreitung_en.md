@@ -29,12 +29,9 @@ We start the approach from the car park in Saas-Almagell by bike, saving ourselv
 
 After doing a quick survey on the approach and at the hut, it became clear that at least 15 rope teams were planning the traverse the next day.
 
-<figure class="article-photo">
-
+<figure class="article-photo article-photo-wide">
     <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/1.jpg" alt="Mountain landscape">
-
     <figcaption>View of the Allalinhorn and Alphubel.</figcaption>
-
 </figure>
 
 
@@ -52,17 +49,11 @@ We climb the lower section to the first steeper step without a rope. From there 
 At the rappelling sections, Luca lowers me down and I place a few pieces of protection for him where necessary. That way he can downclimb without too much stress, and we don't have to untie from the rope every time, which saves us quite a bit of time.
 
 <figure class="photo-grid-group">
-
     <div class="photo-grid photo-grid-2">
-
         <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/hero.jpg" alt="Morning light on the ridge">
-
         <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/2.jpg" alt="View down into the valley">
-
     </div>
-
     <figcaption>On the East Ridge of the Lenzspitze.</figcaption>
-
 </figure>
 
 The mostly solid rock offers perfect climbing and is simply great fun. With the first rays of sunlight, we also start to realise just how exposed the ridge already is.
@@ -70,11 +61,8 @@ The mostly solid rock offers perfect climbing and is simply great fun. With the 
 Soon we reach the snowfield just below the Lenzspitze. A short break, crampons on, and we continue without the rope. Here we pass the mountain guide again, and a little later, after around four hours of climbing, we reach our first summit.
 
 <figure class="article-photo">
-
     <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/3.jpg" alt="Mountain landscape">
-
     <figcaption>The ridge traverse to the Nadelhorn in the background.</figcaption>
-
 </figure>
 
 
@@ -86,19 +74,15 @@ Once again, we climb the first section without a rope, as the climbing is easy a
 
 And in fact, this section of ridge is even better than the first. The climbing is great fun again, helped by the fact that the sun is finally warming us up and we're still moving pretty quickly. There are iron posts on the gendarmes, which are perfect for our combination of lowering and downclimbing.
 
-<figure class="photo-grid-group">
-
-    <div class="photo-grid photo-grid-2">
-
-        <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/4.jpg" alt="Morning light on the ridge">
-
-        <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/5.jpg" alt="View down into the valley">
-
-    </div>
-
-    <figcaption>The gneiss offers perfect holds, even in the steeper sections.</figcaption>
-
+<figure class="article-photo">
+        <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/4.jpg" alt="Climer on the ridge to the Nadelhorn">
 </figure>
+
+<figure class="article-photo article-photo-wide">
+        <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/5.jpg" alt="Steep section on the ridge to the Nadelhorn">
+    <figcaption>The gneiss offers perfect holds, even in the steeper sections.</figcaption>
+</figure>
+
 
 
 ## Descent
@@ -112,19 +96,12 @@ The first section along the snowy ridge is straightforward until we reach the Wi
 Once we reach the glacier basin, we have to cross it completely. Extra care is needed here because the crevasses run parallel to our track. We're very glad that we're still relatively early and the snow bridges are reasonably firm.
 
 <figure class="photo-grid-group">
-
     <div class="photo-grid photo-grid-2">
-
         <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/7.jpg" alt="Snow ridge during the descent">
-
         <img src="/images/articles/lenzspitze_nadelhorn_überschreitung/6.jpg" alt="Glacier basin below the ridge">
-
     </div>
-
     <figcaption>On the snow ridge descending towards the Windjoch. The bare ice is visible in the background on the right.</figcaption>
-
     <figcaption>The glacier basin with its transverse crevasses. The East Ridge of the Lenzspitze is visible in the background.</figcaption>
-
 </figure>
 
 Soon afterwards, we're back at the hut, pack up the rest of our stuff and start the long way down into the valley. Luca finds a great shortcut that saves us an extra climb, and after 11 hours we finally reach our bikes again at the valley station in Saas-Fee.
