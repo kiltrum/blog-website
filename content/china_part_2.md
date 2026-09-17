@@ -1,5 +1,5 @@
-Title: China Part 2
-Summary: Mit dem Zug und den Rädern geht es durch Nordchina Richtung Mongolei – mit improvisierter Fahrradverpackung und einer herzlichen Einladung bei einer kasachischen Familie. In der Mongolei freuen wir uns aufs Zelten und die bevorstehende Altai-Durchquerung, bis uns eine unerwartete Quarantäne stoppt.
+Title: Mit Rad und Zug von Urumqi in die Mongolei | China Teil 2
+Summary: Mit dem Zug und den Rädern geht es durch Nordchina Richtung Mongolei, mit improvisierter Fahrradverpackung und einer herzlichen Einladung bei einer kasachischen Familie. In der Mongolei freuen wir uns aufs Zelten und die bevorstehende Altai-Durchquerung, bis uns eine unerwartete Quarantäne stoppt.
 Date: 2026-05-29
 Author: Kilian und Vanessa
 Category: Bikepacking

@@ -1,4 +1,4 @@
-Title: Wildspitze vom Kaunertal
+Title: Skitour auf die Wildspitze vom Kaunertal
 Summary:Zweitägige Skitour vom Kaunertal über das Brandenburgerhaus und den Fluchtkogel auf die Wildspitze, mit anschließender Abfahrt ins Pitztal.
 Date: 2026-03-18
 Author: Kilian

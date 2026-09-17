@@ -1,4 +1,4 @@
-Title: Kazakhstan Part 1
+Title: Bikepacking Kazakhstan: Almaty, Assy Plateau and Charyn Canyon | Kazakhstan Part 1
 Summary: From Almaty across the Assy Plateau to Charyn Canyon. The intense start to our 10-week bikepacking journey through Kazakhstan, China and Mongolia.
 Date: 2026-04-26
 Author: Kilian und Vanessa

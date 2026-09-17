@@ -1,4 +1,4 @@
-Title: Kazakhstan Part 2
+Title: Bikepacking Through the Steppe and Mountains of East Kazakhstan | Kazakhstan Part 2
 Summary: Through the Kazakh steppe and remote mountain regions of eastern Kazakhstan. Endless gravel roads, thunderstorms and countless river crossings turn our self-planned route into much more of an adventure than expected.
 Date: 2026-04-30
 Author: Kilian und Vanessa

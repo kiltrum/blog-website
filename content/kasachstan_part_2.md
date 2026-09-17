@@ -1,4 +1,4 @@
-Title: Kasachstan Teil 2
+Title: Bikepacking durch die Steppe und Berge Ostkasachstans | Kasachstan Teil 2
 Summary: Durch die kasachische Steppe und abgelegene Bergregionen in Ostkasachstan. Zwischen endlosen Schotterpisten, Gewittern und zahlreichen Flussquerungen wird unsere selbst geplante Route deutlich abenteuerlicher als erwartet.
 Date: 2026-04-30
 Author: Kilian und Vanessa

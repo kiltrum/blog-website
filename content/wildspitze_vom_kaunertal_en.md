@@ -1,4 +1,4 @@
-Title: Wildspitze from the Kaunertal
+Title: Ski Tour to Wildspitze from the Kaunertal
 Summary: A two-day ski tour from the Kaunertal over the Brandenburgerhaus and the Fluchtkogel to the Wildspitze, followed by a descent into the Pitztal.
 Date: 2026-03-18
 Author: Kilian

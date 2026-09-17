@@ -1,4 +1,4 @@
-Title: China Part 1
+Title: Bikepacking durch Xinjiang: von Alashankou nach Urumqi | China Teil 1
 Summary: Fünf Tage mit dem Rad durch Xinjiang: Grenzkontrollen, Sturm, Polizeikontrollen und ein ungeplanter Auftritt bei einem chinesischen Radrennen. Zwischen Alashankou und Urumqi bekommen wir einen ziemlich intensiven ersten Eindruck vom Bikepacking in China.
 Date: 2026-05-11
 Author: Kilian und Vanessa

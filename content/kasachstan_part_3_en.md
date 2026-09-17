@@ -1,4 +1,4 @@
-Title: Kazakhstan Part 3
+Title: Bikepacking to Lake Alakol and the Chinese Border | Kazakhstan Part 3
 Summary: Between broken freehubs, a sandstorm, rain and endless hospitality, we continue through eastern Kazakhstan towards the Chinese border. Despite a few changes of plan, our route takes us along lonely gravel tracks, across green highlands and finally to Lake Alaköl.
 Date: 2026-05-10
 Author: Kilian und Vanessa
@@ -11,7 +11,7 @@ ElevationLoss: 7894 m
 HighestPoint: 1465 m
 MinimumElevation: 347 m
 Duration: 9 days
-Location: East Kazakhstan
+Location: Sarqan, Lepsy, Dostyk, east Kazakhstan
 HeroImage: /images/articles/kasachstan_part_3/hero.jpg
 GPX: /gpx/kasachstan_part_3.gpx
 Lang: en

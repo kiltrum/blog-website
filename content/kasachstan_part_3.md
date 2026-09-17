@@ -1,4 +1,4 @@
-Title: Kasachstan Teil 3
+Title: Bikepacking zum Alaköl-See und weiter nach Dostyk | Kasachstan Teil 3
 Summary: Zwischen kaputten Freiläufen, Sandsturm, Regen und endloser Gastfreundschaft fahren wir weiter durch den Osten Kasachstans Richtung chinesische Grenze. Trotz einiger Planänderungen führt uns die Route über einsame Gravelpisten, grüne Hochebenen und schließlich bis zum Alaköl See.
 Date: 2026-05-10
 Author: Kilian und Vanessa
@@ -11,7 +11,7 @@ ElevationLoss: 7894 m
 HighestPoint: 1465 m
 MinimumElevation: 347 m
 Duration: 9 Tage
-Location: East Kasachstan
+Location: Sarqan, Lepsy, Dostyk, Ost Kasachstan
 HeroImage: /images/articles/kasachstan_part_3/hero.jpg
 GPX: /gpx/kasachstan_part_3.gpx
 Lang: de

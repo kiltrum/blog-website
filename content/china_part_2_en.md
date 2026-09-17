@@ -1,4 +1,4 @@
-Title: China Part 2
+Title: By Bike and Train from Urumqi to Mongolia | China Part 2
 Summary: We head through northern China towards Mongolia by train and bike, with makeshift bike packaging and a warm welcome from a Kazakh family along the way. In Mongolia, we're looking forward to camping and crossing the Altai Mountains, until an unexpected quarantine stops us in our tracks.
 Date: 2026-05-29
 Author: Kilian und Vanessa
