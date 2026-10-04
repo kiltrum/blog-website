@@ -46,8 +46,15 @@ cd ~/Dokumente/TrailError/blog-website/content/images/articles/ORDNERNAME
 magick mogrify -resize "2000x2000>" -strip -quality 82 *.jpg
 ```
 
-## Production Build and sitemap creation
+## png zu jpg
+```bash
+cd ~/Dokumente/TrailError/blog-website/content/images/articles/ORDNERNAME
 
+magick mogrify -resize "2000x2000>" -strip -quality 82 *.jpg
+```
+
+
+## Production Build and sitemap creation
 
 Optional noch kompakter als kompletter Ablauf:
 

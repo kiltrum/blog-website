@@ -9,7 +9,7 @@ ElevationGain: 4796 m
 ElevationLoss: 4750 m
 HighestPoint: 2561 m
 MinimumElevation: 840 m
-Duration: 18 Stunden
+Duration: 18 h
 Location: Steiner Alps, Slovenia
 HeroImage: /images/articles/steiner_alpen_durchquerung/hero.jpg
 GPX: /gpx/steiner_alpen_durchquerung.gpx
