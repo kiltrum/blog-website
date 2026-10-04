@@ -234,14 +234,41 @@
                                 <circle cx="17.5" cy="6.5" r="1"></circle>
                             </svg>
                         </a>
+                        
+                    {% set target_lang = 'en' if current_lang == 'de' else 'de' %}
+                    {% set lang_link = namespace(path='') %}
+
+                    {% if is_article_page or is_page %}
+                        {% set current_content = article if is_article_page else page %}
+
+                        {% for translation in current_content.translations %}
+                            {% if translation.lang == target_lang %}
+                                {% set lang_link.path = translation.url|replace('../', '') %}
+                            {% endif %}
+                        {% endfor %}
+
+                    {% elif is_category_page %}
+                        {% set lang_link.path = category.url|replace('../', '') %}
+                    {% endif %}
+
+                    {# Sprachpräfix vereinheitlichen #}
+                    {% if lang_link.path.startswith('en/') %}
+                        {% set lang_link.path = lang_link.path[3:] %}
+                    {% endif %}
+
+                    {% set target_url = ('/en/' if target_lang == 'en' else '/') ~ lang_link.path %}
 
                     <div class="site-lang-switcher">
                         {% if current_lang == 'de' %}
                             <span class="site-lang-switcher__current">DE</span>
                             <span class="site-lang-switcher__separator">/</span>
-                            <a class="site-lang-switcher__link" href="/en/" hreflang="en">EN</a>
+                            <a class="site-lang-switcher__link"
+                            href="{{ target_url }}"
+                            hreflang="en">EN</a>
                         {% else %}
-                            <a class="site-lang-switcher__link" href="/" hreflang="de">DE</a>
+                            <a class="site-lang-switcher__link"
+                            href="{{ target_url }}"
+                            hreflang="de">DE</a>
                             <span class="site-lang-switcher__separator">/</span>
                             <span class="site-lang-switcher__current">EN</span>
                         {% endif %}
