@@ -222,10 +222,10 @@ FEATURED_CATEGORIES = [
         'image': '/images/categories/bergsteigen.jpg',
         'hero_image': '/images/categories/bergsteigen-hero.jpg',
         'mobile_position': '70% center',
-        'description': 'Hochtouren, Grate und Skitouren – unsere Touren und Erfahrungen aus den Bergen.',
+        'description': 'Hochtouren, Grate und Skitouren – unsere Touren in den Bergen.',
         'description_i18n': {
-            'de': 'Hochtouren, Grate und Skitouren – unsere Touren und Erfahrungen aus den Bergen.',
-            'en': 'Alpine climbs, ridges and ski tours – our adventures and experiences in the mountains.'
+            'de': 'Hochtouren, Grate und Skitouren – unsere Abenteuer in den Bergen.',
+            'en': 'Alpine climbs, ridges and ski tours – our adventures on high mountains.'
         }
     },
     {
