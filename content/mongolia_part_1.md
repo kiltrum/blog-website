@@ -123,38 +123,48 @@ Also bleiben die Räder stehen. Wir beobachten die vorbeiziehenden Familien, gen
 Schlussendlich ist wieder gutes Wetter angesagt! Als wir nach dem Frühstück unsere sieben Sachen zusammenpacken, bleibt ein alter sowjetischer Geländewagen bei uns stehen. Die beiden Mongolen darin wollen uns unbedingt ein Stück mitnehmen. Gegen eine Abkürzung auf dieser mühsamen Piste haben wir nichts einzuwenden. Also verstauen wir die Räder und unser Gepäck im Auto.
 
 <figure class="article-photo article-photo-wide">
-    <img src="/images/articles/mongolia_part_1/14.jpg" alt="Ein sowjetischer Geländewagen in der Mongolei">
+   <img src="/images/articles/mongolia_part_1/14.jpg" alt="Ein sowjetischer Geländewagen in der Mongolei">
 </figure>
 
 Das Auto ist ein Abenteuer für sich. Die Zündung besteht aus zwei Kabeln, zusätzlich wird der Motor mit einer Stange angekurbelt. Als Gaspedal dient ein Löffel, und das Armaturenbrett ist auf zwei Holzstämmen aufgebockt. So geht es rund 40 Minuten durch Bäche und Gräben.
 
 <figure class="article-photo">
-    <img src="/images/articles/mongolia_part_1/15.jpg" alt="Vanessa und ein Mongole">
+   <img src="/images/articles/mongolia_part_1/15.jpg" alt="Vanessa und ein Mongole">
 </figure>
 
 Dann geht es wirklich wieder mit den Rädern weiter. Wir fahren an Gers vorbei und weiter hinein in die Berge. Bis uns plötzlich auffällt, dass etwas fehlt: das Wasser im Flussbett neben uns. Der Fluss ist ausgetrocknet, und unsere Flaschen sind quasi leer. Sollen wir jetzt wirklich umdrehen? Ach, der Fluss wird weiter oben wieder auftauchen, wir sind doch hier in einem riesigen Flussbett.
 
 So wie bisher haben wir uns darauf verlassen, unterwegs an den Flüssen Wasser auffüllen zu können. Dass die Flussbetten hier zu dieser Jahreszeit trocken sein können und erst die Sommergewitter wieder Wasser bringen, lernen wir gerade auf die harte Tour.
 
-Zum Glück finden wir noch ein altes Schneefeld und können unsere Flaschen auffüllen. Damit geht es weiter hinauf zum Pass. Auf den Fluss auf der anderen Seite freuen wir uns jetzt schon. Am Satellitenbild nimmt er schließlich fast den ganzen Talboden ein.
+Es geht weiter bergauf und es wird immer trockener. Jetzt noch umzudrehen, macht noch weniger Sinn! Also geht es immer weiter bergauf. Langsam werden wir doch etwas nervös. Was sollen wir machen, wenn wir wirklich kein Wasser mehr finden? Wir haben den ganzen Tag schon zu wenig getrunken und hoffen, irgendwo unsere Flaschen auffüllen zu können. Am flimmernden Horizont erkennen wir ein großes Schneefeld. Ganz sicher sind wir uns aber noch nicht und wollen uns von einer eventuellen Fata Morgana oder Halluzination nicht demotivieren lassen. Mit jedem Meter, den wir vorankommen, werden die Kontraste des Schneefelds klarer und wir sind sichtlich erleichtert. Wir kochen uns eine Suppe und füllen unsere Trinkflaschen auf.
 
-Wieder einmal falsch gedacht. Auch dort ist alles trocken.
+Weiter geht es über die holprige Piste durch ein tiefes Tal den Pass hinauf. Immer wieder kommen wir an Gers vorbei, die diese wilde Einsamkeit doch irgendwie lebendig wirken lassen.
 
-Mit den letzten Tropfen Wasser kochen wir am Abend unser Essen. Für heute muss es reichen. Schon leicht schwindelig durch die Dehydrierung gehen wir durstig schlafen. Wir hoffen, am nächsten Morgen möglichst bald wieder eine Wasserquelle zu finden.
+Nach einem letzten steilen Anstieg erreichen wir den höchsten Punkt unserer Khangai-Gebirge-Überquerung auf ca. 2700 m. Wir machen bei dem Steinhaufen, der den Pass markiert, Pause und motivieren uns mit dem Gedanken, auf der anderen Seite des Passes im Fluss baden gehen zu können. Auf dem Satellitenbild nimmt er schließlich fast den ganzen Talboden ein.
+
+Nach einer langen, holprigen Abfahrt, wieder vorbei an Gers und Jak- und Pferdeherden, dann die Überraschung:
+
+Auch hier ist alles trocken.
+
+Wir haben noch knappe 2 Liter Wasser und die Schotterpiste verläuft im Bachbett, was das Radfahren wieder einmal extrem mühsam macht. Wir kämpfen uns so aus dem Tal heraus, bis wir uns irgendwann eingestehen müssen, dass wir einfach zu erschöpft sind, weiterzufahren. Am Horizont sieht man zwar wieder zwei kleine Schneefelder, aber unsere körperlichen Reserven und unsere Motivation reichen nicht mehr aus, diese letzten Kilometer auf dieser extrem ruppigen Straße zu fahren.
+
+Mit den letzten Tropfen Wasser kochen wir am Abend unser Essen. Für heute muss es reichen. Schon leicht schwindelig durch die Dehydrierung gehen wir durstig schlafen.
 
 ## Tag 3: Langsam talauswärts
 
-Zum Glück entdecken wir in der Früh recht schnell ein Schneefeld, das einzige, das wir in diesem Tal finden. Das Frühstück ist somit gesichert. Unsere Wasservorräte sind damit vorerst wieder aufgefüllt, und wir fahren elend langsam talauswärts.
+Zum Glück erreichen wir in der Früh recht schnell das Schneefeld, das wir am Vortag schon gesehen haben, und es wird auch das einzige bleiben, das wir in diesem Tal finden. Das Frühstück ist somit gesichert und unsere Wasservorräte sind vorerst wieder aufgefüllt. Wir fahren elend langsam talauswärts.
 
 Die Straße führt direkt durch das ausgetrocknete Flussbett. Dementsprechend mühsam ist das Fahren. Zwischen den Steinen kommen wir nur langsam weiter, und Vanessa bekommt mit ihren etwas dünneren Reifen und der schlechteren Dämpfung besonders viel davon ab.
 
 <figure class="article-photo">
-    <img src="/images/articles/mongolia_part_1/16.jpg" alt="Das ausgetrocknete Tal im Khangai Gebirge ">
+   <img src="/images/articles/mongolia_part_1/16.jpg" alt="Das ausgetrocknete Tal im Khangai-Gebirge">
 </figure>
 
-Als nach ein paar Stunden das erste Auto an uns vorbeikommt, hält Vanessa es an. Sie wirft sich regelrecht vor den Land Rover. Wir dürfen mitfahren und legen die letzten Kilometer bis zum nächsten Ort wieder einmal mit unseren Rädern im Auto zurück.
+Ständig hoffen wir, irgendwo einen Fluss zu finden oder dass zumindest die Straße etwas besser wird. Doch keiner unserer Wünsche wird erfüllt. Wir lassen so viel Luft wie möglich aus unseren Schlauchreifen, um irgendwie die dauerhaften Stöße der Steine zu federn.
 
-Wir erreichen das Dorf Bulgan. Richtig, wieder ein Dorf namens Bulgan! Die Mongolen haben ca. 10 Ortsnamen, die sie über das ganze Land immer wieder verwenden, was doch für etwas Verwirrung sorgen kann. Wir kaufen uns Instant-Nudeln und stellen unser Zelt ein bisschen außerhalb vom Dorf auf.
+Als nach ein paar Stunden das erste Auto an uns vorbeikommt, hält Vanessa es an. Sie wirft sich regelrecht vor den Land Rover und überzeugt die Mongolen davon, uns mitzunehmen. Wir dürfen mitfahren und legen die letzten Kilometer bis zum nächsten Ort wieder einmal mit unseren Rädern im Auto zurück.
+
+Wir beobachten die vorbeiziehende Landschaft aus dem Auto und stellen fest, dass sich hinter der nächsten Talbiegung wieder eine grüne Ebene mit einem voll rauschenden Fluss auftut. Eine Stunde später erreichen wir das Dorf Bulgan. Richtig, wieder ein Dorf namens Bulgan! Die Mongolen haben ca. 10 Ortsnamen, die sie über das ganze Land immer wieder verwenden, was doch für etwas Verwirrung sorgen kann. Wir kaufen uns Instant-Nudeln und stellen unser Zelt ein bisschen außerhalb des Dorfes auf.
 
 ## Tag 4: Zurück in der Zivilisation
 

@@ -118,29 +118,53 @@ By now, the weather models agree: it's going to snow. We have to rethink things 
 
 So the bikes stay put. We watch the families passing by, enjoy the peace and quiet and, despite the cold, finally get a chance to recover a little from our difficult start in Mongolia. We'd hoped to be much further along by now, but at least there's nothing we need to organise for once.
 
-## Day 2: A spoon for an accelerator
+## Day 2: A Spoon for a Gas Pedal
 
-Finally, good weather is on the cards again! As we pack up our things after breakfast, an old Soviet off-road vehicle stops beside us. The two Mongolian men inside are keen to give us a lift. We have nothing against skipping a stretch of this rough track, so we load our bikes and bags into the car.
+Finally, good weather is forecast again! As we pack up our things after breakfast, an old Soviet off-road vehicle stops next to us. The two Mongolians inside insist on giving us a lift. We certainly don't mind a shortcut on this exhausting track. So we load our bikes and luggage into the car.
 
 <figure class="article-photo article-photo-wide">
-    <img src="/images/articles/mongolia_part_1/14.jpg" alt="A Soviet off-road vehicle in Mongolia">
+   <img src="/images/articles/mongolia_part_1/14.jpg" alt="An old Soviet off-road vehicle in Mongolia">
 </figure>
 
-The car is an adventure in itself. The ignition consists of two wires, and the engine also needs to be hand-cranked with a metal bar. A spoon serves as the accelerator, and the dashboard is propped up on two logs. And that's how we spend the next 40 minutes crossing streams and ditches.
+The car is an adventure in itself. The ignition consists of two wires, and the engine also has to be cranked with a metal rod. A spoon serves as the gas pedal, while the dashboard is propped up on two pieces of wood. And so we spend the next 40 minutes bouncing through streams and ditches.
 
 <figure class="article-photo">
-    <img src="/images/articles/mongolia_part_1/15.jpg" alt="Vanessa with a Mongolian man">
+   <img src="/images/articles/mongolia_part_1/15.jpg" alt="Vanessa and a Mongolian">
 </figure>
 
-Then we're really back on the bikes. We ride past gers and further into the mountains. Until we suddenly notice that something is missing: the water in the riverbed beside us. The river has dried up, and our bottles are almost empty. Do we really have to turn around now? Ah, surely the river will reappear further up. This is a huge riverbed, after all.
+Then we really do continue on our bikes again. We pass gers and head deeper into the mountains. Until we suddenly notice that something is missing: the water in the riverbed next to us. The river has dried up, and our bottles are almost empty. Are we really going to turn around now? Surely the river will reappear further upstream. We're riding through a huge riverbed, after all.
 
-Just as before, we'd been relying on being able to refill our bottles from rivers along the way. We're now learning the hard way that the riverbeds here can be dry at this time of year, and that it's the summer thunderstorms that bring the water back.
+Until now, we've relied on being able to refill our water from rivers along the way. We're learning the hard way that the riverbeds here can be dry at this time of year and only fill up again with the summer thunderstorms.
 
-Luckily, we find an old patch of snow and manage to refill our bottles. With that, we carry on up to the pass. We're already looking forward to the river on the other side. On the satellite image, it takes up almost the entire valley floor, after all.
+We continue uphill, and it gets drier and drier. Turning around now makes even less sense! So we keep climbing. Slowly, we're starting to get a little nervous. What are we going to do if we really don't find any more water? We've already drunk far too little all day and are hoping to find somewhere to refill our bottles. On the shimmering horizon, we spot a large patch of snow. We're not entirely sure yet, though, and don't want to get our hopes up over what might turn out to be a mirage or hallucination. With every metre we get closer, the outlines of the snowfield become clearer, and we're visibly relieved. We cook ourselves some soup and refill our water bottles.
 
-Wrong again. Everything is dry there too.
+We continue along the rough track through a deep valley towards the pass. Again and again, we pass gers, which somehow make this wild solitude feel alive.
 
-That evening, we cook our food with the last few drops of water. It'll have to do for today. Already feeling a little dizzy from dehydration, we go to sleep thirsty. We hope to find water as soon as possible the next morning.
+After one final steep climb, we reach the highest point of our crossing of the Khangai Mountains at around 2,700 m. We take a break by the pile of stones marking the pass and motivate ourselves with the thought of going for a swim in the river on the other side. On the satellite image, it takes up almost the entire valley floor, after all.
+
+After a long, bumpy descent, once again passing gers and herds of yaks and horses, comes the surprise:
+
+It's completely dry here too.
+
+We have just under 2 litres of water left, and the gravel track runs directly through the streambed, making cycling extremely exhausting once again. We fight our way out of the valley until eventually we have to admit that we're simply too exhausted to keep riding. We can see two small patches of snow on the horizon, but we don't have enough energy or motivation left to tackle those final kilometres on this extremely rough road.
+
+With the last drops of water, we cook our dinner that evening. It will have to be enough for today. Already slightly dizzy from dehydration, we go to sleep thirsty.
+
+## Day 3: Slowly Out of the Valley
+
+Luckily, we reach the patch of snow we had already spotted the day before fairly quickly in the morning. It will also be the only one we find in this valley. Breakfast is secured, our water supplies are replenished for now, and we slowly make our way out of the valley.
+
+The road leads directly through the dried-up riverbed. Accordingly, the riding is exhausting. We make painfully slow progress between the rocks, and Vanessa, with her slightly narrower tyres and less cushioning, gets the worst of it.
+
+<figure class="article-photo">
+   <img src="/images/articles/mongolia_part_1/16.jpg" alt="The dried-up valley in the Khangai Mountains">
+</figure>
+
+We constantly hope to find a river somewhere or that at least the road will improve. Neither of our wishes comes true. We let as much air as possible out of our tubed tyres, trying somehow to soften the constant impacts from the rocks.
+
+When the first car passes us after a few hours, Vanessa stops it. She practically throws herself in front of the Land Rover and convinces the Mongolians to give us a lift. They agree, and once again we cover the last few kilometres to the next village with our bikes loaded into a car.
+
+Watching the landscape pass by from the car, we realise that just beyond the next bend in the valley, a green plain opens up again, with a full, rushing river running through it. An hour later, we reach the village of Bulgan. That's right, another village called Bulgan! The Mongolians seem to have about ten place names that they reuse all over the country, which can get a little confusing. We buy some instant noodles and pitch our tent just outside the village.
 
 ## Day 3: Slowly down the valley
 
