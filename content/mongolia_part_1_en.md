@@ -164,21 +164,7 @@ We constantly hope to find a river somewhere or that at least the road will impr
 
 When the first car passes us after a few hours, Vanessa stops it. She practically throws herself in front of the Land Rover and convinces the Mongolians to give us a lift. They agree, and once again we cover the last few kilometres to the next village with our bikes loaded into a car.
 
-Watching the landscape pass by from the car, we realise that just beyond the next bend in the valley, a green plain opens up again, with a full, rushing river running through it. An hour later, we reach the village of Bulgan. That's right, another village called Bulgan! The Mongolians seem to have about ten place names that they reuse all over the country, which can get a little confusing. We buy some instant noodles and pitch our tent just outside the village.
-
-## Day 3: Slowly down the valley
-
-Luckily, we spot a patch of snow quite early in the morning, the only one we find in this valley. Breakfast is sorted. Our water bottles are full again for now, and we ride painfully slowly down the valley.
-
-The road runs straight through the dry riverbed. Riding is just as hard as you'd expect. We make slow progress between the stones, and Vanessa gets a particularly rough ride with her slightly narrower tyres and less cushioning.
-
-<figure class="article-photo">
-    <img src="/images/articles/mongolia_part_1/16.jpg" alt="The dry valley in the Khangai Mountains">
-</figure>
-
-When the first car passes us after a few hours, Vanessa flags it down. She practically throws herself in front of the Land Rover. We get a lift and cover the last few kilometres to the next village with our bikes in the car yet again.
-
-We reach the village of Bulgan. Yep, another village called Bulgan! Mongolians have about ten place names that they reuse all over the country, which can get a bit confusing. We buy some instant noodles and pitch our tent a little way outside the village.
+Watching the landscape pass by from the car, we realise that just beyond the next bend in the valley, a green plain opens up again, with a full, rushing river running through it. An hour later, we reach the village of Bulgan. That's right, another village called Bulgan! The Mongolians seem to have about ten names for places, which they reuse all over the country, which can get a little confusing. We buy some instant noodles and pitch our tent just outside the village.
 
 ## Day 4: Back in civilisation
 
