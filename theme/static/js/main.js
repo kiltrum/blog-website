@@ -370,13 +370,17 @@ function initializeArticleLightbox() {
     overlay.setAttribute('aria-modal', 'true');
     overlay.setAttribute('aria-label', translateUi('lightbox_title', 'Bildansicht'));
     overlay.innerHTML = '<button class="lightbox__close" type="button" aria-label="' + translateUi('lightbox_close', 'Bildansicht schließen') + '">&times;</button>'
+        + '<button class="lightbox__nav lightbox__nav--previous" type="button" aria-label="Vorheriges Bild">&#8249;</button>'
         + '<figure class="lightbox__figure">'
         + '<img class="lightbox__image" alt="">'
         + '<figcaption class="lightbox__caption"></figcaption>'
-        + '</figure>';
+        + '</figure>'
+        + '<button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Nächstes Bild">&#8250;</button>';
     document.body.appendChild(overlay);
 
     const closeButton = overlay.querySelector('.lightbox__close');
+    const previousButton = overlay.querySelector('.lightbox__nav--previous');
+    const nextButton = overlay.querySelector('.lightbox__nav--next');
     const lightboxImage = overlay.querySelector('.lightbox__image');
     const caption = overlay.querySelector('.lightbox__caption');
     const figure = overlay.querySelector('.lightbox__figure');
@@ -469,6 +473,15 @@ function initializeArticleLightbox() {
     });
 
     closeButton.addEventListener('click', closeLightbox);
+    previousButton.addEventListener('click', function (event) {
+    event.stopPropagation();
+    navigateLightbox(-1);
+    });
+
+    nextButton.addEventListener('click', function (event) {
+        event.stopPropagation();
+        navigateLightbox(1);
+    });
     lightboxImage.addEventListener('click', closeLightbox);
     caption.addEventListener('click', closeLightbox);
     figure.addEventListener('click', function (event) {
