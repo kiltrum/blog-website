@@ -386,6 +386,8 @@ function initializeArticleLightbox() {
     const figure = overlay.querySelector('.lightbox__figure');
     let previouslyFocusedImage = null;
     let currentImageIndex = -1;
+    let touchStartX = 0;
+    let touchStartY = 0;
 
     function getFigureCaptionText(image) {
         const fig = image.closest('figure');
@@ -494,6 +496,30 @@ function initializeArticleLightbox() {
             closeLightbox();
         }
     });
+
+    overlay.addEventListener('touchstart', function (event) {
+        const touch = event.changedTouches[0];
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+    }, { passive: true });
+
+    overlay.addEventListener('touchend', function (event) {
+        const touch = event.changedTouches[0];
+
+        const deltaX = touch.clientX - touchStartX;
+        const deltaY = touch.clientY - touchStartY;
+
+        if (Math.abs(deltaX) < 50 || Math.abs(deltaX) <= Math.abs(deltaY)) {
+            return;
+        }
+
+        if (deltaX < 0) {
+            navigateLightbox(1);
+        } else {
+            navigateLightbox(-1);
+        }
+    }, { passive: true });
+
     document.addEventListener('keydown', function (event) {
         if (!overlay.classList.contains('is-open')) {
             return;
