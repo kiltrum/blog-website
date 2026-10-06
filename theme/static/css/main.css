@@ -174,7 +174,18 @@ a {
     stroke-width: 1.5;
 }
 
-.instagram-link {
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.01rem;
+}
+
+.mobile-social-links {
+    display: none;
+}
+
+.instagram-link,
+.whatsapp-link {
     width: 42px;
     height: 38px;
     display: flex;
@@ -184,10 +195,17 @@ a {
     text-decoration: none;
 }
 
+.instagram-link svg,
+.whatsapp-link svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    opacity: 0.9;
+}
+
 .instagram-link svg {
-    display: block;
-    width: 21px;
-    height: 21px;
+    width: 22px;
+    height: 22px;
     fill: none;
     stroke: currentColor;
     stroke-width: 1.4;
@@ -195,11 +213,17 @@ a {
     stroke-linejoin: round;
 }
 
-.instagram-link:hover {
-    opacity: 0.6;
+.whatsapp-link svg {
+    fill: currentColor;
 }
 
-.instagram-link:focus-visible {
+.instagram-link:hover,
+.whatsapp-link:hover {
+    opacity: 0.8;
+}
+
+.instagram-link:focus-visible,
+.whatsapp-link:focus-visible {
     outline: 2px solid var(--accent-strong);
     outline-offset: 3px;
 }
@@ -1570,16 +1594,76 @@ a {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 950px) {
     .header-inner {
         display: flex;
         position: relative;
-        justify-content: space-between;
+        justify-content: flex-start;
         min-height: 64px;
     }
 
+    .header-utilities {
+        margin-left: auto;
+    }
+
+    .social-links {
+        display: none;
+    }
+
+    .mobile-social-links {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-top: 0.5rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid var(--line);
+    }
+
+    .mobile-social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        color: var(--ink);
+    }
+
+    .mobile-social-links svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile-social-links a:first-child svg {
+        width: 22px;
+        height: 22px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        opacity: 0.9;
+    }
+
+    .mobile-social-links a:last-child svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+        opacity: 0.9;
+    }
+
+    .mobile-social-links a:hover {
+        opacity: 0.6;
+    }
+
+    .mobile-social-links a:focus-visible {
+        outline: 2px solid var(--accent-strong);
+        outline-offset: 2px;
+    }
     .nav-toggle {
         display: block;
+        order: 3;
         border: 0;
         background: transparent;
     }
@@ -1605,7 +1689,9 @@ a {
         padding: 0.65rem 0;
         font-size: 0.95rem;
     }
+}
 
+@media (max-width: 640px) {
     .hero {
         min-height: calc(100vh - 64px);
         min-height: calc(100svh - 64px);
